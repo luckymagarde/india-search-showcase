@@ -55,14 +55,14 @@ function Header() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 border-b transition ${scrolled || open ? "border-border bg-background/85 backdrop-blur-lg" : "border-transparent"}`}>
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 py-4 md:px-8">
-        <a href="#" className="flex items-center gap-2 font-display text-lg font-bold">
+        <a href="#" className="flex items-center gap-2 whitespace-nowrap font-display text-lg font-bold">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-gold text-sm text-primary-foreground">SE</span>
           SEO Expert India
         </a>
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground lg:flex">
           {nav.map(([l, h]) => <a key={h} href={h} className="hover:text-foreground">{l}</a>)}
         </nav>
-        <a href="#contact" className={`${btnPrimary} hidden !px-5 !py-2 text-sm lg:inline-flex`}>Free Consultation</a>
+        <div className="hidden lg:block"><a href="#contact" className={`${btnPrimary} !px-5 !py-2 text-sm`}>Free Consultation</a></div>
         <button className="lg:hidden" aria-label="Menu" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
       </div>
       {open && (
@@ -183,7 +183,7 @@ function Index() {
             </div>
           </div>
           <div className="relative">
-            <img src={founder.url} alt="Lokesh Magarde, Founder of SEO Expert India, at his desk" className="aspect-[4/3] w-full rounded-3xl border border-border object-cover" loading="lazy" />
+            <img src={founder.url} alt="Lokesh Magarde, Founder of SEO Expert India, at his desk" className="aspect-[4/3] w-full rounded-3xl border border-border object-cover" />
             <div className="absolute -bottom-6 left-6 rounded-2xl bg-gradient-gold px-6 py-4 text-primary-foreground shadow-glow">
               <p className="font-display text-3xl font-bold">10+</p><p className="text-sm font-semibold">Years of Excellence</p>
             </div>

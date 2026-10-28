@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- The home page renders the original Elementor HTML/CSS/JS verbatim from src/legacy/ — the user requires a pixel-exact match, so edit those files rather than rebuilding in Tailwind.

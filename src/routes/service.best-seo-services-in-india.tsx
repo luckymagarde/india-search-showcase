@@ -121,8 +121,8 @@ function SeoServicesPage() {
   const [plat, setPlat] = useState(0);
   const [svc, setSvc] = useState(0);
   const [faq, setFaq] = useState<number | null>(0);
-  const p = platforms[plat];
-  const s = services[svc];
+  const p = platforms[plat]!;
+  const s = services[svc]!;
 
   return (
     <>

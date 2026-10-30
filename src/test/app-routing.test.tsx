@@ -15,3 +15,10 @@ describe("App routing", () => {
     expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
   });
 });
+
+describe("SEO services route", () => {
+  it("matches /service/best-seo-services-in-india/ with trailing slash", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    expect(router.matchRoutes("/service/best-seo-services-in-india/").at(-1)?.routeId).toBe("/service/best-seo-services-in-india");
+  });
+});

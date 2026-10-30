@@ -96,7 +96,7 @@
 .ss-svc-panel h3{font-size:28px;margin-bottom:12px}
 /* timeline */
 .ss-tl{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;position:relative;counter-reset:s}
-.ss-tl-item{position:relative;padding:26px 22px;border-radius:18px;background:var(--ss-card);border:1px solid rgba(148,163,196,.12);opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s,border-color .3s}
+.ss-tl-item{position:relative;padding:26px 22px;border-radius:18px;background:var(--ss-card);border:1px solid rgba(148,163,196,.12);transition:opacity .6s,transform .6s,border-color .3s}
 .ss-tl-item.in{opacity:1;transform:none}
 .ss-tl-item:hover{border-color:var(--ss-gold)}
 .ss-tl-num{position:absolute;top:18px;right:20px;font:700 34px 'Space Grotesk';color:transparent;-webkit-text-stroke:1px rgba(243,201,95,.5)}
@@ -149,7 +149,7 @@
 .ss-btn-dark:hover{transform:translateY(-2px)}
 .ss-btn-outline{border:1.5px solid #020817;color:#020817;background:transparent}
 .ss-final .ss-cta-row{justify-content:center}
-.ss-reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.ss-reveal{transition:opacity .7s ease,transform .7s ease}
 .ss-reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.ss *{animation:none!important;transition:none!important}.ss-reveal,.ss-tl-item{opacity:1;transform:none}}
 @media (max-width:1024px){

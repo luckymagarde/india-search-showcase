@@ -10,33 +10,44 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ServiceBestSeoServicesInIndiaRouteImport } from './routes/service.best-seo-services-in-india'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServiceBestSeoServicesInIndiaRoute =
+  ServiceBestSeoServicesInIndiaRouteImport.update({
+    id: '/service/best-seo-services-in-india',
+    path: '/service/best-seo-services-in-india',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/service/best-seo-services-in-india'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/service/best-seo-services-in-india'
+  id: '__root__' | '/' | '/service/best-seo-services-in-india'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ServiceBestSeoServicesInIndiaRoute: typeof ServiceBestSeoServicesInIndiaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +59,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/service/best-seo-services-in-india': {
+      id: '/service/best-seo-services-in-india'
+      path: '/service/best-seo-services-in-india'
+      fullPath: '/service/best-seo-services-in-india'
+      preLoaderRoute: typeof ServiceBestSeoServicesInIndiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ServiceBestSeoServicesInIndiaRoute: ServiceBestSeoServicesInIndiaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

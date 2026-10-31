@@ -14,7 +14,7 @@ export function SiteHeader(){
   <Button variant="ghost" className="site-menu-toggle" aria-label={open?'Close menu':'Open menu'} aria-expanded={open} aria-controls="site-navigation" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</Button>
   <nav id="site-navigation" className={`site-nav ${open?'open':''}`} aria-label="Main navigation">
    <Link to="/" onClick={()=>setOpen(false)}>Home</Link><a href="https://www.seoexpertindia.biz/about/">About</a>
-   <div className={`site-services ${services?'expanded':''}`}><a href="https://www.seoexpertindia.biz/services/">Services</a><Button className="site-dropdown-toggle" variant="ghost" aria-label="Expand Services menu" aria-expanded={services} aria-controls="services-submenu" onClick={()=>setServices(!services)}><ChevronDown/></Button><div id="services-submenu" className="site-submenu"><Link to="/service/best-seo-services-in-india" onClick={()=>{setOpen(false);setServices(false)}}>SEO Services</Link></div></div>
+   <div className={`site-services ${services?'expanded':''}`}><a href="https://www.seoexpertindia.biz/services/">Services</a><Button className="site-dropdown-toggle" variant="ghost" aria-label="Expand Services menu" aria-expanded={services} aria-controls="services-submenu" onClick={()=>setServices(!services)}><ChevronDown/></Button><div id="services-submenu" className="site-submenu"><Link to="/service/best-seo-services-in-india/" onClick={()=>{setOpen(false);setServices(false)}}>SEO Services</Link></div></div>
    {menu.slice(1).map(([name,path])=><a key={name} href={`https://www.seoexpertindia.biz/${path}`}>{name}</a>)}{consult(true)}
   </nav>{consult()}</div></header></>;
 }

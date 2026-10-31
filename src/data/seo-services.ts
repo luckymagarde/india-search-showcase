@@ -45,7 +45,7 @@ export const aiServices = [
     "AI Search Visibility Analysis",
     "Review brand mentions and cited pages across priority conversational queries, recording variability and next actions."
   ]
-];
+] as const;
 
 export const aiPlatforms = [
   ["ChatGPT Search", "Conversational answers with cited sources."],
@@ -53,7 +53,7 @@ export const aiPlatforms = [
   ["Google Gemini", "Google's multimodal assistant."],
   ["Perplexity", "Answer engine built on live citations."],
   ["Microsoft Copilot", "AI answers across Bing and Microsoft 365."],
-];
+] as const;
 
 export const tools = [
   ["Ahrefs", "Backlink research and competitor keyword gaps."],
@@ -62,7 +62,7 @@ export const tools = [
   ["Google Analytics 4", "Engagement, conversions and organic lead attribution."],
   ["Screaming Frog", "Deep technical crawls, redirects and metadata audits."],
   ["Surfer SEO", "Content analysis and on-page topical coverage."],
-];
+] as const;
 
 export const platforms: { name: string; intro: string; points: string[] }[] = [
   { name: "WordPress", intro: "WordPress gives businesses extensive control over publishing, but that flexibility can introduce slow plugins, duplicate archives and inconsistent page templates. We audit the theme, permalink structure and SEO settings before refining priority content. Carefully configured metadata, schema and internal links help search engines understand your expertise, while performance improvements make articles and service pages easier for visitors to explore.", points: ["Clean permalink structure and canonical tags on archives, tags and pagination", "Title and meta templates via SEO plugins, reviewed page by page", "Schema for Organization, Service, Article and Breadcrumbs", "Caching, image compression and plugin clean-up for faster Core Web Vitals", "Noindex rules for thin tag, author and attachment pages", "Internal linking and content optimization for priority pages"] },

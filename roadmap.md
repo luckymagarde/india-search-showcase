@@ -1,0 +1,9 @@
+# SEO Services upgrade
+- [x] Upgrade strategy videos, AI services, platform illustration and branded tools.
+- [x] Expand all platform, industry and service content and improve interactive layouts.
+- [x] Correct USD pricing; place statement, reviews and FAQ in requested order.
+- [x] Match live navigation and connect Quick Consultation to existing form.
+- [x] Verify content rules, interactions, media and layout at four screen sizes; preserve homepage/footer.
+- [ ] Review/FAQ reference matching — blocked: uploaded files are AI/platform references, not review/FAQ references.
+- [ ] Genuine additional reviews — blocked: independently verified additional reviews were not supplied; preview cards explicitly identify editable samples.
+- [ ] Enquiry delivery verification — blocked: existing form has only a simulated thank-you state, not a connected delivery service; preserved unchanged.

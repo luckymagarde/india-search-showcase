@@ -1,0 +1,8 @@
+import {createFileRoute} from '@tanstack/react-router';
+import {useState} from 'react';
+import {Plus,Minus} from 'lucide-react';
+import {Button} from '@/components/ui/button';
+import {PageShell,Intro,FinalCTA} from '@/components/site/page-shell';
+import {faqGroups,pageHead} from '@/data/site-pages';
+export const Route=createFileRoute('/faq')({head:()=>pageHead('faq','Frequently Asked Questions – SEO, Websites & Working Together','Helpful answers about SEO, local search, website and eCommerce development, pricing, timelines, reporting and working with SEO Expert India.'),component:FAQ});
+function FAQ(){const[open,setOpen]=useState<string|null>('faq-0-0');return <PageShell><Intro name="FAQs" eyebrow="Clear answers" title="Frequently asked questions." description="What to expect, how the work is planned and what matters before you get started."/><section><div className="sp-wrap sp-faq-layout"><nav className="sp-faq-nav" aria-label="FAQ categories">{faqGroups.map((g,i)=><a key={g.name} href={`#category-${i}`}>{g.name}</a>)}</nav><div>{faqGroups.map((g,i)=><div className="sp-faq-group" id={`category-${i}`} key={g.name}><h2>{g.name}</h2>{g.items.map(([q,a],j)=>{const id=`faq-${i}-${j}`,active=id===open;return <article className="sp-faq-item" key={id}><h3><Button variant="ghost" className="sp-faq-question" id={`${id}-question`} aria-expanded={active} aria-controls={`${id}-answer`} onClick={()=>setOpen(active?null:id)}>{q}{active?<Minus aria-hidden/>:<Plus aria-hidden/>}</Button></h3><div id={`${id}-answer`} role="region" aria-labelledby={`${id}-question`} hidden={!active} className="sp-faq-answer">{a}</div></article>})}</div>)}</div></div></section><FinalCTA/></PageShell>}

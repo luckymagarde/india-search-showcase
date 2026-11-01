@@ -93,6 +93,12 @@
   --chart-5: oklch(0.7 0.18 30);
   --gradient-gold: linear-gradient(120deg, var(--primary), var(--primary-glow));
   --shadow-glow: 0 20px 60px -20px color-mix(in oklab, var(--primary) 45%, transparent);
+  --page-background: oklch(0.15 0.035 263);
+  --page-blue: oklch(0.66 0.17 250);
+  --page-cyan: oklch(0.8 0.13 210);
+  --page-surface: oklch(0.21 0.045 261);
+  --page-gradient: linear-gradient(115deg, var(--page-surface), var(--page-background));
+  --page-shadow: 0 14px 38px color-mix(in oklab, var(--page-background) 65%, transparent);
 }
 
 @layer base {

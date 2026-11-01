@@ -10,11 +10,47 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as RecentWorkRouteImport } from './routes/recent-work'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as TestimonialsRouteImport } from './routes/testimonials'
 import { Route as ServiceBestSeoServicesInIndiaRouteImport } from './routes/service.best-seo-services-in-india'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecentWorkRoute = RecentWorkRouteImport.update({
+  id: '/recent-work',
+  path: '/recent-work',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TestimonialsRoute = TestimonialsRouteImport.update({
+  id: '/testimonials',
+  path: '/testimonials',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServiceBestSeoServicesInIndiaRoute =
@@ -26,27 +62,76 @@ const ServiceBestSeoServicesInIndiaRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/recent-work': typeof RecentWorkRoute
+  '/services': typeof ServicesRoute
+  '/testimonials': typeof TestimonialsRoute
   '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/recent-work': typeof RecentWorkRoute
+  '/services': typeof ServicesRoute
+  '/testimonials': typeof TestimonialsRoute
   '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/recent-work': typeof RecentWorkRoute
+  '/services': typeof ServicesRoute
+  '/testimonials': typeof TestimonialsRoute
   '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/service/best-seo-services-in-india'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/faq'
+    | '/recent-work'
+    | '/services'
+    | '/testimonials'
+    | '/service/best-seo-services-in-india'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/service/best-seo-services-in-india'
-  id: '__root__' | '/' | '/service/best-seo-services-in-india'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/faq'
+    | '/recent-work'
+    | '/services'
+    | '/testimonials'
+    | '/service/best-seo-services-in-india'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/faq'
+    | '/recent-work'
+    | '/services'
+    | '/testimonials'
+    | '/service/best-seo-services-in-india'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  RecentWorkRoute: typeof RecentWorkRoute
+  ServicesRoute: typeof ServicesRoute
+  TestimonialsRoute: typeof TestimonialsRoute
   ServiceBestSeoServicesInIndiaRoute: typeof ServiceBestSeoServicesInIndiaRoute
 }
 
@@ -57,6 +142,48 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recent-work': {
+      id: '/recent-work'
+      path: '/recent-work'
+      fullPath: '/recent-work'
+      preLoaderRoute: typeof RecentWorkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/testimonials': {
+      id: '/testimonials'
+      path: '/testimonials'
+      fullPath: '/testimonials'
+      preLoaderRoute: typeof TestimonialsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/service/best-seo-services-in-india': {
@@ -71,6 +198,12 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  RecentWorkRoute: RecentWorkRoute,
+  ServicesRoute: ServicesRoute,
+  TestimonialsRoute: TestimonialsRoute,
   ServiceBestSeoServicesInIndiaRoute: ServiceBestSeoServicesInIndiaRoute,
 }
 export const routeTree = rootRouteImport

@@ -1,4 +1,5 @@
 # SEO Services upgrade
+- [ ] Include the supplied Google Maps listing link on Contact alongside the existing profile and embed.
 - [ ] Complete About, Recent Work, Testimonials, Contact, FAQ and Services using existing website sections.
 - [ ] Connect local header/footer links and verify all six pages, form parity, map and mobile layouts.
 - [x] Upgrade strategy videos, AI services, platform illustration and branded tools.

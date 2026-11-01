@@ -1,4 +1,6 @@
 # SEO Services upgrade
+- [ ] Complete About, Recent Work, Testimonials, Contact, FAQ and Services using existing website sections.
+- [ ] Connect local header/footer links and verify all six pages, form parity, map and mobile layouts.
 - [x] Upgrade strategy videos, AI services, platform illustration and branded tools.
 - [x] Expand all platform, industry and service content and improve interactive layouts.
 - [x] Correct USD pricing; place statement, reviews and FAQ in requested order.

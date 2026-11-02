@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useLocation,
   HeadContent,
   Scripts,
   type ErrorComponentProps,
@@ -12,6 +13,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/site-header";
+import { integrateFooter } from "@/components/site/legacy-sections";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -115,6 +117,13 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const location = useLocation();
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => {
+      document.querySelectorAll('footer').forEach(integrateFooter);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [location.pathname]);
 
   return (
     <QueryClientProvider client={queryClient}>

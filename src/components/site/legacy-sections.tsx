@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import homeHtml from '@/legacy/home.html?raw';
 import { pageLinks } from '@/data/site-pages';
 
@@ -19,9 +19,9 @@ export function integrateFooter(footer:HTMLElement){
  footer.querySelectorAll('a[href="#services"]').forEach(a=>a.setAttribute('href','/service/best-seo-services-in-india/'));
 }
 export function LegacyFooter(){const ref=useRef<HTMLDivElement>(null);useEffect(()=>{const f=ref.current?.querySelector('footer');if(f)integrateFooter(f);},[]);return <div ref={ref} dangerouslySetInnerHTML={{__html:legacyFooterHtml}}/>;}
-export function LegacyContactForm({heading,description}:{heading?:string;description?:string}={}){const ref=useRef<HTMLDivElement>(null);useEffect(()=>{
+export function LegacyContactForm({heading,description}:{heading?:string;description?:string}={}){const ref=useRef<HTMLDivElement>(null);const markup=useMemo(()=>{let html=legacyFormHtml;if(heading)html=html.replace("Let's Grow Your Organic Traffic",heading);if(description)html=html.replace("Tell us about your business and SEO goals. We'll review your requirements and get back to you with the next steps.",description);return {__html:html};},[heading,description]);useEffect(()=>{
  const container=ref.current, form=container?.querySelector<HTMLFormElement>('#leadForm');if(!container||!form)return;
  let timer:ReturnType<typeof setTimeout>|undefined;
  const submit=(e:Event)=>{e.preventDefault();let valid=true;for(const [wrap,id,test] of [['f-name','name',(v:string)=>v.trim().length>0],['f-email','email',(v:string)=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)],['f-phone','phone',(v:string)=>v.trim().length>=7]] as const){const input=container.querySelector<HTMLInputElement>(`#${id}`);const ok=Boolean(input&&test(input.value));container.querySelector(`#${wrap}`)?.classList.toggle('error',!ok);input?.setAttribute('aria-invalid',String(!ok));if(!ok)valid=false;}if(!valid)return;const b=form.querySelector<HTMLButtonElement>('.submit');if(b){b.textContent='Sending…';b.disabled=true;}timer=setTimeout(()=>{form.style.display='none';container.querySelector('#fSuccess')?.classList.add('show');},800);};
  form.addEventListener('submit',submit);return()=>{form.removeEventListener('submit',submit);clearTimeout(timer);};
- },[]);let html=legacyFormHtml;if(heading)html=html.replace("Let's Grow Your Organic Traffic",heading);if(description)html=html.replace("Tell us about your business and SEO goals. We'll review your requirements and get back to you with the next steps.",description);return <div ref={ref} dangerouslySetInnerHTML={{__html:html}}/>;}
+ },[markup]);return <div ref={ref} dangerouslySetInnerHTML={markup}/>;}

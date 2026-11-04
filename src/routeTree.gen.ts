@@ -17,6 +17,7 @@ import { Route as RecentWorkRouteImport } from './routes/recent-work'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as TestimonialsRouteImport } from './routes/testimonials'
 import { Route as ServiceBestSeoServicesInIndiaRouteImport } from './routes/service.best-seo-services-in-india'
+import { Route as ServiceWebDevelopmentCompanyIndiaRouteImport } from './routes/service.web-development-company-india'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -59,6 +60,12 @@ const ServiceBestSeoServicesInIndiaRoute =
     path: '/service/best-seo-services-in-india',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ServiceWebDevelopmentCompanyIndiaRoute =
+  ServiceWebDevelopmentCompanyIndiaRouteImport.update({
+    id: '/service/web-development-company-india',
+    path: '/service/web-development-company-india',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -69,6 +76,7 @@ export interface FileRoutesByFullPath {
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
   '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
+  '/service/web-development-company-india': typeof ServiceWebDevelopmentCompanyIndiaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -79,6 +87,7 @@ export interface FileRoutesByTo {
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
   '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
+  '/service/web-development-company-india': typeof ServiceWebDevelopmentCompanyIndiaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -90,6 +99,7 @@ export interface FileRoutesById {
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
   '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
+  '/service/web-development-company-india': typeof ServiceWebDevelopmentCompanyIndiaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -102,6 +112,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/testimonials'
     | '/service/best-seo-services-in-india'
+    | '/service/web-development-company-india'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -112,6 +123,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/testimonials'
     | '/service/best-seo-services-in-india'
+    | '/service/web-development-company-india'
   id:
     | '__root__'
     | '/'
@@ -122,6 +134,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/testimonials'
     | '/service/best-seo-services-in-india'
+    | '/service/web-development-company-india'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -133,6 +146,7 @@ export interface RootRouteChildren {
   ServicesRoute: typeof ServicesRoute
   TestimonialsRoute: typeof TestimonialsRoute
   ServiceBestSeoServicesInIndiaRoute: typeof ServiceBestSeoServicesInIndiaRoute
+  ServiceWebDevelopmentCompanyIndiaRoute: typeof ServiceWebDevelopmentCompanyIndiaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -193,6 +207,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiceBestSeoServicesInIndiaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/service/web-development-company-india': {
+      id: '/service/web-development-company-india'
+      path: '/service/web-development-company-india'
+      fullPath: '/service/web-development-company-india'
+      preLoaderRoute: typeof ServiceWebDevelopmentCompanyIndiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -205,6 +226,8 @@ const rootRouteChildren: RootRouteChildren = {
   ServicesRoute: ServicesRoute,
   TestimonialsRoute: TestimonialsRoute,
   ServiceBestSeoServicesInIndiaRoute: ServiceBestSeoServicesInIndiaRoute,
+  ServiceWebDevelopmentCompanyIndiaRoute:
+    ServiceWebDevelopmentCompanyIndiaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

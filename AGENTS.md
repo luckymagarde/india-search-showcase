@@ -15,3 +15,4 @@
 - SEO-specific visual components live in src/components/seo and consume CDN asset pointers via src/data/seo-assets.ts, keeping brand media separate from editable content.
 - The six company pages share PageShell, legacy form/footer extraction and site-pages content; reuse these to preserve original appearance and avoid duplicate forms. Footer link integration runs in the root so legacy source remains unchanged.
 - Portfolio media reuses CDN pointers to original homepage mockups; existing testimonial copy is derived from the homepage without stock portrait identities, and unverified endorsements/results must not receive review schema.
+- Additional development service pages reuse the shared legacy form with optional heading/description overrides and SEO service styles; scoped content and styles keep unrelated pages unchanged.

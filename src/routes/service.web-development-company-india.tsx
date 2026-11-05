@@ -7,6 +7,7 @@ import {BrandLogo,PlatformVisual} from '@/components/seo/visuals';
 import {portfolio} from '@/data/portfolio';
 import {DEVELOPMENT_URL,developmentIntro,developmentServices,developmentIndustries,developmentProcess,seoDevelopment,capabilitySections,quoteRows,designComparison,businessBenefits,developmentFaqs} from '@/data/web-development';
 import {company} from '@/data/site-pages';
+import developmentWhyImage from '@/assets/website-development-company-india.png.asset.json';
 import homeCss from '@/legacy/home.css?raw';
 import serviceCss from '@/styles/seo-services.css?raw';
 import pageCss from '@/styles/web-development.css?raw';

@@ -14,9 +14,11 @@
 .wd .wd-benefits strong{display:block;font:700 25px 'Space Grotesk';color:var(--ss-gold2);margin-bottom:4px}
 .wd .wd-link{display:inline-flex;gap:8px;align-items:center;color:var(--ss-gold2);margin-top:24px;font-size:14px;text-decoration:underline;text-underline-offset:5px}
 .wd .wd-link svg{width:16px;height:16px}
-.wd .wd-capability{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:54px;align-items:center}
+.wd .wd-capability{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:54px;align-items:center}
 .wd .wd-capability .ss-dashboard{width:100%;grid-column:auto}
 .wd .wd-media{margin:0;width:100%}
+.wd .wd-why-media{align-self:stretch;max-width:none;display:flex;flex-direction:column}
+.wd .wd-why-media img{flex:1;min-height:0;height:auto;width:100%;aspect-ratio:auto;object-fit:cover}
 .wd .wd-media img{width:100%;height:auto;aspect-ratio:500/281;object-fit:cover;display:block;border-radius:8px}
 .wd figcaption{color:var(--ss-dim);font-size:12px;margin-top:12px}
 .wd .wd-tech{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}

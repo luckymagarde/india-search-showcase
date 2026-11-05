@@ -17,6 +17,8 @@
 .wd .wd-capability{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:54px;align-items:center}
 .wd .wd-capability .ss-dashboard{width:100%;grid-column:auto}
 .wd .wd-media{margin:0;width:100%}
+.wd .wd-why-media{align-self:stretch;max-width:none;display:flex;flex-direction:column}
+.wd .wd-why-media img{flex:1;min-height:0;height:auto;width:100%;aspect-ratio:auto;object-fit:cover}
 .wd .wd-media img{width:100%;height:auto;aspect-ratio:500/281;object-fit:cover;display:block;border-radius:8px}
 .wd figcaption{color:var(--ss-dim);font-size:12px;margin-top:12px}
 .wd .wd-tech{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}

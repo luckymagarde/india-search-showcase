@@ -55,11 +55,11 @@ export const capabilitySections=[
  {id:'maintenance',title:'Website Redesign, Maintenance and Support',intro:'An outdated website may need clearer content, a better mobile experience and technical improvements as well as new styling. We review existing pages and functions before recommending a replacement. This helps retain useful information, established links and familiar workflows where they still serve the business.',points:['Existing website redesign and planned website migration','SEO-safe URL migration and redirect planning','Broken-link checks and agreed backup arrangements','Security, plugin and CMS update responsibilities','Performance monitoring and ongoing technical support'],detail:'Migration planning identifies which addresses stay, which change and how visitors reach the replacement content. Backups should be recoverable, not merely scheduled. Maintenance agreements define the supported platform, access requirements and response expectations; new features and emergency work should not be silently assumed to fall within routine updates.'},
 ] as const;
 export const quoteRows=[
- ['Basic Business Website','A focused service presence with essential business information and enquiries.','Page count, content readiness and layout requirements.'],
- ['Professional Corporate Website','A broader company structure with multiple audiences and publishing needs.','Departments, content workflows and integrations.'],
- ['WordPress Website','Editable business pages and content using a suitable WordPress setup.','Theme work, plugins and training requirements.'],
- ['eCommerce Website','Catalogue, checkout and agreed operational integrations.','Product complexity, fulfilment and payment requirements.'],
- ['Custom Website Development','Tailored functionality around a documented business workflow.','User roles, data, integrations and testing complexity.'],
+ ['Basic Business Website','A focused service presence with essential business information and enquiries.','Page count, content readiness and layout requirements.',500],
+ ['Professional Corporate Website','A broader company structure with multiple audiences and publishing needs.','Departments, content workflows and integrations.',800],
+ ['WordPress Website','Editable business pages and content using a suitable WordPress setup.','Theme work, plugins and training requirements.',800],
+ ['eCommerce Website','Catalogue, checkout and agreed operational integrations.','Product complexity, fulfilment and payment requirements.',1500],
+ ['Custom Website Development','Tailored functionality around a documented business workflow.','User roles, data, integrations and testing complexity.',2000],
 ] as const;
 export const designComparison=[
  ['UI/UX design','Defines how information is organised, how users move through the site and how the interface communicates your brand. Wireframes and visual designs guide implementation.'],

@@ -7,5 +7,11 @@ describe('Website development requirements',()=>{
  it('includes at least twelve useful questions',()=>expect(developmentFaqs.length).toBeGreaterThanOrEqual(12));
  it.each(developmentFaqs)('gives a detailed answer to %s',(_,answer)=>expect(answer.trim().split(/\s+/).length).toBeGreaterThanOrEqual(150));
  it.each(developmentFaqs)('keeps the answer to %s concise enough',(_,answer)=>expect(answer.trim().split(/\s+/).length).toBeLessThanOrEqual(200));
- it('compares the five specified project categories without invented prices',()=>{expect(quoteRows.map(r=>r[0])).toEqual(['Basic Business Website','Professional Corporate Website','WordPress Website','eCommerce Website','Custom Website Development']);expect(quoteRows.flat().join(' ')).not.toMatch(/[$€₹]\s*\d/)});
+ it.each([
+  ['Basic Business Website',500],
+  ['Professional Corporate Website',800],
+  ['WordPress Website',800],
+  ['eCommerce Website',1500],
+  ['Custom Website Development',2000],
+ ])('uses the supplied USD cost for %s',(category,cost)=>expect(quoteRows.find(row=>row[0]===category)?.[3]).toBe(cost));
 });

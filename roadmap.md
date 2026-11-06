@@ -1,10 +1,12 @@
 # SEO Services upgrade
+- [x] Cross-check the uploaded Excel service sitemap: all 29 unique URLs exactly match the master brief.
+- [ ] Complete the 29-page redesign: three-category navigation, independent researched content, exact URLs, imagery, shared enquiry delivery and page-by-page quality checks.
 - [x] Equalise development SEO cards, remove extra technical notes and add the five supplied USD costs.
 - [x] Complete India website development service page, connect its existing directory entry and verify content, form and mobile layout.
 - [x] Include the supplied Google Maps listing link on Contact alongside the existing profile and embed.
 - [x] Complete About, Recent Work, Testimonials, Contact, FAQ and Services using existing website sections.
 - [x] Connect local header/footer links and verify all six pages, form parity, map and mobile layouts.
-- [ ] Complete live service directory verification — blocked: original site returns a verification page; six evidenced destinations preserved, remaining exact destinations unavailable.
+- [x] Confirm the complete service directory from the supplied Excel sitemap and matching master brief: 29 exact URLs.
 - [x] Upgrade strategy videos, AI services, platform illustration and branded tools.
 - [x] Expand all platform, industry and service content and improve interactive layouts.
 - [x] Correct USD pricing; place statement, reviews and FAQ in requested order.

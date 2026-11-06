@@ -1,5 +1,5 @@
 # SEO Services upgrade
-- [ ] Equalise development SEO cards, remove extra technical notes and add the five supplied USD costs.
+- [x] Equalise development SEO cards, remove extra technical notes and add the five supplied USD costs.
 - [x] Complete India website development service page, connect its existing directory entry and verify content, form and mobile layout.
 - [x] Include the supplied Google Maps listing link on Contact alongside the existing profile and embed.
 - [x] Complete About, Recent Work, Testimonials, Contact, FAQ and Services using existing website sections.

@@ -3,7 +3,7 @@
 ## Outcome
 Complete all 29 service pages from your brief—not sample pages—with the existing SEO India and Development India designs as the foundations. Keep the original homepage, logo, footer, existing page URLs, supplied development images and latest USD costs intact.
 
-Newcastle will target **Newcastle upon Tyne, UK**. No Excel sitemap was attached; use the 29 explicit URLs in your brief as the working list, without waiting for another upload.
+Newcastle will target **Newcastle upon Tyne, UK**. The uploaded Excel sitemap has been checked: all 29 unique URLs exactly match the master brief. Use those verified URLs as the authoritative list. The spreadsheet groups 20 pages under SEO; the menu will split these into the brief's 11 general SEO and 9 industry SEO pages, alongside 9 development pages.
 
 ## Phase 1 — Shared foundations and navigation
 - Establish one service catalogue with the three requested categories and exact URLs.

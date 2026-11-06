@@ -1,4 +1,5 @@
 # SEO Services upgrade
+- [ ] Complete the 29-page redesign: three-category navigation, independent researched content, exact URLs, imagery, shared enquiry delivery and page-by-page quality checks.
 - [x] Equalise development SEO cards, remove extra technical notes and add the five supplied USD costs.
 - [x] Complete India website development service page, connect its existing directory entry and verify content, form and mobile layout.
 - [x] Include the supplied Google Maps listing link on Contact alongside the existing profile and embed.

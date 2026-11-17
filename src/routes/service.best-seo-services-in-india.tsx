@@ -154,7 +154,7 @@ export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
                 {v?<h1><span className="gold">{v.h1}</span></h1>:<h1>Best <span className="gold">SEO Services in India</span> to Grow Your Business Online</h1>}
                 {v&&<p>{v.intro}</p>}
                 <p className="sub">Drive qualified traffic, improve search visibility, and generate sustainable business growth with strategic SEO solutions.</p>
-                <p>SEO Expert India is a search engine optimization company that helps businesses in India and international markets earn more visibility on Google and AI-powered search. As an SEO agency in India with hands-on web development experience, we combine technical SEO, content optimization, authority building, local SEO and AI search optimization into one clear plan — focused on the pages, keywords and enquiries that actually matter to your business.</p>
+                {!v&&<p>SEO Expert India is a search engine optimization company that helps businesses in India and international markets earn more visibility on Google and AI-powered search. As an SEO agency in India with hands-on web development experience, we combine technical SEO, content optimization, authority building, local SEO and AI search optimization into one clear plan — focused on the pages, keywords and enquiries that actually matter to your business.</p>}
                 <ul className="ss-trust">
                   <li><span>✓</span>SEO &amp; Website Development Expertise</li>
                   <li><span>✓</span>Data-Driven SEO Strategies</li>

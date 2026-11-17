@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Play, Quote, ChevronLeft, ChevronRight, ShieldCheck } from "lucide-react";
+import { ClientTestimonials } from "@/components/site/client-testimonials";
 import { seoAssets } from "@/data/seo-assets";
 import { BrandLogo, PlatformVisual, AiEngineeringVisual, aiIcons, serviceIcons, industryIcons } from "@/components/seo/visuals";
 import homeCss from "@/legacy/home.css?raw";
@@ -110,7 +111,8 @@ const previewReviews = [
   { theme: "Technical optimization", copy: "Editable sample placeholder: add an authentic client review about the website audit, implementation process and ongoing communication." },
   { theme: "Transparent communication", copy: "Editable sample placeholder: add an authentic client review about reporting, collaboration and the explanation of next steps." },
 ];
-function Reviews() {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function _Reviews() {
   const [start, setStart] = useState(0);
   return <section className="ss-sec alt" id="client-reviews"><div className="ss-wrap">
     <Head2 eyebrow="Client Perspectives" intro="Discover how businesses value our approach to SEO strategy, technical optimization, transparent communication, and long-term search growth.">What Our Clients Say About <span className="gold">SEO Expert India</span></Head2>
@@ -359,7 +361,7 @@ export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
           </div>
         </section>
 
-        <Reviews />
+        <ClientTestimonials />
 
         {/* FAQ */}
         <section className="ss-sec">

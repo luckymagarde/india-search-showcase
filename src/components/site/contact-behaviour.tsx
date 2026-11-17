@@ -25,7 +25,7 @@ export function ContactBehaviour() {
    let feedback = form.querySelector<HTMLElement>('[data-contact-feedback]');
    if (!feedback) {
     feedback = document.createElement('p');
-    feedback.dataset.contactFeedback = 'true';
+    feedback.dataset['contactFeedback'] = 'true';
     feedback.setAttribute('role', 'alert');
     form.append(feedback);
    }

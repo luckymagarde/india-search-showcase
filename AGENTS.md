@@ -17,3 +17,4 @@
 - Portfolio media reuses CDN pointers to original homepage mockups; existing testimonial copy is derived from the homepage without stock portrait identities, and unverified endorsements/results must not receive review schema.
 - Additional development service pages reuse the shared legacy form with optional heading/description overrides and SEO service styles; scoped content and styles keep unrelated pages unchanged.
 - All legacy enquiry forms use one root-level capture handler and a validated write-only server function; private submissions are reviewed in Lovable Cloud Database, preventing simulated success and divergent delivery paths.
+- The shared service catalogue owns menu categories and original sitemap destinations; links switch to local routes only when complete pages exist, keeping navigation free of placeholder destinations.

@@ -128,7 +128,8 @@ function tabKeys(e: React.KeyboardEvent, index: number, count: number, select: (
   e.preventDefault();select(next);document.getElementById(`${prefix}-${next}`)?.focus();
 }
 
-function SeoServicesPage() {
+export type ServiceVariant={eyebrow:string;h1:string;intro:string;crumb:string};
+export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
   useLegacyBehaviour();
   const [plat, setPlat] = useState(0);
   const [svc, setSvc] = useState(0);
@@ -149,8 +150,9 @@ function SeoServicesPage() {
             <nav className="ss-crumb" aria-label="Breadcrumb"><a href="/">Home</a> / <span>SEO Services</span></nav>
             <div className="ss-hero-grid">
               <div>
-                <div className="ss-eyebrow">SEO Company in India</div>
-                <h1>Best <span className="gold">SEO Services in India</span> to Grow Your Business Online</h1>
+                <div className="ss-eyebrow">{v?v.eyebrow:"SEO Company in India"}</div>
+                {v?<h1><span className="gold">{v.h1}</span></h1>:<h1>Best <span className="gold">SEO Services in India</span> to Grow Your Business Online</h1>}
+                {v&&<p>{v.intro}</p>}
                 <p className="sub">Drive qualified traffic, improve search visibility, and generate sustainable business growth with strategic SEO solutions.</p>
                 <p>SEO Expert India is a search engine optimization company that helps businesses in India and international markets earn more visibility on Google and AI-powered search. As an SEO agency in India with hands-on web development experience, we combine technical SEO, content optimization, authority building, local SEO and AI search optimization into one clear plan — focused on the pages, keywords and enquiries that actually matter to your business.</p>
                 <ul className="ss-trust">

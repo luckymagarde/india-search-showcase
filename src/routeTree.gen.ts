@@ -16,6 +16,7 @@ import { Route as FaqRouteImport } from './routes/faq'
 import { Route as RecentWorkRouteImport } from './routes/recent-work'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as TestimonialsRouteImport } from './routes/testimonials'
+import { Route as ServiceSlugRouteImport } from './routes/service.$slug'
 import { Route as ServiceBestSeoServicesInIndiaRouteImport } from './routes/service.best-seo-services-in-india'
 import { Route as ServiceWebDevelopmentCompanyIndiaRouteImport } from './routes/service.web-development-company-india'
 
@@ -54,6 +55,11 @@ const TestimonialsRoute = TestimonialsRouteImport.update({
   path: '/testimonials',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServiceSlugRoute = ServiceSlugRouteImport.update({
+  id: '/service/$slug',
+  path: '/service/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServiceBestSeoServicesInIndiaRoute =
   ServiceBestSeoServicesInIndiaRouteImport.update({
     id: '/service/best-seo-services-in-india',
@@ -75,6 +81,7 @@ export interface FileRoutesByFullPath {
   '/recent-work': typeof RecentWorkRoute
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
+  '/service/$slug': typeof ServiceSlugRoute
   '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
   '/service/web-development-company-india': typeof ServiceWebDevelopmentCompanyIndiaRoute
 }
@@ -86,6 +93,7 @@ export interface FileRoutesByTo {
   '/recent-work': typeof RecentWorkRoute
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
+  '/service/$slug': typeof ServiceSlugRoute
   '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
   '/service/web-development-company-india': typeof ServiceWebDevelopmentCompanyIndiaRoute
 }
@@ -98,6 +106,7 @@ export interface FileRoutesById {
   '/recent-work': typeof RecentWorkRoute
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
+  '/service/$slug': typeof ServiceSlugRoute
   '/service/best-seo-services-in-india': typeof ServiceBestSeoServicesInIndiaRoute
   '/service/web-development-company-india': typeof ServiceWebDevelopmentCompanyIndiaRoute
 }
@@ -111,6 +120,7 @@ export interface FileRouteTypes {
     | '/recent-work'
     | '/services'
     | '/testimonials'
+    | '/service/$slug'
     | '/service/best-seo-services-in-india'
     | '/service/web-development-company-india'
   fileRoutesByTo: FileRoutesByTo
@@ -122,6 +132,7 @@ export interface FileRouteTypes {
     | '/recent-work'
     | '/services'
     | '/testimonials'
+    | '/service/$slug'
     | '/service/best-seo-services-in-india'
     | '/service/web-development-company-india'
   id:
@@ -133,6 +144,7 @@ export interface FileRouteTypes {
     | '/recent-work'
     | '/services'
     | '/testimonials'
+    | '/service/$slug'
     | '/service/best-seo-services-in-india'
     | '/service/web-development-company-india'
   fileRoutesById: FileRoutesById
@@ -145,6 +157,7 @@ export interface RootRouteChildren {
   RecentWorkRoute: typeof RecentWorkRoute
   ServicesRoute: typeof ServicesRoute
   TestimonialsRoute: typeof TestimonialsRoute
+  ServiceSlugRoute: typeof ServiceSlugRoute
   ServiceBestSeoServicesInIndiaRoute: typeof ServiceBestSeoServicesInIndiaRoute
   ServiceWebDevelopmentCompanyIndiaRoute: typeof ServiceWebDevelopmentCompanyIndiaRoute
 }
@@ -200,6 +213,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TestimonialsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/service/$slug': {
+      id: '/service/$slug'
+      path: '/service/$slug'
+      fullPath: '/service/$slug'
+      preLoaderRoute: typeof ServiceSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/service/best-seo-services-in-india': {
       id: '/service/best-seo-services-in-india'
       path: '/service/best-seo-services-in-india'
@@ -225,6 +245,7 @@ const rootRouteChildren: RootRouteChildren = {
   RecentWorkRoute: RecentWorkRoute,
   ServicesRoute: ServicesRoute,
   TestimonialsRoute: TestimonialsRoute,
+  ServiceSlugRoute: ServiceSlugRoute,
   ServiceBestSeoServicesInIndiaRoute: ServiceBestSeoServicesInIndiaRoute,
   ServiceWebDevelopmentCompanyIndiaRoute:
     ServiceWebDevelopmentCompanyIndiaRoute,

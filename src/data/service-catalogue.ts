@@ -8,7 +8,7 @@ export const serviceCatalogue = [
     "path": "/service/seo-for-law-firm/",
     "category": "industry",
     "icon": "Scale",
-    "local": false
+    "local": true
   },
   {
     "title": "Newcastle SEO Expert",
@@ -16,7 +16,7 @@ export const serviceCatalogue = [
     "path": "/service/newcastle-seo-expert/",
     "category": "seo",
     "icon": "MapPin",
-    "local": false
+    "local": true
   },
   {
     "title": "SEO Services for Education Industry",
@@ -24,7 +24,7 @@ export const serviceCatalogue = [
     "path": "/service/seo-services-for-education-industry/",
     "category": "industry",
     "icon": "GraduationCap",
-    "local": false
+    "local": true
   },
   {
     "title": "Home Improvements",
@@ -32,7 +32,7 @@ export const serviceCatalogue = [
     "path": "/service/home-improvements/",
     "category": "industry",
     "icon": "Hammer",
-    "local": false
+    "local": true
   },
   {
     "title": "Pet Services",
@@ -40,7 +40,7 @@ export const serviceCatalogue = [
     "path": "/service/pet-services/",
     "category": "industry",
     "icon": "PawPrint",
-    "local": false
+    "local": true
   },
   {
     "title": "SEO for IT Industry",
@@ -48,7 +48,7 @@ export const serviceCatalogue = [
     "path": "/service/seo-for-it-industry/",
     "category": "industry",
     "icon": "Monitor",
-    "local": false
+    "local": true
   },
   {
     "title": "Automobile Industries SEO",
@@ -56,7 +56,7 @@ export const serviceCatalogue = [
     "path": "/service/automobile-industries-seo/",
     "category": "industry",
     "icon": "Car",
-    "local": false
+    "local": true
   },
   {
     "title": "Best SEO Services in India",
@@ -72,7 +72,7 @@ export const serviceCatalogue = [
     "path": "/service/best-seo-linkbuilding-services-in-india/",
     "category": "seo",
     "icon": "Link2",
-    "local": false
+    "local": true
   },
   {
     "title": "Best SEO Services in UAE",
@@ -80,7 +80,7 @@ export const serviceCatalogue = [
     "path": "/service/best-seo-services-in-uae/",
     "category": "seo",
     "icon": "Globe",
-    "local": false
+    "local": true
   },
   {
     "title": "Global SEO Services",
@@ -88,7 +88,7 @@ export const serviceCatalogue = [
     "path": "/service/global-seo-services/",
     "category": "seo",
     "icon": "Languages",
-    "local": false
+    "local": true
   },
   {
     "title": "SEO Expert New York",
@@ -96,7 +96,7 @@ export const serviceCatalogue = [
     "path": "/service/seo-expert-new-york/",
     "category": "seo",
     "icon": "Building2",
-    "local": false
+    "local": true
   },
   {
     "title": "San Diego SEO Expert",
@@ -104,7 +104,7 @@ export const serviceCatalogue = [
     "path": "/service/san-diego-seo-expert/",
     "category": "seo",
     "icon": "Compass",
-    "local": false
+    "local": true
   },
   {
     "title": "SEO Expert London UK",
@@ -112,7 +112,7 @@ export const serviceCatalogue = [
     "path": "/service/seo-expert-london-uk/",
     "category": "seo",
     "icon": "Landmark",
-    "local": false
+    "local": true
   },
   {
     "title": "SEO Expert Denmark",
@@ -120,7 +120,7 @@ export const serviceCatalogue = [
     "path": "/service/seo-expert-denmark/",
     "category": "seo",
     "icon": "Flag",
-    "local": false
+    "local": true
   },
   {
     "title": "Ecommerce Website SEO Services",
@@ -128,7 +128,7 @@ export const serviceCatalogue = [
     "path": "/service/ecommerce-website-seo-services/",
     "category": "industry",
     "icon": "ShoppingBag",
-    "local": false
+    "local": true
   },
   {
     "title": "Real Estate Website SEO Services",
@@ -136,7 +136,7 @@ export const serviceCatalogue = [
     "path": "/service/real-estate-website-seo-services/",
     "category": "industry",
     "icon": "House",
-    "local": false
+    "local": true
   },
   {
     "title": "Healthcare Website SEO Services",
@@ -144,7 +144,7 @@ export const serviceCatalogue = [
     "path": "/service/healthcare-website-seo-services/",
     "category": "industry",
     "icon": "HeartPulse",
-    "local": false
+    "local": true
   },
   {
     "title": "Best SEO Experts in Malta",
@@ -152,7 +152,7 @@ export const serviceCatalogue = [
     "path": "/service/best-seo-experts-in-malta/",
     "category": "seo",
     "icon": "Anchor",
-    "local": false
+    "local": true
   },
   {
     "title": "Best Local SEO Services in India",
@@ -160,7 +160,7 @@ export const serviceCatalogue = [
     "path": "/service/best-local-seo-services-in-india/",
     "category": "seo",
     "icon": "MapPinned",
-    "local": false
+    "local": true
   },
   {
     "title": "Web Agency Copenhagen, Denmark",
@@ -168,7 +168,7 @@ export const serviceCatalogue = [
     "path": "/service/web-agency-copenhagen-denmark/",
     "category": "development",
     "icon": "Palette",
-    "local": false
+    "local": true
   },
   {
     "title": "Web Development Company Paris",
@@ -176,7 +176,7 @@ export const serviceCatalogue = [
     "path": "/service/web-development-company-paris/",
     "category": "development",
     "icon": "Code2",
-    "local": false
+    "local": true
   },
   {
     "title": "Web Development Company Netherlands",
@@ -184,7 +184,7 @@ export const serviceCatalogue = [
     "path": "/service/web-development-company-netherlands/",
     "category": "development",
     "icon": "Workflow",
-    "local": false
+    "local": true
   },
   {
     "title": "Web Development Company UK",
@@ -192,7 +192,7 @@ export const serviceCatalogue = [
     "path": "/service/web-development-company-uk/",
     "category": "development",
     "icon": "Laptop",
-    "local": false
+    "local": true
   },
   {
     "title": "Web Development Agency Germany",
@@ -200,7 +200,7 @@ export const serviceCatalogue = [
     "path": "/service/web-development-agency-germany/",
     "category": "development",
     "icon": "Settings",
-    "local": false
+    "local": true
   },
   {
     "title": "Web Development Company Washington",
@@ -208,7 +208,7 @@ export const serviceCatalogue = [
     "path": "/service/web-development-company-washington/",
     "category": "development",
     "icon": "PanelsTopLeft",
-    "local": false
+    "local": true
   },
   {
     "title": "Web Development Company USA",
@@ -216,7 +216,7 @@ export const serviceCatalogue = [
     "path": "/service/web-development-company-usa/",
     "category": "development",
     "icon": "MonitorSmartphone",
-    "local": false
+    "local": true
   },
   {
     "title": "Website Development Company Malta",
@@ -224,7 +224,7 @@ export const serviceCatalogue = [
     "path": "/service/website-development-company-malta/",
     "category": "development",
     "icon": "LayoutTemplate",
-    "local": false
+    "local": true
   },
   {
     "title": "Web Development Company India",

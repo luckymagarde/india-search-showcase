@@ -2,6 +2,7 @@
 - [x] Cross-check the uploaded Excel service sitemap: all 29 unique URLs exactly match the master brief.
 - [ ] Complete the 29-page redesign: three-category navigation, independent researched content, exact URLs, imagery, shared enquiry delivery and page-by-page quality checks.
 - [x] Resolve location targeting: Newcastle upon Tyne UK, Washington DC and New York City.
+- [x] Audit all 29 local service URLs at desktop and phone widths: two existing service pages render; 27 are not yet implemented locally. Record actual gaps without claiming redesign completion.
 - [x] Create verified 29-service catalogue, desktop three-column mega menu, mobile category accordions and complete Services directory; preserve original destinations until local replacements are complete.
 - [x] Verify shared enquiry capture through development-page UI and confirm saved test entry in Cloud; remove only the test entry.
 - [ ] Owner enquiry email notifications — blocked: recipient address not supplied and sender domain not configured. Enquiries are stored privately in Cloud meanwhile.

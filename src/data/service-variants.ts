@@ -34,7 +34,7 @@ const focus: Record<string, string> = {
 export type Variant = { slug: string; kind: Kind; url: string; title: string; description: string; eyebrow: string; h1: string; crumb: string; intro: string };
 
 export const serviceVariants: Record<string, Variant> = Object.fromEntries(
- serviceCatalogue.filter(s => !s.local).map(s => {
+ serviceCatalogue.filter(s => !['/service/best-seo-services-in-india/', '/service/web-development-company-india/'].includes(s.path)).map(s => {
   const slug = s.path.split('/')[2] ?? '';
   const kind: Kind = s.category === 'development' ? 'development' : 'seo';
   const who = focus[slug];

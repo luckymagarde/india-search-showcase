@@ -17,4 +17,8 @@
 - Portfolio media reuses CDN pointers to original homepage mockups; existing testimonial copy is derived from the homepage without stock portrait identities, and unverified endorsements/results must not receive review schema.
 - Additional development service pages reuse the shared legacy form with optional heading/description overrides and SEO service styles; scoped content and styles keep unrelated pages unchanged.
 - All legacy enquiry forms use one root-level capture handler and a validated write-only server function; private submissions are reviewed in Lovable Cloud Database, preventing simulated success and divergent delivery paths.
-- The shared service catalogue owns menu categories and original sitemap destinations; links switch to local routes only when complete pages exist, keeping navigation free of placeholder destinations.
+- The service catalogue owns exact sitemap paths; navigation and contextual industry links use same-origin paths to existing local routes, never external replacements.
+
+- Shared hero tokens in global CSS match the development reference across the legacy homepage and service templates to prevent background drift.
+- Contact URL normalization is a pure shared schema transformation; development forms configure their Budget label without changing stored values.
+- Dynamic service routes consume topic-specific editorial priorities and FAQs; common platform capabilities and process remain shared to avoid duplicated page implementations.

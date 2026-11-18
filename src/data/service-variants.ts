@@ -1,3 +1,4 @@
+import { serviceEditorial, type Editorial } from './service-editorial';
 import { serviceCatalogue } from './service-catalogue';
 
 type Kind = 'seo' | 'development';
@@ -31,13 +32,15 @@ const focus: Record<string, string> = {
  'website-development-company-malta': 'companies in Malta and Gozo',
 };
 
-export type Variant = { slug: string; kind: Kind; url: string; title: string; description: string; eyebrow: string; h1: string; crumb: string; intro: string };
+export type Variant = { slug: string; kind: Kind; url: string; title: string; description: string; eyebrow: string; h1: string; crumb: string; intro: string; editorial: Editorial };
 
 export const serviceVariants: Record<string, Variant> = Object.fromEntries(
  serviceCatalogue.filter(s => !['/service/best-seo-services-in-india/', '/service/web-development-company-india/'].includes(s.path)).map(s => {
   const slug = s.path.split('/')[2] ?? '';
   const kind: Kind = s.category === 'development' ? 'development' : 'seo';
   const who = focus[slug];
+  const editorial = serviceEditorial[slug];
+  if (!editorial) throw new Error(`Missing service editorial content: ${slug}`);
   const intro = kind === 'seo'
    ? `SEO Expert India provides ${s.title} for ${who}. Since 2016 we have combined technical SEO, keyword and intent research, content optimisation, authority building and AI search readiness into one transparent plan built around your audience, competition and enquiry goals — with honest monthly reporting and no ranking guarantees.`
    : `SEO Expert India is a ${s.title.replace(/,.*/, '')} partner for ${who}. We plan, design and build fast, responsive, SEO-friendly websites — business sites, WordPress, custom builds and eCommerce — with clear scope, collaborative reviews, full ownership and support after launch.`;
@@ -45,6 +48,6 @@ export const serviceVariants: Record<string, Variant> = Object.fromEntries(
   const description = kind === 'seo'
    ? `${s.title} from SEO Expert India for ${who}: technical, content, local and AI search SEO with transparent reporting. Free consultation.`
    : `${s.title}: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for ${who}. Get a free quote.`;
-  return [slug, { slug, kind, url: s.url, title, description, eyebrow: s.category === 'industry' ? 'Industry SEO Services' : kind === 'seo' ? 'SEO Services' : 'Website Design & Development', h1: s.title, crumb: s.title, intro }];
+  return [slug, { slug, kind, url: s.url, title, description, eyebrow: s.category === 'industry' ? 'Industry SEO Services' : kind === 'seo' ? 'SEO Services' : 'Website Design & Development', h1: s.title, crumb: s.title, intro, editorial }];
  }),
 );

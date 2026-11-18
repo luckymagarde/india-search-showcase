@@ -8,4 +8,7 @@ describe('Shared enquiry validation', () => {
  it('rejects bot-trap content', () => expect(contactSchema.safeParse({ ...valid, company_fax: 'spam' }).success).toBe(false));
  it('rejects unsafe website protocols', () => expect(contactSchema.safeParse({ ...valid, website: 'javascript:alert(1)' }).success).toBe(false));
  it('rejects oversized enquiry text', () => expect(contactSchema.safeParse({ ...valid, goals: 'x'.repeat(5001) }).success).toBe(false));
+ it.each(['google.com','www.google.com','example.com','https://google.com','http://google.com','example.co.in','www.example.co.uk'])('accepts %s',website=>expect(contactSchema.safeParse({...valid,website}).success).toBe(true));
+ it.each(['invalid domain','malformed','https://','-invalid.com','example..com','ftp://google.com'])('rejects malformed %s',website=>expect(contactSchema.safeParse({...valid,website}).success).toBe(false));
+ it('normalizes a trimmed bare domain',()=>expect(contactSchema.parse({...valid,website:'  www.google.com  '}).website).toBe('https://www.google.com'));
 });

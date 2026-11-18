@@ -17,8 +17,8 @@ export function ContactBehaviour() {
    const values = new FormData(form);
    const read = (name: string) => String(values.get(name) ?? '');
    const parsed = contactSchema.safeParse({ name: read('name'), email: read('email'), phone: read('phone'), website: read('site'), budget: read('budget'), goals: read('goals'), page_path: window.location.pathname, company_fax: read('company_fax') });
-   for (const name of ['name', 'email', 'phone']) {
-    const invalid = !parsed.success && parsed.error.issues.some(issue => issue.path[0] === name);
+   for (const name of ['name', 'email', 'phone', 'site']) {
+    const invalid = !parsed.success && parsed.error.issues.some(issue => issue.path[0] === (name === 'site' ? 'website' : name));
     form.querySelector(`#f-${name}`)?.classList.toggle('error', invalid);
     form.querySelector(`#${name}`)?.setAttribute('aria-invalid', String(invalid));
    }

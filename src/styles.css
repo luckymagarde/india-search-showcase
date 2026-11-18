@@ -127,3 +127,16 @@
 }
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-sans); }
+
+/* Website Development is the source of truth for shared hero backgrounds. */
+:root {
+ --hero-background: var(--page-background);
+ --hero-pattern: linear-gradient(color-mix(in srgb, var(--ink-dim) 7%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, var(--ink-dim) 7%, transparent) 1px, transparent 1px);
+ --hero-mask: radial-gradient(ellipse 70% 60% at 50% 0%, oklch(0 0 0) 30%, transparent 85%);
+}
+.hero#home, .ss .ss-hero { background:var(--hero-background); position:relative; }
+.hero#home .hero-pattern, .ss-hero > .ss-grid-bg { position:absolute; inset:0; background-image:var(--hero-pattern); background-size:56px 56px; mask-image:var(--hero-mask); pointer-events:none; }
+.hero#home > .wrap { position:relative; }
+.industry-card-link { display:block; }
+.industry-card-link:focus-visible { outline:2px solid var(--primary); outline-offset:4px; }
+.sp-tags a { font-size:13px;border-bottom:1px solid var(--line);padding:8px 16px 8px 0;color:var(--ink-dim); }

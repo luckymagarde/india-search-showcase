@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Play, Quote, ChevronLeft, ChevronRight, ShieldCheck } from "lucide-react";
+import { Play, ShieldCheck } from "lucide-react";
 import { ClientTestimonials } from "@/components/site/client-testimonials";
+import { industryPath } from '@/data/industry-links';
+import type { Editorial } from '@/data/service-editorial';
 import { seoAssets } from "@/data/seo-assets";
 import { BrandLogo, PlatformVisual, AiEngineeringVisual, aiIcons, serviceIcons, industryIcons } from "@/components/seo/visuals";
 import homeCss from "@/legacy/home.css?raw";
@@ -48,7 +50,6 @@ export const Route = createFileRoute("/service/best-seo-services-in-india")({
     links: [
       { rel: "canonical", href: PAGE_URL },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&family=Space+Grotesk:wght@500;600;700&display=swap" },
     ],
     scripts: jsonLd.map((d) => ({ type: "application/ld+json", children: JSON.stringify(d) })),
   }),
@@ -57,30 +58,13 @@ export const Route = createFileRoute("/service/best-seo-services-in-india")({
 
 function useLegacyBehaviour() {
   useEffect(() => {
-    // Same validation + submit behaviour as the existing site form.
-    const form = document.getElementById("leadForm") as HTMLFormElement | null;
-    const onSubmit = (e: Event) => {
-      e.preventDefault();
-      let valid = true;
-      ([["f-name", "name", (v: string) => v.trim().length > 0], ["f-email", "email", (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)], ["f-phone", "phone", (v: string) => v.trim().length >= 7]] as const)
-        .forEach(([w, f, test]) => {
-          const ok = test((document.getElementById(f) as HTMLInputElement).value);
-          document.getElementById(w)?.classList.toggle("error", !ok);
-          if (!ok) valid = false;
-        });
-      if (!valid || !form) return;
-      const btn = form.querySelector(".submit") as HTMLButtonElement;
-      btn.textContent = "Sending…"; btn.disabled = true;
-      setTimeout(() => { form.style.display = "none"; document.getElementById("fSuccess")?.classList.add("show"); }, 800);
-    };
-    form?.addEventListener("submit", onSubmit);
     const top = document.getElementById("backToTop");
     const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
     top?.addEventListener("click", toTop);
 
     const io = new IntersectionObserver((es) => es.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } }), { threshold: 0.12 });
     document.querySelectorAll(".ss-reveal,.ss-tl-item").forEach((el) => io.observe(el));
-    return () => { form?.removeEventListener("submit", onSubmit); top?.removeEventListener("click", toTop); io.disconnect(); };
+    return () => { top?.removeEventListener("click", toTop); io.disconnect(); };
   }, []);
 }
 
@@ -106,20 +90,6 @@ function Video({ video, index }: { video: typeof strategyVideos[number]; index: 
   </article>;
 }
 
-const previewReviews = [
-  { theme: "SEO strategy", copy: "Editable sample placeholder: add an authentic client review about campaign planning and the clarity of the proposed SEO roadmap." },
-  { theme: "Technical optimization", copy: "Editable sample placeholder: add an authentic client review about the website audit, implementation process and ongoing communication." },
-  { theme: "Transparent communication", copy: "Editable sample placeholder: add an authentic client review about reporting, collaboration and the explanation of next steps." },
-];
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function _Reviews() {
-  const [start, setStart] = useState(0);
-  return <section className="ss-sec alt" id="client-reviews"><div className="ss-wrap">
-    <Head2 eyebrow="Client Perspectives" intro="Discover how businesses value our approach to SEO strategy, technical optimization, transparent communication, and long-term search growth.">What Our Clients Say About <span className="gold">SEO Expert India</span></Head2>
-    <div className="ss-review-grid">{previewReviews.map((_,i) => { const review = previewReviews[(start+i)%previewReviews.length]; if (!review) return null; return <article className="ss-review" key={review.theme}><Quote aria-hidden/><span className="ss-sample-label">EDITABLE SAMPLE · NOT A CUSTOMER REVIEW</span><h3>{review.theme}</h3><p>{review.copy}</p><div className="ss-review-source">Customer attribution pending</div></article>; })}</div>
-    <div className="ss-review-controls"><Button variant="ghost" aria-label="Previous review" onClick={()=>setStart((start+2)%3)}><ChevronLeft/></Button><span>{start+1} / 3</span><Button variant="ghost" aria-label="Next review" onClick={()=>setStart((start+1)%3)}><ChevronRight/></Button></div>
-  </div></section>;
-}
 function tabKeys(e: React.KeyboardEvent, index: number, count: number, select: (i:number)=>void, prefix: string) {
   let next=index;
   if (e.key === "ArrowRight" || e.key === "ArrowDown") next=(index+1)%count;
@@ -130,9 +100,16 @@ function tabKeys(e: React.KeyboardEvent, index: number, count: number, select: (
   e.preventDefault();select(next);document.getElementById(`${prefix}-${next}`)?.focus();
 }
 
-export type ServiceVariant={eyebrow:string;h1:string;intro:string;crumb:string};
+export type ServiceVariant={eyebrow:string;h1:string;intro:string;crumb:string;editorial?:Editorial};
 export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
   useLegacyBehaviour();
+  const editorial = v?.editorial;
+  const pageFaqs = editorial ? [
+    [editorial.question, editorial.answer],
+    [`What should a ${v.h1} campaign prioritize?`, `${editorial.context} ${editorial.priorities.map(([title, detail]) => `${title}: ${detail}`).join(' ')}`],
+    [`What information is needed to plan ${v.h1}?`, `Share the website, actual services, target audience and current enquiry goals. For ${editorial.market}, confirm service availability and who approves specialist or localized content before the plan is agreed.`],
+    [`How is progress reviewed for ${v.h1}?`, `Agree the useful search topics and conversion events first. Reports should separate relevant enquiries from unrelated traffic, document completed changes and explain the next priorities without guaranteeing rankings.`],
+  ].concat(faqs.map(([question,answer]) => [question.replace(" in India", ""), answer.replaceAll(" in India", "")])) : faqs;
   const [plat, setPlat] = useState(0);
   const [svc, setSvc] = useState(0);
   const [faq, setFaq] = useState<number | null>(0);
@@ -149,7 +126,7 @@ export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
         <section className="ss-hero" id="consultation">
           <div className="ss-grid-bg" />
           <div className="ss-wrap">
-            <nav className="ss-crumb" aria-label="Breadcrumb"><a href="/">Home</a> / <span>SEO Services</span></nav>
+            <nav className="ss-crumb" aria-label="Breadcrumb"><a href="/">Home</a> / <span aria-current="page">{v?.crumb ?? "SEO Services"}</span></nav>
             <div className="ss-hero-grid">
               <div>
                 <div className="ss-eyebrow">{v?v.eyebrow:"SEO Company in India"}</div>
@@ -177,7 +154,8 @@ export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
           <div className="ss-wrap">
             <div className="ss-center ss-reveal" style={{ marginBottom: 0 }}>
               <div className="ss-eyebrow">The Fundamentals</div>
-              <h2>What Are <span className="serif gold">SEO Services?</span></h2>
+              <h2>{v ? `${v.h1}: campaign priorities` : <>What Are <span className="serif gold">SEO Services?</span></>}</h2>
+              {editorial && <><p>{editorial.context}</p><div className="ss-steps">{editorial.priorities.map(([title,detail])=><div className="ss-step" key={title}><h3>{title}</h3><p>{detail}</p></div>)}</div></>}
               <p>SEO services are the professional work of improving a website so it appears more often — and more prominently — in organic search results. The goal is not just traffic, but the right traffic: people actively searching for the products or services you offer.</p>
               <p>Professional SEO services begin with keyword research and search intent analysis, so every important page targets what customers really type. Technical website optimization makes sure search engines can crawl, render and index the site quickly. On-page SEO and content optimization improve titles, headings, copy and internal links, while link building and authority development earn trust from relevant websites.</p>
               <p>Depending on your goals, the work extends to local SEO for nearby customers and international SEO for multiple countries. Throughout, search engine performance monitoring and conversion optimization connect rankings to real outcomes — enquiries, calls and sales.</p>
@@ -196,7 +174,7 @@ export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
             <div className="ss-reveal">
               <div className="ss-eyebrow">Our Approach</div>
               <h2>A Strategic Approach to <span className="gold">Search Engine Optimization</span></h2>
-              <p>Successful SEO is never a single tactic. Rankings improve when technical health, keyword targeting, content strategy, competitor research, search intent, user experience and authority all move forward together. Our SEO experts in India plan each campaign around those connected parts, then prioritize the changes most likely to move results for your business.</p>
+              <p>Successful SEO is never a single tactic. Rankings improve when technical health, keyword targeting, content strategy, competitor research, search intent, user experience and authority all move forward together. Our SEO specialists plan each campaign around those connected parts, then prioritize the changes most likely to move results for your business.</p>
               <div className="ss-steps">
                 {strategyPoints.map(([t, d]) => <div className="ss-step" key={t}><b>{t}</b><small>{d}</small></div>)}
               </div>
@@ -260,10 +238,9 @@ export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
             </Head2>
             <div className="ss-bento">
               {industries.map(([, t, d, size],i) => {const Icon=industryIcons[i] ?? industryIcons[0];return (
-                <div className={`ss-card ss-reveal ${size}`} key={t}>
-                  <div className="ss-icon" aria-hidden><Icon/></div>
-                  <div><h3>{t}</h3><p>{d}</p></div>
-                </div>
+                <article className={`ss-card ss-reveal ${size}`} key={t}>
+                  {industryPath(t) ? <a className="industry-card-link" href={industryPath(t)}><div className="ss-icon" aria-hidden><Icon/></div><h3>{t}</h3><p>{d}</p></a> : <><div className="ss-icon" aria-hidden><Icon/></div><div><h3>{t}</h3><p>{d}</p></div></>}
+                </article>
               );})}
             </div>
           </div>
@@ -313,7 +290,7 @@ export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
         {/* PRICING */}
         <section className="ss-sec">
           <div className="ss-wrap">
-            <Head2 eyebrow="Pricing" intro="Affordable SEO services in India, with clear deliverables at every level.">
+            <Head2 eyebrow="Pricing" intro={v ? "SEO scope and pricing are confirmed against the target audience and agreed deliverables." : "Affordable SEO services in India, with clear deliverables at every level."}>
               SEO Packages Designed for <span className="serif gold">Business Growth</span>
             </Head2>
             <div className="ss-price">
@@ -351,7 +328,7 @@ export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
               <div className="ss-eyebrow">Why Us</div>
               <h2>Why Choose SEO Expert India for Your <span className="gold">SEO Growth?</span></h2>
               <p>SEO Expert India is a technical, data-driven SEO and website development company. Because we build websites as well as optimize them, we understand how code, content and structure affect search performance — and we can implement fixes rather than only recommend them.</p>
-              <p>Every engagement starts with an honest audit and a customized plan. We follow white-hat practices, report transparently every month and focus on qualified organic opportunities that support long-term growth, whether you are a local business or expanding internationally. If you want an experienced SEO consultant in India who explains what is being done and why, we would like to hear from you.</p>
+              <p>Every engagement starts with an honest audit and a customized plan. We follow white-hat practices, report transparently every month and focus on qualified organic opportunities that support long-term growth, whether you are a local business or expanding internationally. If you want an experienced SEO consultant who explains what is being done and why, we would like to hear from you.</p>
 
             </div>
             <div className="ss-why-grid">
@@ -366,9 +343,9 @@ export function SeoServicesPage({v}:{v?:ServiceVariant}={}) {
         {/* FAQ */}
         <section className="ss-sec">
           <div className="ss-wrap">
-            <Head2 eyebrow="FAQ">Frequently Asked Questions About <span className="gold">SEO Services</span></Head2>
+            <Head2 eyebrow="FAQ">Frequently Asked Questions About <span className="gold">{v?.h1 ?? "SEO Services"}</span></Head2>
             <div className="ss-faq">
-              {faqs.map(([q, a], i) => {
+              {pageFaqs.map(([q, a], i) => {
                 const open = faq === i;
                 return (
                   <div className={`ss-faq-item ${open ? "open" : ""}`} key={q}>

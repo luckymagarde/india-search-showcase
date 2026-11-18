@@ -2,7 +2,7 @@
 - [x] Cross-check the uploaded Excel service sitemap: all 29 unique URLs exactly match the master brief.
 - [ ] Complete the 29-page redesign: three-category navigation, independent researched content, exact URLs, imagery, shared enquiry delivery and page-by-page quality checks.
 - [x] Resolve location targeting: Newcastle upon Tyne UK, Washington DC and New York City.
-- [x] Audit all 29 local service URLs at desktop and phone widths: two existing service pages render; 27 are not yet implemented locally. Record actual gaps without claiming redesign completion.
+- [x] Audit all 29 local service URLs at desktop and phone widths: all render locally using the two reference layouts; independent long-form editorial completion remains outside this shared update.
 - [x] Create verified 29-service catalogue, desktop three-column mega menu, mobile category accordions and complete Services directory; preserve original destinations until local replacements are complete.
 - [x] Verify shared enquiry capture through development-page UI and confirm saved test entry in Cloud; remove only the test entry.
 - [ ] Owner enquiry email notifications — blocked: recipient address not supplied and sender domain not configured. Enquiries are stored privately in Cloud meanwhile.
@@ -58,4 +58,14 @@ Every unchecked page still needs independently written 5,000-word content, relev
 - [ ] /service/ecommerce-website-seo-services/
 - [ ] /service/real-estate-website-seo-services/
 - [ ] /service/healthcare-website-seo-services/
-- [ ] Suggest next step after remix.
+- [x] Suggest publishing the verified shared updates after remix, then check deployed speed; do not imply independent long-form service content is complete.
+
+## November website update
+- [x] Remove reviews only from the five specified company pages.
+- [x] Match homepage and service heroes to the development reference.
+- [x] Link existing industry services contextually throughout the site.
+- [x] Preserve prices while replacing euro symbols with dollars.
+- [x] Share domain validation and development-specific Budget labels.
+- [x] Audit and correct topic-specific content, metadata, links, headings and images.
+- [x] Reduce media/font delivery overhead and verify all public pages and submissions.
+- [ ] External production PageSpeed test — blocked: no published deployment is available.

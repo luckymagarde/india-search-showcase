@@ -13,10 +13,12 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Technical, local and international SEO, AI search optimization and SEO-ready websites." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "robots", content: "index,follow" },
+      { property: "og:url", content: "https://www.seoexpertindia.biz/" },
     ],
     links: [
+      { rel: "canonical", href: "https://www.seoexpertindia.biz/" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" },
     ],
   }),
   component: Index,

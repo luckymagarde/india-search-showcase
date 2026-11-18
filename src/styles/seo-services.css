@@ -28,7 +28,7 @@
 .ss-crumb{font-size:13px;color:var(--ss-dim);margin-bottom:22px}
 .ss-crumb a{color:var(--ss-gold2);text-decoration:none}
 /* hero */
-.ss-hero{padding:56px 0 90px;background:var(--ss-bg)}
+.ss-hero{padding:56px 0 90px;background:var(--hero-background)}
 .ss-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:start}
 .ss-hero h1{font-size:clamp(34px,5vw,58px);line-height:1.06;margin-bottom:18px}
 .ss-hero .sub{font-size:19px;color:var(--ss-ink);opacity:.92}

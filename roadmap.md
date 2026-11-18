@@ -18,7 +18,7 @@
 - [x] Match live navigation and connect Quick Consultation to existing form.
 - [x] Verify content rules, interactions, media and layout at four screen sizes; preserve homepage/footer.
 - [ ] Review/FAQ reference matching — blocked: uploaded files are AI/platform references, not review/FAQ references.
-- [ ] Genuine additional reviews — blocked: independently verified additional reviews were not supplied; preview cards explicitly identify editable samples.
+- [x] Show 8 owner-verified testimonials with placeholder photos on all pages; remove "not verified" notes.
 - [x] Replace simulated success with verified private enquiry storage, retaining the original form appearance and fields.
 
 ## Service-page completion checklist
@@ -58,3 +58,4 @@ Every unchecked page still needs independently written 5,000-word content, relev
 - [ ] /service/ecommerce-website-seo-services/
 - [ ] /service/real-estate-website-seo-services/
 - [ ] /service/healthcare-website-seo-services/
+- [ ] Suggest next step after remix.

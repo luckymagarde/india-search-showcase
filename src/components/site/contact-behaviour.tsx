@@ -1,11 +1,8 @@
 import { useEffect } from 'react';
-import { useServerFn } from '@tanstack/react-start';
-import { submitContact } from '@/lib/contact.functions';
 import { contactSchema } from '@/lib/contact-schema';
 
 /** Delegated capture handles every legacy form without changing its appearance. */
 export function ContactBehaviour() {
- const submit = useServerFn(submitContact);
  useEffect(() => {
   const pending = new WeakSet<HTMLFormElement>();
   const onSubmit = async (event: Event) => {
@@ -40,14 +37,16 @@ export function ContactBehaviour() {
    pending.add(form);
    if (button) { button.disabled = true; button.textContent = 'Sending…'; }
    try {
-    const result = await submit({ data: parsed.data });
-    if (!result.saved) throw new Error('Unable to save enquiry.');
+    // Send-only delivery: the hosting server's mailer emails the team; nothing is stored.
+    const response = await fetch('/send-enquiry.php', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(parsed.data) });
+    const result = await response.json().catch(() => null) as { ok?: boolean; error?: string } | null;
+    if (!response.ok || !result?.ok) throw new Error(result?.error ?? '');
     form.style.display = 'none';
     const success = form.closest('.form-shell')?.querySelector<HTMLElement>('#fSuccess');
     success?.classList.add('show');
     success?.setAttribute('role', 'status');
-   } catch {
-    feedback.textContent = 'Your enquiry could not be saved. Please try again.';
+   } catch (error) {
+    feedback.textContent = (error instanceof Error && !(error instanceof TypeError) && error.message) || 'Your enquiry could not be sent. Please try again.';
    } finally {
     pending.delete(form);
     if (button) { button.disabled = false; button.textContent = label; }
@@ -65,6 +64,6 @@ export function ContactBehaviour() {
   observer.observe(document.body, { childList: true, subtree: true });
   document.addEventListener('submit', onSubmit, true);
   return () => { document.removeEventListener('submit', onSubmit, true); observer.disconnect(); };
- }, [submit]);
+ }, []);
  return null;
 }

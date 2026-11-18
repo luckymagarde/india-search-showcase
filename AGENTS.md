@@ -16,7 +16,7 @@
 - The six company pages share PageShell, legacy form/footer extraction and site-pages content; reuse these to preserve original appearance and avoid duplicate forms. Footer link integration runs in the root so legacy source remains unchanged.
 - Portfolio media reuses CDN pointers to original homepage mockups; existing testimonial copy is derived from the homepage without stock portrait identities, and unverified endorsements/results must not receive review schema.
 - Additional development service pages reuse the shared legacy form with optional heading/description overrides and SEO service styles; scoped content and styles keep unrelated pages unchanged.
-- All legacy enquiry forms use one root-level capture handler and a validated write-only server function; private submissions are reviewed in Lovable Cloud Database, preventing simulated success and divergent delivery paths.
+- All legacy enquiry forms use one root-level capture handler that posts validated data to public/send-enquiry.php, a send-only PHP mailer for the owner's PHP hosting; nothing is stored, keeping one delivery path.
 - The service catalogue owns exact sitemap paths; navigation and contextual industry links use same-origin paths to existing local routes, never external replacements.
 
 - Shared hero tokens in global CSS match the development reference across the legacy homepage and service templates to prevent background drift.

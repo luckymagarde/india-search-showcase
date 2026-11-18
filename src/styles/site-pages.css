@@ -1,3 +1,16 @@
+.seo-project-grid{align-items:stretch}
+.sp-page .seo-project-logo{height:124px;display:flex;align-items:center;justify-content:center;background:var(--accent-foreground);border-radius:6px;padding:12px;margin-bottom:22px}
+.seo-project-logo img{max-width:100%;width:auto;height:auto;max-height:100px;object-fit:contain}
+.sp-page .seo-project-url{margin:0 0 20px;overflow-wrap:anywhere;display:grid;grid-template-columns:minmax(0,1fr) 16px}
+.seo-ranking-table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:13px}
+.seo-ranking-table caption{text-align:left;font-weight:700;color:var(--page-cyan);padding:0 0 14px}
+.seo-ranking-table th,.seo-ranking-table td{padding:12px 0;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;overflow-wrap:anywhere}
+.seo-ranking-table thead th{font-size:11px;color:var(--ink-dim)}
+.seo-ranking-table th:last-child,.seo-ranking-table td:last-child{width:76px;text-align:right;padding-left:12px}
+.seo-ranking-table tbody th{font-weight:400}
+.seo-position{color:var(--primary);font-size:18px;font-weight:700}
+.seo-project-image{width:100%;height:auto;object-fit:contain;margin-bottom:20px}
+.sp-page .seo-project-date{font-size:12px;margin-top:18px}
 .sp-page .rw-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .sp-page .rw-scroll{height:340px;margin:0;overflow:hidden;border-radius:8px;border:1px solid var(--line);background:var(--page-surface);min-width:0}
 .sp-page .rw-scroll img{width:100%;height:auto;display:block;transform:translateY(0);transition:transform 5s linear}

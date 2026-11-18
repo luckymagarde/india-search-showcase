@@ -56,12 +56,3 @@ export const recentWorkDesigns = [
  {asset:design26,alt:'Fashion collection and apparel store website design',width:583,height:1468},
  {asset:design27,alt:'Summer fashion and womenswear store website design',width:583,height:1628},
 ];
-
-// Existing public references; no ranking, traffic or revenue outcomes asserted.
-export const seoProjectReferences = [
- ['Astrology','https://www.kaalsarpmangaldoshpujainujjain.com/'],
- ['Astrology','https://www.kaalsarpdoshpujainujjain.co.in/'],
- ['Construction','https://www.arrowairconditioning.com.au/'],
- ['Education','https://www.catalyser.in/'],
- ['Construction','https://cornerstonefenceco.com/'],
-] as const;

@@ -75,3 +75,7 @@ Every unchecked page still needs independently written 5,000-word content, relev
 - [x] Add the received second batch of 17 images in numerical order, completing the 27-design gallery.
 - [x] Separate SEO Projects below the website gallery, retaining existing public references without invented results.
 - [x] Verify desktop/mobile gallery and hover scrolling with all received images.
+
+## SEO ranking portfolio import
+- [x] Preserve Website Development gallery exactly; import 24 source SEO projects, 23 available logos and 108 unique keyword-position records into separate data and cards.
+- [x] Verify source associations, exact duplicate removal, canonical and desktop/tablet/mobile rendering without filters; source rankings are undated, not live checks.

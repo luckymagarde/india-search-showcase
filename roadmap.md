@@ -69,3 +69,9 @@ Every unchecked page still needs independently written 5,000-word content, relev
 - [x] Audit and correct topic-specific content, metadata, links, headings and images.
 - [x] Reduce media/font delivery overhead and verify all public pages and submissions.
 - [ ] External production PageSpeed test — blocked: no published deployment is available.
+
+## Recent Work portfolio update
+- [x] Replace old mockup portfolio with the first 10 uploaded full-page designs and hover scrolling.
+- [x] Add the received second batch of 17 images in numerical order, completing the 27-design gallery.
+- [x] Separate SEO Projects below the website gallery, retaining existing public references without invented results.
+- [x] Verify desktop/mobile gallery and hover scrolling with all received images.

@@ -22,3 +22,4 @@
 - Shared hero tokens in global CSS match the development reference across the legacy homepage and service templates to prevent background drift.
 - Contact URL normalization is a pure shared schema transformation; development forms configure their Budget label without changing stored values.
 - Dynamic service routes consume topic-specific editorial priorities and FAQs; common platform capabilities and process remain shared to avoid duplicated page implementations.
+- Recent Work keeps uploaded full-page design pointers in its own ordered data catalogue and scoped scroll-gallery styles so adding image batches does not alter homepage or service portfolios.

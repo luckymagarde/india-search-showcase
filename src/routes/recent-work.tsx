@@ -1,11 +1,23 @@
 import {createFileRoute} from '@tanstack/react-router';
-import {useState} from 'react';
 import {ExternalLink} from 'lucide-react';
-import {Button} from '@/components/ui/button';
 import {PageShell,Intro,SectionHead,FinalCTA} from '@/components/site/page-shell';
-import {industryPath} from '@/data/industry-links';
-import {portfolio} from '@/data/portfolio';
+import {recentWorkDesigns,seoProjectReferences} from '@/data/recent-work';
 import {pageHead} from '@/data/site-pages';
-export const Route=createFileRoute('/recent-work')({head:()=>pageHead('recent-work','Recent Work – Website & SEO Portfolio','Browse existing website portfolio visuals from SEO Expert India, filter by industry and explore publicly listed project websites without invented performance claims.'),component:RecentWork});
-const listed=[['Astrology','https://www.kaalsarpmangaldoshpujainujjain.com/'],['Astrology','https://www.kaalsarpdoshpujainujjain.co.in/'],['Construction','https://www.arrowairconditioning.com.au/'],['Education','https://www.catalyser.in/'],['Construction','https://cornerstonefenceco.com/']] as const;
-function RecentWork(){const[category,setCategory]=useState('All');const categories=['All',...new Set(portfolio.map(p=>p.category))];return <PageShell reviews={false}><Intro name="Recent Work" eyebrow="Websites + search" title="Recent work & website portfolio." description="Explore existing portfolio visuals across different industries — and public website references already listed on our original Recent Work page."/><section><div className="sp-wrap"><SectionHead eyebrow="Website portfolio" title="A closer look at the existing designs."/><p className="sp-note">These existing homepage visuals are design mockups, not verified client case studies. Project results and performance claims are intentionally omitted.</p><div className="sp-filters" role="group" aria-label="Filter portfolio by industry">{categories.map(c=><Button key={c} variant="outline" className="sp-button" aria-pressed={c===category} onClick={()=>setCategory(c)}>{c}</Button>)}</div><div className="sp-grid">{portfolio.filter(p=>category==='All'||p.category===category).map(p=><article className="sp-card sp-project" key={p.title}><img src={p.image} alt={`${p.title} website design mockup`} width={500} height={281} loading="lazy"/><div className="sp-project-copy"><div className="sp-label">{industryPath(p.category)?<a href={industryPath(p.category)}>{p.category} SEO</a>:p.category} · Design mockup</div><h3>{p.title}</h3><p>Existing {p.category.toLowerCase()} website concept from the homepage portfolio. Project scope and a confirmed client case study are not available.</p></div></article>)}</div></div></section><section className="sp-band"><div className="sp-wrap"><SectionHead eyebrow="Public project references" title="Websites listed on our original work page." description="These website addresses are present on the original Recent Work page. No ranking, traffic or revenue results are asserted here."/><div className="sp-grid">{listed.map(([cat,url])=><article className="sp-card" key={url}><div className="sp-label">{cat}</div><h3>{new URL(url).hostname.replace('www.','')}</h3><p>Public website reference. A detailed project scope and independently verified outcomes are not available.</p><a className="sp-service-link" href={url} target="_blank" rel="noopener noreferrer">Visit website<ExternalLink aria-hidden/></a></article>)}</div></div></section><FinalCTA/></PageShell>}
+export const Route=createFileRoute('/recent-work')({head:()=>pageHead('recent-work','Recent Work – Website & SEO Portfolio','Explore SEO Expert India’s website design portfolio across fashion, sports, construction, wellness and eCommerce, with a separate SEO projects section.'),component:RecentWork});
+
+function RecentWork(){return <PageShell reviews={false}>
+ <Intro name="Recent Work" eyebrow="Websites + search" title="Recent work & website portfolio." description="Website designs across different industries, followed by our SEO project references."/>
+ <section aria-labelledby="website-projects"><div className="sp-wrap">
+  <div id="website-projects"><SectionHead eyebrow="Website portfolio" title="Website Development Projects"/></div>
+  <div className="rw-gallery">{recentWorkDesigns.map(project=><figure className="rw-scroll" key={project.asset.url} tabIndex={0} aria-label={project.alt}>
+   <img src={project.asset.url} alt={project.alt} width={project.width} height={project.height} loading="lazy" decoding="async"/>
+  </figure>)}</div>
+ </div></section>
+ <section className="sp-band" aria-labelledby="seo-projects"><div className="sp-wrap">
+  <div id="seo-projects"><SectionHead eyebrow="Search portfolio" title="SEO Projects" description="Website references from our original Recent Work page."/></div>
+  <div className="sp-grid">{seoProjectReferences.map(([category,url])=><article className="sp-card" key={url}>
+   <div className="sp-label">{category}</div><h3>{new URL(url).hostname.replace('www.','')}</h3>
+   <a className="sp-service-link" href={url} target="_blank" rel="noopener noreferrer">Visit website<ExternalLink aria-hidden/></a>
+  </article>)}</div>
+ </div></section><FinalCTA/>
+ </PageShell>}

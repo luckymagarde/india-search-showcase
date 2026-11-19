@@ -79,3 +79,13 @@ Every unchecked page still needs independently written 5,000-word content, relev
 ## SEO ranking portfolio import
 - [x] Preserve Website Development gallery exactly; import 24 source SEO projects, 23 available logos and 108 unique keyword-position records into separate data and cards.
 - [x] Verify source associations, exact duplicate removal, canonical and desktop/tablet/mobile rendering without filters; source rankings are undated, not live checks.
+
+## WordPress theme + one-click demo import (Nov 19 brief)
+- [ ] Audit routes, CSS, media, interactions; capture all 36 pages from the running site.
+- [ ] Theme `seoexpertindia`: header with WP-menu three-column mega menu, Quick Consultation, Elementor-friendly templates, blog templates, global colours/fonts.
+- [ ] Elementor JSON per page (containers + editable SEO Expert India widgets), editable global footer template.
+- [ ] Importer plugin: Dashboard → SEO Expert India → Import Demo; checks, warning, batched AJAX, progress, report, idempotent (no duplicates), media library import, menus, front page, blog page, kit globals.
+- [ ] Forms: validation, spam trap, server-side wp_mail to configured recipients, success/error messages.
+- [ ] SEO: editable title/description, canonical, schema, Rank Math compatibility.
+- [ ] Test in a real WordPress + Elementor install: activation, import twice, rendering, menu, links, images, forms, PHP lint, JS errors, 6 breakpoints.
+- [ ] Deliver 4 ZIPs (theme, importer, templates, complete bundle) + README/requirements/troubleshooting/changelog.

@@ -8,9 +8,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "SEO Expert India | SEO, AI Search & Website Development" },
-      { name: "description", content: "SEO Expert India helps businesses grow with technical, local and international SEO, AI search optimization and SEO-ready website development." },
+      {
+        name: "description",
+        content:
+          "SEO Expert India helps businesses grow with technical, local and international SEO, AI search optimization and SEO-ready website development.",
+      },
       { property: "og:title", content: "SEO Expert India | SEO, AI Search & Website Development" },
-      { property: "og:description", content: "Technical, local and international SEO, AI search optimization and SEO-ready websites." },
+      {
+        property: "og:description",
+        content:
+          "Technical, local and international SEO, AI search optimization and SEO-ready websites.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "robots", content: "index,follow" },
@@ -31,7 +39,7 @@ function Index() {
     if (ran) return;
     ran = true;
     // Run the original page script exactly as designed.
-    // eslint-disable-next-line @typescript-eslint/no-implied-eval
+
     new Function(homeJs)();
   }, []);
 

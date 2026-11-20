@@ -1,68 +1,702 @@
-import {createFileRoute,Link} from '@tanstack/react-router';
-import {useState} from 'react';
-import {Code2,Building2,ShoppingBag,MonitorSmartphone,RefreshCw,LayoutTemplate,Wrench,Gauge,Globe,Check,ArrowUpRight,Database,Workflow,ShieldCheck,FileCode2,Layers,Braces} from 'lucide-react';
-import {industryPath} from '@/data/industry-links';
-import {ClientTestimonials} from '@/components/site/client-testimonials';
-import {Button} from '@/components/ui/button';
-import {LegacyContactForm,LegacyFooter} from '@/components/site/legacy-sections';
-import {BrandLogo,PlatformVisual} from '@/components/seo/visuals';
-import {portfolio} from '@/data/portfolio';
-import {DEVELOPMENT_URL,developmentIntro,developmentServices,developmentIndustries,developmentProcess,seoDevelopment,capabilitySections,quoteRows,designComparison,businessBenefits,developmentFaqs} from '@/data/web-development';
-import {company} from '@/data/site-pages';
-import developmentWhyImage from '@/assets/website-development-company-india.png.asset.json';
-import wordpressCapabilityImage from '@/assets/wordpress-website-development-company-india.png.asset.json';
-import customCapabilityImage from '@/assets/custom-website-development-solutions.png.asset.json';
-import homeCss from '@/legacy/home.css?raw';
-import serviceCss from '@/styles/seo-services.css?raw';
-import dp3 from '@/assets/development-project-3.webp.asset.json';
-import dp5 from '@/assets/development-project-5.webp.asset.json';
-import dp8 from '@/assets/development-project-8.webp.asset.json';
-import dp9 from '@/assets/development-project-9.webp.asset.json';
-import dp13 from '@/assets/development-project-13.webp.asset.json';
-import dp15 from '@/assets/development-project-15.webp.asset.json';
-import dp18 from '@/assets/development-project-18.webp.asset.json';
-import dp19 from '@/assets/development-project-19.webp.asset.json';
-import dp22 from '@/assets/development-project-22.webp.asset.json';
-const devProjects=[dp19,dp22,dp3,dp5,dp8,dp9,dp13,dp15,dp18];
-import pageCss from '@/styles/web-development.css?raw';
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
+import {
+  Code2,
+  Building2,
+  ShoppingBag,
+  MonitorSmartphone,
+  RefreshCw,
+  LayoutTemplate,
+  Wrench,
+  Gauge,
+  Globe,
+  Check,
+  ArrowUpRight,
+  Database,
+  Workflow,
+  ShieldCheck,
+  FileCode2,
+  Layers,
+  Braces,
+} from "lucide-react";
+import { industryPath } from "@/data/industry-links";
+import { ClientTestimonials } from "@/components/site/client-testimonials";
+import { Button } from "@/components/ui/button";
+import { LegacyContactForm, LegacyFooter } from "@/components/site/legacy-sections";
+import { BrandLogo, PlatformVisual } from "@/components/seo/visuals";
+import { portfolio } from "@/data/portfolio";
+import {
+  DEVELOPMENT_URL,
+  developmentIntro,
+  developmentServices,
+  developmentIndustries,
+  developmentProcess,
+  seoDevelopment,
+  capabilitySections,
+  quoteRows,
+  designComparison,
+  businessBenefits,
+  developmentFaqs,
+} from "@/data/web-development";
+import { company } from "@/data/site-pages";
+import developmentWhyImage from "@/assets/website-development-company-india.png.asset.json";
+import wordpressCapabilityImage from "@/assets/wordpress-website-development-company-india.png.asset.json";
+import customCapabilityImage from "@/assets/custom-website-development-solutions.png.asset.json";
+import homeCss from "@/legacy/home.css?raw";
+import serviceCss from "@/styles/seo-services.css?raw";
+import dp3 from "@/assets/development-project-3.webp.asset.json";
+import dp5 from "@/assets/development-project-5.webp.asset.json";
+import dp8 from "@/assets/development-project-8.webp.asset.json";
+import dp9 from "@/assets/development-project-9.webp.asset.json";
+import dp13 from "@/assets/development-project-13.webp.asset.json";
+import dp15 from "@/assets/development-project-15.webp.asset.json";
+import dp18 from "@/assets/development-project-18.webp.asset.json";
+import dp19 from "@/assets/development-project-19.webp.asset.json";
+import dp22 from "@/assets/development-project-22.webp.asset.json";
+const devProjects = [dp19, dp22, dp3, dp5, dp8, dp9, dp13, dp15, dp18];
+import pageCss from "@/styles/web-development.css?raw";
 
-const title='Website Development Company in India | SEO Expert India';
-const description='Looking for a website development company in India? SEO Expert India builds professional, responsive and SEO-friendly business, WordPress and eCommerce websites.';
-export const Route=createFileRoute('/service/web-development-company-india')({
- head:()=>({meta:[{title},{name:'description',content:description},{property:'og:title',content:title},{property:'og:description',content:description},{property:'og:type',content:'website'},{property:'og:url',content:DEVELOPMENT_URL},{name:'twitter:card',content:'summary_large_image'}],links:[{rel:'canonical',href:DEVELOPMENT_URL}],scripts:[{type:'application/ld+json',children:JSON.stringify({'@context':'https://schema.org','@type':'Service',name:'Website Development Company in India',serviceType:'Website design and development',url:DEVELOPMENT_URL,description,provider:{'@type':'Organization',name:company.name,url:'https://www.seoexpertindia.biz/',foundingDate:String(company.established)},areaServed:['India','Worldwide']})},{type:'application/ld+json',children:JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://www.seoexpertindia.biz/'},{'@type':'ListItem',position:2,name:'Services',item:'https://www.seoexpertindia.biz/services/'},{'@type':'ListItem',position:3,name:'Website Development',item:DEVELOPMENT_URL}]})}]}),
- component:WebsiteDevelopment,
+const title = "Website Development Company in India | SEO Expert India";
+const description =
+  "Looking for a website development company in India? SEO Expert India builds professional, responsive and SEO-friendly business, WordPress and eCommerce websites.";
+export const Route = createFileRoute("/service/web-development-company-india")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: DEVELOPMENT_URL },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: DEVELOPMENT_URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Website Development Company in India",
+          serviceType: "Website design and development",
+          url: DEVELOPMENT_URL,
+          description,
+          provider: {
+            "@type": "Organization",
+            name: company.name,
+            url: "https://www.seoexpertindia.biz/",
+            foundingDate: String(company.established),
+          },
+          areaServed: ["India", "Worldwide"],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.seoexpertindia.biz/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Services",
+              item: "https://www.seoexpertindia.biz/services/",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Website Development",
+              item: DEVELOPMENT_URL,
+            },
+          ],
+        }),
+      },
+    ],
+  }),
+  component: WebsiteDevelopment,
 });
-const serviceIcons=[Building2,Globe,LayoutTemplate,Code2,ShoppingBag,ShoppingBag,Database,ShoppingBag,MonitorSmartphone,RefreshCw,LayoutTemplate,Wrench,FileCode2,Layers,Gauge];
-function Heading({eyebrow,title,intro}:{eyebrow:string;title:string;intro?:string}){return <div className="wd-section-head"><div className="ss-eyebrow">{eyebrow}</div><h2>{title}</h2>{intro&&<p>{intro}</p>}</div>}
-function QuoteButton({label='Get a Free Website Consultation'}:{label?:string}){return <Button asChild className="ss-btn ss-btn-gold"><a href="#lead-form">{label}<ArrowUpRight aria-hidden/></a></Button>}
-export function WebsiteDevelopment({v}:{v?:import('./service.best-seo-services-in-india').ServiceVariant}={}){
- const editorial=v?.editorial;
- const pageFaqs=editorial ? [
-  [editorial.question,editorial.answer],
-  [`What should a website for ${editorial.market} include?`,`${editorial.context} ${editorial.priorities.map(([title,detail])=>`${title}: ${detail}`).join(' ')}`],
-  [`How is a ${v.h1} project priced?`,'The USD scope examples above are reference categories, not an automatic quote for every location. Page count, language versions, integrations, content preparation and testing determine the final proposal. Confirm recurring hosting, platform and support charges separately.'],
-  [`What is needed before launching in ${editorial.market}?`,'Agree approved content, real service coverage, domain and hosting ownership, redirects and critical enquiry tests. Language and policy information must have named reviewers. Check the deployed site and hand over editing responsibilities before launch sign-off.'],
- ].concat(developmentFaqs.map(([question,answer])=>[question.replace(" in India", ""),answer.replaceAll(" in India", "")])) : developmentFaqs;
- const [faq,setFaq]=useState<number|null>(0);
- return <><style dangerouslySetInnerHTML={{__html:homeCss+serviceCss+pageCss}}/><main className="ss wd">
-  <section className="ss-hero" id="consultation"><div className="ss-grid-bg"/><div className="ss-wrap">
-   <nav className="ss-crumb" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/services/">Services</Link> / <span aria-current="page">{v?v.crumb:"Website Development"}</span></nav>
-   <div className="ss-hero-grid"><div><div className="ss-eyebrow">{v?v.eyebrow:"Website Design & Development Services"}</div>{v?<h1><span className="gold">{v.h1}</span></h1>:<h1>Website Development <span className="gold">Company in India</span></h1>}{v&&<p>{v.intro}</p>}<p className="sub">Build a Powerful Website That Turns Visitors Into Customers</p><p>{v ? developmentIntro.replaceAll("in India", "for international businesses") : developmentIntro}</p><ul className="ss-trust">{['Custom & Responsive Website Design','SEO-Friendly Development Structure','Performance-Focused Development','Business-Oriented User Experience'].map(t=><li key={t}><span><Check size={16} aria-hidden/></span>{t}</li>)}</ul><div className="ss-cta-row"><QuoteButton/><Button asChild className="ss-btn ss-btn-ghost"><a href="#development-services">Explore Our Website Development Services</a></Button></div></div>
-   <div className="ss-form-card"><LegacyContactForm serviceType="web-development" heading="Get a Free Website Development Quote" description="Tell us about your project. Our team will help you explore the right website development solution for your business."/></div></div>
-  </div></section>
-  {editorial&&<section className="ss-sec"><div className="ss-wrap"><Heading eyebrow="Your market and project" title={`${v.h1}: planning priorities`} intro={editorial.context}/><div className="wd-grid">{editorial.priorities.map(([title,detail])=><article className="ss-card" key={title}><h3>{title}</h3><p>{detail}</p></article>)}</div></div></section>}
-  <section className="ss-sec alt" id="development-services"><div className="ss-wrap"><Heading eyebrow="From first impression to functionality" title="Professional Website Development Services for Every Business" intro="A professionally developed website brings content, design and functionality into one useful experience. It should help visitors understand your business, find relevant information and take a clear next step. Choose a focused launch scope that your team can maintain, then extend the website as real requirements emerge."/><div className="wd-grid">{developmentServices.map(([t,d],i)=>{const Icon=serviceIcons[i]??Code2;return <article className="ss-card" key={t}><div className="ss-icon-heading"><Icon aria-hidden/><h3>{t}</h3></div><p>{d}</p></article>})}</div></div></section>
-  <section className="ss-sec"><div className="ss-wrap wd-capability"><div><Heading eyebrow="Development + search expertise" title="Why Choose SEO Expert India as Your Website Development Company?"/><p>Established in 2016, SEO Expert India brings 10+ years of experience in website development and SEO. Our capabilities include WordPress, WooCommerce, Magento, PHP and Laravel, with business-focused work for Indian and international markets. We connect development choices with the content and technical foundations a website needs for ongoing search optimisation.</p><p>Our objective is not simply an attractive screen. We develop useful digital platforms with clear navigation, responsive layouts and functionality suited to your operations. Transparent scope, collaborative reviews and long-term maintainability guide the work. We explain platform trade-offs and avoid promises about rankings or results that no development company can control.</p><div className="wd-benefits"><div><strong>2016</strong>Established</div><div><strong>10+ years</strong>Website development &amp; SEO</div><div><strong>One plan</strong>Design, content &amp; technology</div></div><Link className="wd-link" to="/about/">Explore our company and approach<ArrowUpRight aria-hidden/></Link></div><figure className="wd-media wd-why-media"><img src={developmentWhyImage.url} alt="website development company india" width={1536} height={1024} loading="lazy"/><figcaption>Website development tools, code and platforms we use to build business websites.</figcaption></figure></div></section>
-  <section className="ss-sec alt"><div className="ss-wrap"><Heading eyebrow="Built around your audience" title="Website Development Solutions for Different Industries" intro="Different businesses need different information and workflows. We adapt page structure, content priorities and functionality to the decisions your customers make, rather than applying the same template to every industry."/><div className="wd-grid">{developmentIndustries.map(([t,d])=><article className="ss-card" key={t}><h3>{industryPath(t)?<a href={industryPath(t)}>{t}</a>:t}</h3><p>{d}</p></article>)}</div></div></section>
-  <section className="ss-sec"><div className="ss-wrap"><Heading eyebrow="A clear path to launch" title="Our Website Design and Development Process" intro="A shared process makes responsibilities visible. Each stage has a purpose, from defining the scope to checking the deployed website. Review milestones help prevent content, design and technical decisions from drifting apart."/><ol className="wd-process">{developmentProcess.map(([t,d],i)=><li key={t}><span>{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{d}</p></li>)}</ol></div></section>
-  <section className="ss-sec alt"><div className="ss-wrap"><Heading eyebrow="The right foundation" title="Website Development Technologies and Platforms We Work With" intro="We select technology according to business objectives, functionality, scalability and maintenance requirements. A content-focused business website, an online store and a custom dashboard may need different foundations. Platform subscriptions and extension costs are part of that decision, not an afterthought."/><div className="wd-tech">{([['wordpress','WordPress'],['woocommerce','WooCommerce'],['magento','Magento'],['shopify','Shopify']] as const).map(([asset,name])=><div className="wd-tech-item" key={asset}><BrandLogo asset={asset} name={name}/><span>{name}</span></div>)}{[['PHP',FileCode2],['Laravel',Layers],['HTML5',Code2],['CSS3',LayoutTemplate],['JavaScript',Braces],['Bootstrap',MonitorSmartphone]].map(([name,Icon])=>{const TechnologyIcon=Icon as typeof Code2;return <div className="wd-tech-item" key={String(name)}><TechnologyIcon aria-hidden/><span>{String(name)}</span></div>})}</div></div></section>
-  <section className="ss-sec"><div className="ss-wrap"><Heading eyebrow="Search-ready from the beginning" title="SEO-Friendly Website Development for Better Search Visibility" intro="Search requirements influence page organisation, content publishing and technical implementation. Considering them early avoids unnecessary rework after launch. Our development and SEO teams connect these decisions with useful information for customers, while recognising that a sound website foundation is only one part of search performance."/><div className="wd-grid two wd-seo-grid">{seoDevelopment.map(([t,d])=><article className="ss-card" key={t}><div className="ss-icon-heading"><ShieldCheck aria-hidden/><h3>{t}</h3></div><p>{d}</p></article>)}</div><Link className="wd-link" to="/service/best-seo-services-in-india/">Explore our SEO Services in India<ArrowUpRight aria-hidden/></Link></div></section>
-  {capabilitySections.map((s,i)=><section className={`ss-sec ${i%2===0?'alt':''}`} id={s.id} key={s.id}><div className="ss-wrap wd-capability"><div><Heading eyebrow={['Content you can manage','Commerce that fits your operation','Beyond a standard template','Protect and improve your website'][i]??'Our capabilities'} title={v ? s.title.replace(" in India", "") : s.title}/><p>{s.intro}</p><ul className="ss-checks">{s.points.map(p=><li key={p}>{p}</li>)}</ul><p>{s.detail}</p><QuoteButton label="Discuss your website requirements"/></div>{i===0?<figure className="wd-media"><img src={wordpressCapabilityImage.url} alt="WordPress website development company india" width={900} height={600} loading="lazy" style={{aspectRatio:'900/600'}}/><figcaption>WordPress and Elementor workflow used to build editable, maintainable business websites.</figcaption></figure>:i===1?<PlatformVisual name="WooCommerce"/>:i===2?<figure className="wd-media"><img src={customCapabilityImage.url} alt="Custom website development solutions for growing businesses" width={628} height={489} loading="lazy" style={{aspectRatio:'628/489'}}/><figcaption>Custom development covering responsive design, performance, security and tailored UI/UX.</figcaption></figure>:<figure className="wd-media"><img src={portfolio[0]?.image} alt="Responsive education website design example from the existing showcase" width={500} height={281} loading="lazy"/><figcaption>Existing design example showing organised content and navigation.</figcaption></figure>}</div></section>)}
-  <section className="ss-sec alt"><div className="ss-wrap"><Heading eyebrow="Clear scope, informed decisions" title={v ? `Website development costs for ${editorial?.market}` : "How Much Does Website Development Cost in India?"} intro="Website size, design complexity and required functionality determine the work involved. CMS choice, commerce features, third-party integrations, content preparation and SEO requirements also affect the proposal. The costs below are listed in USD; the final proposal confirms the agreed scope and requirements."/><div className="wd-table-wrap" tabIndex={0} role="region" aria-label="Website project scope comparison"><table><caption className="sr-only">Website categories, scope, quote factors and costs in USD</caption><thead><tr><th scope="col">Website category</th><th scope="col">Typical scope</th><th scope="col">Key quote factors</th><th scope="col">Cost (USD)</th></tr></thead><tbody>{quoteRows.map(([t,d,f,cost])=><tr key={t}><th scope="row">{t}</th><td>{d}</td><td>{f}</td><td className="whitespace-nowrap">${cost} USD</td></tr>)}</tbody></table></div><p>Initial development covers the agreed design and implementation scope. Recurring expenses can include domain renewal, hosting, premium plugins, platform subscriptions and maintenance. Confirm ownership, renewal dates and exclusions before approving a proposal. New functionality after launch is assessed separately from routine support unless the agreement explicitly includes it.</p><QuoteButton label="Get a Custom Quote"/></div></section>
-  <section className="ss-sec"><div className="ss-wrap"><Heading eyebrow="Connected disciplines" title="Website Design vs Website Development: Understanding the Difference" intro="Design defines the experience; development makes it work. A successful project connects both with publishing and launch decisions, so approved visuals become a dependable website rather than isolated mockups."/><div className="wd-grid">{designComparison.map(([t,d])=><article className="ss-card" key={t}><h3>{t}</h3><p>{d}</p></article>)}</div></div></section>
-  <section className="ss-sec alt"><div className="ss-wrap"><Heading eyebrow="A useful business asset" title="Why Is a Professional Business Website Important?" intro="Your website is a place customers can inspect your offer on their own terms. Reliable information, a clear structure and appropriate functionality support business conversations across channels. The value comes from usefulness and ongoing care, not visual polish alone."/><div className="wd-grid">{businessBenefits.map(([t,d])=><article className="ss-card" key={t}><h3>{t}</h3><p>{d}</p></article>)}</div></div></section>
-  <section className="ss-sec"><div className="ss-wrap"><Heading eyebrow="Existing website showcase" title="Explore Our Website Development Projects" intro="A selection of website design layouts from our development showcase. Hover over any design to view the full page. These are design presentations, not verified client case studies, endorsements or performance results."/><div className="wd-grid">{devProjects.map((p,i)=><div className="wd-scroll" key={p.url}><img src={p.url} alt={`${["Restaurant", "Automotive store", "Basketball training", "Financial services", "Nutrition", "Cosmetics store", "Grocery store", "Pet store", "Coffee shop"][i]} website design showcase`} width={500} height={340} loading="lazy" decoding="async"/></div>)}</div><Link className="wd-link" to="/recent-work/">Explore the complete Recent Work showcase<ArrowUpRight aria-hidden/></Link></div></section>
-  <section className="ss-sec alt" id="development-faq"><div className="ss-wrap"><Heading eyebrow="Practical answers before you begin" title={v ? `Frequently Asked Questions About ${v.h1}` : "Frequently Asked Questions About Website Development Services"} intro="Scope, ownership, platform choices and ongoing care deserve clear answers. These questions address common considerations for business owners comparing website development options across different markets."/><div className="ss-faq">{pageFaqs.map(([q,a],i)=>{const open=faq===i;return <div className={`ss-faq-item ${open?'open':''}`} key={q}><h3><Button variant="ghost" className="ss-faq-q" aria-expanded={open} aria-controls={`wd-answer-${i}`} id={`wd-question-${i}`} onClick={()=>setFaq(open?null:i)}><span>{q}</span><i aria-hidden>+</i></Button></h3><div className="ss-faq-a" id={`wd-answer-${i}`} role="region" aria-labelledby={`wd-question-${i}`} aria-hidden={!open} inert={!open}><div>{a.split('\n\n').map(p=><p key={p}>{p}</p>)}</div></div></div>})}</div></div></section>
-  <section className="wd-final"><div className="ss-wrap"><div className="ss-eyebrow">Your next website starts with a conversation</div><h2>Ready to Build a Professional Website for Your Business?</h2><p>Tell us what your business needs, who the website will serve and what you want to improve. We’ll help you explore a practical website development scope with clear responsibilities, suitable technology and a sensible path to launch.</p><div className="ss-cta-row"><QuoteButton/><Button asChild className="ss-btn ss-btn-ghost"><Link to="/contact/">Contact Us<ArrowUpRight aria-hidden/></Link></Button></div></div></section>
- <ClientTestimonials/></main><LegacyFooter/></>;
+const serviceIcons = [
+  Building2,
+  Globe,
+  LayoutTemplate,
+  Code2,
+  ShoppingBag,
+  ShoppingBag,
+  Database,
+  ShoppingBag,
+  MonitorSmartphone,
+  RefreshCw,
+  LayoutTemplate,
+  Wrench,
+  FileCode2,
+  Layers,
+  Gauge,
+];
+function Heading({ eyebrow, title, intro }: { eyebrow: string; title: string; intro?: string }) {
+  return (
+    <div className="wd-section-head">
+      <div className="ss-eyebrow">{eyebrow}</div>
+      <h2>{title}</h2>
+      {intro && <p>{intro}</p>}
+    </div>
+  );
+}
+function QuoteButton({ label = "Get a Free Website Consultation" }: { label?: string }) {
+  return (
+    <Button asChild className="ss-btn ss-btn-gold">
+      <a href="#lead-form">
+        {label}
+        <ArrowUpRight aria-hidden />
+      </a>
+    </Button>
+  );
+}
+export function WebsiteDevelopment({
+  v,
+}: { v?: import("./service.best-seo-services-in-india").ServiceVariant } = {}) {
+  const editorial = v?.editorial;
+  const pageFaqs = editorial
+    ? [
+        [editorial.question, editorial.answer],
+        [
+          `What should a website for ${editorial.market} include?`,
+          `${editorial.context} ${editorial.priorities.map(([title, detail]) => `${title}: ${detail}`).join(" ")}`,
+        ],
+        [
+          `How is a ${v.h1} project priced?`,
+          "The USD scope examples above are reference categories, not an automatic quote for every location. Page count, language versions, integrations, content preparation and testing determine the final proposal. Confirm recurring hosting, platform and support charges separately.",
+        ],
+        [
+          `What is needed before launching in ${editorial.market}?`,
+          "Agree approved content, real service coverage, domain and hosting ownership, redirects and critical enquiry tests. Language and policy information must have named reviewers. Check the deployed site and hand over editing responsibilities before launch sign-off.",
+        ],
+      ].concat(
+        developmentFaqs.map(([question, answer]) => [
+          question.replace(" in India", ""),
+          answer.replaceAll(" in India", ""),
+        ]),
+      )
+    : developmentFaqs;
+  const [faq, setFaq] = useState<number | null>(0);
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: homeCss + serviceCss + pageCss }} />
+      <main className="ss wd">
+        <section className="ss-hero" id="consultation">
+          <div className="ss-grid-bg" />
+          <div className="ss-wrap">
+            <nav className="ss-crumb" aria-label="Breadcrumb">
+              <Link to="/">Home</Link> / <Link to="/services/">Services</Link> /{" "}
+              <span aria-current="page">{v ? v.crumb : "Website Development"}</span>
+            </nav>
+            <div className="ss-hero-grid">
+              <div>
+                <div className="ss-eyebrow">
+                  {v ? v.eyebrow : "Website Design & Development Services"}
+                </div>
+                {v ? (
+                  <h1>
+                    <span className="gold">{v.h1}</span>
+                  </h1>
+                ) : (
+                  <h1>
+                    Website Development <span className="gold">Company in India</span>
+                  </h1>
+                )}
+                {v && <p>{v.intro}</p>}
+                <p className="sub">Build a Powerful Website That Turns Visitors Into Customers</p>
+                <p>
+                  {v
+                    ? developmentIntro.replaceAll("in India", "for international businesses")
+                    : developmentIntro}
+                </p>
+                <ul className="ss-trust">
+                  {[
+                    "Custom & Responsive Website Design",
+                    "SEO-Friendly Development Structure",
+                    "Performance-Focused Development",
+                    "Business-Oriented User Experience",
+                  ].map((t) => (
+                    <li key={t}>
+                      <span>
+                        <Check size={16} aria-hidden />
+                      </span>
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+                <div className="ss-cta-row">
+                  <QuoteButton />
+                  <Button asChild className="ss-btn ss-btn-ghost">
+                    <a href="#development-services">Explore Our Website Development Services</a>
+                  </Button>
+                </div>
+              </div>
+              <div className="ss-form-card">
+                <LegacyContactForm
+                  serviceType="web-development"
+                  heading="Get a Free Website Development Quote"
+                  description="Tell us about your project. Our team will help you explore the right website development solution for your business."
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        {editorial && (
+          <section className="ss-sec">
+            <div className="ss-wrap">
+              <Heading
+                eyebrow="Your market and project"
+                title={`${v.h1}: planning priorities`}
+                intro={editorial.context}
+              />
+              <div className="wd-grid">
+                {editorial.priorities.map(([title, detail]) => (
+                  <article className="ss-card" key={title}>
+                    <h3>{title}</h3>
+                    <p>{detail}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+        <section className="ss-sec alt" id="development-services">
+          <div className="ss-wrap">
+            <Heading
+              eyebrow="From first impression to functionality"
+              title="Professional Website Development Services for Every Business"
+              intro="A professionally developed website brings content, design and functionality into one useful experience. It should help visitors understand your business, find relevant information and take a clear next step. Choose a focused launch scope that your team can maintain, then extend the website as real requirements emerge."
+            />
+            <div className="wd-grid">
+              {developmentServices.map(([t, d], i) => {
+                const Icon = serviceIcons[i] ?? Code2;
+                return (
+                  <article className="ss-card" key={t}>
+                    <div className="ss-icon-heading">
+                      <Icon aria-hidden />
+                      <h3>{t}</h3>
+                    </div>
+                    <p>{d}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+        <section className="ss-sec">
+          <div className="ss-wrap wd-capability">
+            <div>
+              <Heading
+                eyebrow="Development + search expertise"
+                title="Why Choose SEO Expert India as Your Website Development Company?"
+              />
+              <p>
+                Established in 2016, SEO Expert India brings 10+ years of experience in website
+                development and SEO. Our capabilities include WordPress, WooCommerce, Magento, PHP
+                and Laravel, with business-focused work for Indian and international markets. We
+                connect development choices with the content and technical foundations a website
+                needs for ongoing search optimisation.
+              </p>
+              <p>
+                Our objective is not simply an attractive screen. We develop useful digital
+                platforms with clear navigation, responsive layouts and functionality suited to your
+                operations. Transparent scope, collaborative reviews and long-term maintainability
+                guide the work. We explain platform trade-offs and avoid promises about rankings or
+                results that no development company can control.
+              </p>
+              <div className="wd-benefits">
+                <div>
+                  <strong>2016</strong>Established
+                </div>
+                <div>
+                  <strong>10+ years</strong>Website development &amp; SEO
+                </div>
+                <div>
+                  <strong>One plan</strong>Design, content &amp; technology
+                </div>
+              </div>
+              <Link className="wd-link" to="/about/">
+                Explore our company and approach
+                <ArrowUpRight aria-hidden />
+              </Link>
+            </div>
+            <figure className="wd-media wd-why-media">
+              <img
+                src={developmentWhyImage.url}
+                alt="website development company india"
+                width={1536}
+                height={1024}
+                loading="lazy"
+              />
+              <figcaption>
+                Website development tools, code and platforms we use to build business websites.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section className="ss-sec alt">
+          <div className="ss-wrap">
+            <Heading
+              eyebrow="Built around your audience"
+              title="Website Development Solutions for Different Industries"
+              intro="Different businesses need different information and workflows. We adapt page structure, content priorities and functionality to the decisions your customers make, rather than applying the same template to every industry."
+            />
+            <div className="wd-grid">
+              {developmentIndustries.map(([t, d]) => (
+                <article className="ss-card" key={t}>
+                  <h3>{industryPath(t) ? <a href={industryPath(t)}>{t}</a> : t}</h3>
+                  <p>{d}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="ss-sec">
+          <div className="ss-wrap">
+            <Heading
+              eyebrow="A clear path to launch"
+              title="Our Website Design and Development Process"
+              intro="A shared process makes responsibilities visible. Each stage has a purpose, from defining the scope to checking the deployed website. Review milestones help prevent content, design and technical decisions from drifting apart."
+            />
+            <ol className="wd-process">
+              {developmentProcess.map(([t, d], i) => (
+                <li key={t}>
+                  <span>{String(i + 1).padStart(2, "0")}</span>
+                  <h3>{t}</h3>
+                  <p>{d}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+        <section className="ss-sec alt">
+          <div className="ss-wrap">
+            <Heading
+              eyebrow="The right foundation"
+              title="Website Development Technologies and Platforms We Work With"
+              intro="We select technology according to business objectives, functionality, scalability and maintenance requirements. A content-focused business website, an online store and a custom dashboard may need different foundations. Platform subscriptions and extension costs are part of that decision, not an afterthought."
+            />
+            <div className="wd-tech">
+              {(
+                [
+                  ["wordpress", "WordPress"],
+                  ["woocommerce", "WooCommerce"],
+                  ["magento", "Magento"],
+                  ["shopify", "Shopify"],
+                ] as const
+              ).map(([asset, name]) => (
+                <div className="wd-tech-item" key={asset}>
+                  <BrandLogo asset={asset} name={name} />
+                  <span>{name}</span>
+                </div>
+              ))}
+              {[
+                ["PHP", FileCode2],
+                ["Laravel", Layers],
+                ["HTML5", Code2],
+                ["CSS3", LayoutTemplate],
+                ["JavaScript", Braces],
+                ["Bootstrap", MonitorSmartphone],
+              ].map(([name, Icon]) => {
+                const TechnologyIcon = Icon as typeof Code2;
+                return (
+                  <div className="wd-tech-item" key={String(name)}>
+                    <TechnologyIcon aria-hidden />
+                    <span>{String(name)}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+        <section className="ss-sec">
+          <div className="ss-wrap">
+            <Heading
+              eyebrow="Search-ready from the beginning"
+              title="SEO-Friendly Website Development for Better Search Visibility"
+              intro="Search requirements influence page organisation, content publishing and technical implementation. Considering them early avoids unnecessary rework after launch. Our development and SEO teams connect these decisions with useful information for customers, while recognising that a sound website foundation is only one part of search performance."
+            />
+            <div className="wd-grid two wd-seo-grid">
+              {seoDevelopment.map(([t, d]) => (
+                <article className="ss-card" key={t}>
+                  <div className="ss-icon-heading">
+                    <ShieldCheck aria-hidden />
+                    <h3>{t}</h3>
+                  </div>
+                  <p>{d}</p>
+                </article>
+              ))}
+            </div>
+            <Link className="wd-link" to="/service/best-seo-services-in-india/">
+              Explore our SEO Services in India
+              <ArrowUpRight aria-hidden />
+            </Link>
+          </div>
+        </section>
+        {capabilitySections.map((s, i) => (
+          <section className={`ss-sec ${i % 2 === 0 ? "alt" : ""}`} id={s.id} key={s.id}>
+            <div className="ss-wrap wd-capability">
+              <div>
+                <Heading
+                  eyebrow={
+                    [
+                      "Content you can manage",
+                      "Commerce that fits your operation",
+                      "Beyond a standard template",
+                      "Protect and improve your website",
+                    ][i] ?? "Our capabilities"
+                  }
+                  title={v ? s.title.replace(" in India", "") : s.title}
+                />
+                <p>{s.intro}</p>
+                <ul className="ss-checks">
+                  {s.points.map((p) => (
+                    <li key={p}>{p}</li>
+                  ))}
+                </ul>
+                <p>{s.detail}</p>
+                <QuoteButton label="Discuss your website requirements" />
+              </div>
+              {i === 0 ? (
+                <figure className="wd-media">
+                  <img
+                    src={wordpressCapabilityImage.url}
+                    alt="WordPress website development company india"
+                    width={900}
+                    height={600}
+                    loading="lazy"
+                    style={{ aspectRatio: "900/600" }}
+                  />
+                  <figcaption>
+                    WordPress and Elementor workflow used to build editable, maintainable business
+                    websites.
+                  </figcaption>
+                </figure>
+              ) : i === 1 ? (
+                <PlatformVisual name="WooCommerce" />
+              ) : i === 2 ? (
+                <figure className="wd-media">
+                  <img
+                    src={customCapabilityImage.url}
+                    alt="Custom website development solutions for growing businesses"
+                    width={628}
+                    height={489}
+                    loading="lazy"
+                    style={{ aspectRatio: "628/489" }}
+                  />
+                  <figcaption>
+                    Custom development covering responsive design, performance, security and
+                    tailored UI/UX.
+                  </figcaption>
+                </figure>
+              ) : (
+                <figure className="wd-media">
+                  <img
+                    src={portfolio[0]?.image}
+                    alt="Responsive education website design example from the existing showcase"
+                    width={500}
+                    height={281}
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Existing design example showing organised content and navigation.
+                  </figcaption>
+                </figure>
+              )}
+            </div>
+          </section>
+        ))}
+        <section className="ss-sec alt">
+          <div className="ss-wrap">
+            <Heading
+              eyebrow="Clear scope, informed decisions"
+              title={
+                v
+                  ? `Website development costs for ${editorial?.market}`
+                  : "How Much Does Website Development Cost in India?"
+              }
+              intro="Website size, design complexity and required functionality determine the work involved. CMS choice, commerce features, third-party integrations, content preparation and SEO requirements also affect the proposal. The costs below are listed in USD; the final proposal confirms the agreed scope and requirements."
+            />
+            <div
+              className="wd-table-wrap"
+              tabIndex={0}
+              role="region"
+              aria-label="Website project scope comparison"
+            >
+              <table>
+                <caption className="sr-only">
+                  Website categories, scope, quote factors and costs in USD
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Website category</th>
+                    <th scope="col">Typical scope</th>
+                    <th scope="col">Key quote factors</th>
+                    <th scope="col">Cost (USD)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {quoteRows.map(([t, d, f, cost]) => (
+                    <tr key={t}>
+                      <th scope="row">{t}</th>
+                      <td>{d}</td>
+                      <td>{f}</td>
+                      <td className="whitespace-nowrap">${cost} USD</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Initial development covers the agreed design and implementation scope. Recurring
+              expenses can include domain renewal, hosting, premium plugins, platform subscriptions
+              and maintenance. Confirm ownership, renewal dates and exclusions before approving a
+              proposal. New functionality after launch is assessed separately from routine support
+              unless the agreement explicitly includes it.
+            </p>
+            <QuoteButton label="Get a Custom Quote" />
+          </div>
+        </section>
+        <section className="ss-sec">
+          <div className="ss-wrap">
+            <Heading
+              eyebrow="Connected disciplines"
+              title="Website Design vs Website Development: Understanding the Difference"
+              intro="Design defines the experience; development makes it work. A successful project connects both with publishing and launch decisions, so approved visuals become a dependable website rather than isolated mockups."
+            />
+            <div className="wd-grid">
+              {designComparison.map(([t, d]) => (
+                <article className="ss-card" key={t}>
+                  <h3>{t}</h3>
+                  <p>{d}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="ss-sec alt">
+          <div className="ss-wrap">
+            <Heading
+              eyebrow="A useful business asset"
+              title="Why Is a Professional Business Website Important?"
+              intro="Your website is a place customers can inspect your offer on their own terms. Reliable information, a clear structure and appropriate functionality support business conversations across channels. The value comes from usefulness and ongoing care, not visual polish alone."
+            />
+            <div className="wd-grid">
+              {businessBenefits.map(([t, d]) => (
+                <article className="ss-card" key={t}>
+                  <h3>{t}</h3>
+                  <p>{d}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="ss-sec">
+          <div className="ss-wrap">
+            <Heading
+              eyebrow="Existing website showcase"
+              title="Explore Our Website Development Projects"
+              intro="A selection of website design layouts from our development showcase. Hover over any design to view the full page. These are design presentations, not verified client case studies, endorsements or performance results."
+            />
+            <div className="wd-grid">
+              {devProjects.map((p, i) => (
+                <div className="wd-scroll" key={p.url}>
+                  <img
+                    src={p.url}
+                    alt={`${["Restaurant", "Automotive store", "Basketball training", "Financial services", "Nutrition", "Cosmetics store", "Grocery store", "Pet store", "Coffee shop"][i]} website design showcase`}
+                    width={500}
+                    height={340}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              ))}
+            </div>
+            <Link className="wd-link" to="/recent-work/">
+              Explore the complete Recent Work showcase
+              <ArrowUpRight aria-hidden />
+            </Link>
+          </div>
+        </section>
+        <section className="ss-sec alt" id="development-faq">
+          <div className="ss-wrap">
+            <Heading
+              eyebrow="Practical answers before you begin"
+              title={
+                v
+                  ? `Frequently Asked Questions About ${v.h1}`
+                  : "Frequently Asked Questions About Website Development Services"
+              }
+              intro="Scope, ownership, platform choices and ongoing care deserve clear answers. These questions address common considerations for business owners comparing website development options across different markets."
+            />
+            <div className="ss-faq">
+              {pageFaqs.map(([q, a], i) => {
+                const open = faq === i;
+                return (
+                  <div className={`ss-faq-item ${open ? "open" : ""}`} key={q}>
+                    <h3>
+                      <Button
+                        variant="ghost"
+                        className="ss-faq-q"
+                        aria-expanded={open}
+                        aria-controls={`wd-answer-${i}`}
+                        id={`wd-question-${i}`}
+                        onClick={() => setFaq(open ? null : i)}
+                      >
+                        <span>{q}</span>
+                        <i aria-hidden>+</i>
+                      </Button>
+                    </h3>
+                    <div
+                      className="ss-faq-a"
+                      id={`wd-answer-${i}`}
+                      role="region"
+                      aria-labelledby={`wd-question-${i}`}
+                      aria-hidden={!open}
+                      inert={!open}
+                    >
+                      <div>
+                        {a.split("\n\n").map((p) => (
+                          <p key={p}>{p}</p>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+        <section className="wd-final">
+          <div className="ss-wrap">
+            <div className="ss-eyebrow">Your next website starts with a conversation</div>
+            <h2>Ready to Build a Professional Website for Your Business?</h2>
+            <p>
+              Tell us what your business needs, who the website will serve and what you want to
+              improve. We’ll help you explore a practical website development scope with clear
+              responsibilities, suitable technology and a sensible path to launch.
+            </p>
+            <div className="ss-cta-row">
+              <QuoteButton />
+              <Button asChild className="ss-btn ss-btn-ghost">
+                <Link to="/contact/">
+                  Contact Us
+                  <ArrowUpRight aria-hidden />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+        <ClientTestimonials />
+      </main>
+      <LegacyFooter />
+    </>
+  );
 }

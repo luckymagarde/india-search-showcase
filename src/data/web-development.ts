@@ -1,142 +1,417 @@
-export const DEVELOPMENT_URL='https://www.seoexpertindia.biz/service/web-development-company-india/';
-export const developmentIntro='SEO Expert India is a Website Development Company in India helping businesses build a clear, dependable online presence. Our Professional Website Development Services connect visual design with practical functionality, so customers can understand your offer, explore your services and make an enquiry without unnecessary friction. From Business Website Development to a growing online store, we plan each project around its audience, content and operational needs. Custom Website Development supports requirements that a standard theme cannot comfortably handle, while WordPress and commerce platforms offer manageable foundations for suitable projects. Our SEO-Friendly Website Design approach considers page structure, mobile usability and technical search requirements from the beginning. We work with businesses across India and international markets, combining website development and SEO experience with a transparent scope, collaborative reviews and a sensible launch plan.';
-export const developmentServices=[
- ['Business Website Development','Present your services, business information and contact options through a clear, manageable website.'],
- ['Corporate Website Development','Bring company information, business divisions, capabilities and recruitment content into a consistent structure.'],
- ['WordPress Website Development','Build a flexible publishing foundation for business pages, articles and resource libraries.'],
- ['Custom Website Development','Address business-specific workflows with a planned interface and tailored functionality.'],
- ['eCommerce Website Development','Make products easy to discover, compare and buy.'],
- ['WooCommerce Development','Extend a suitable WordPress website into an online store with product types, categories and commerce workflows.'],
- ['Magento Website Development','Plan more involved commerce requirements around catalogue organisation, customer journeys and operational needs.'],
- ['Shopify Website Development','Create a storefront around your catalogue and brand within Shopify’s platform capabilities.'],
- ['Responsive Website Design','Adapt content and controls for desktop, tablet and mobile rather than simply shrinking a desktop page.'],
- ['Website Redesign Services','Improve an existing site without overlooking its useful content and established addresses.'],
- ['Landing Page Development','Give a campaign or service a focused destination with relevant information and a clear next step.'],
- ['Website Maintenance and Support','Keep an agreed website scope manageable after launch through updates, checks and technical assistance.'],
- ['PHP Website Development','Develop server-side functionality where PHP suits the platform and project.'],
- ['Laravel Website Development','Use a structured PHP framework for suitable custom applications and business workflows.'],
- ['Website Speed and Performance Optimization','Review media, code delivery, fonts and third-party scripts to identify practical improvements.'],
+export const DEVELOPMENT_URL =
+  "https://www.seoexpertindia.biz/service/web-development-company-india/";
+export const developmentIntro =
+  "SEO Expert India is a Website Development Company in India helping businesses build a clear, dependable online presence. Our Professional Website Development Services connect visual design with practical functionality, so customers can understand your offer, explore your services and make an enquiry without unnecessary friction. From Business Website Development to a growing online store, we plan each project around its audience, content and operational needs. Custom Website Development supports requirements that a standard theme cannot comfortably handle, while WordPress and commerce platforms offer manageable foundations for suitable projects. Our SEO-Friendly Website Design approach considers page structure, mobile usability and technical search requirements from the beginning. We work with businesses across India and international markets, combining website development and SEO experience with a transparent scope, collaborative reviews and a sensible launch plan.";
+export const developmentServices = [
+  [
+    "Business Website Development",
+    "Present your services, business information and contact options through a clear, manageable website.",
+  ],
+  [
+    "Corporate Website Development",
+    "Bring company information, business divisions, capabilities and recruitment content into a consistent structure.",
+  ],
+  [
+    "WordPress Website Development",
+    "Build a flexible publishing foundation for business pages, articles and resource libraries.",
+  ],
+  [
+    "Custom Website Development",
+    "Address business-specific workflows with a planned interface and tailored functionality.",
+  ],
+  ["eCommerce Website Development", "Make products easy to discover, compare and buy."],
+  [
+    "WooCommerce Development",
+    "Extend a suitable WordPress website into an online store with product types, categories and commerce workflows.",
+  ],
+  [
+    "Magento Website Development",
+    "Plan more involved commerce requirements around catalogue organisation, customer journeys and operational needs.",
+  ],
+  [
+    "Shopify Website Development",
+    "Create a storefront around your catalogue and brand within Shopify’s platform capabilities.",
+  ],
+  [
+    "Responsive Website Design",
+    "Adapt content and controls for desktop, tablet and mobile rather than simply shrinking a desktop page.",
+  ],
+  [
+    "Website Redesign Services",
+    "Improve an existing site without overlooking its useful content and established addresses.",
+  ],
+  [
+    "Landing Page Development",
+    "Give a campaign or service a focused destination with relevant information and a clear next step.",
+  ],
+  [
+    "Website Maintenance and Support",
+    "Keep an agreed website scope manageable after launch through updates, checks and technical assistance.",
+  ],
+  [
+    "PHP Website Development",
+    "Develop server-side functionality where PHP suits the platform and project.",
+  ],
+  [
+    "Laravel Website Development",
+    "Use a structured PHP framework for suitable custom applications and business workflows.",
+  ],
+  [
+    "Website Speed and Performance Optimization",
+    "Review media, code delivery, fonts and third-party scripts to identify practical improvements.",
+  ],
 ] as const;
-export const developmentIndustries=[
- ['Small Business Websites','A small business needs a credible introduction, useful service pages and direct contact options. Priorities include straightforward editing, local business information and a manageable structure that can grow without making routine updates difficult.'],
- ['Corporate Websites','Larger organisations need consistent messaging across departments and audiences. Clear section ownership, capability information, recruitment content and publishing permissions help the website remain organised as different teams contribute.'],
- ['Startup Websites','An early-stage business needs room to refine its offer. A focused structure can explain the product, establish credibility and collect relevant enquiries while keeping unnecessary complexity out of the initial scope.'],
- ['eCommerce Websites','Stores need searchable categories, clear product information and dependable checkout journeys. Planning also considers stock updates, delivery information, returns and the practical work your team performs after receiving an order.'],
- ['B2B Websites','Business buyers often research specifications and capabilities before contacting sales. Resource downloads, detailed service information and well-positioned enquiry forms should support longer decision cycles without hiding essential information.'],
- ['Professional Service Websites','Consultancies and specialist firms need to explain expertise, engagement models and next steps. Useful service pages and transparent contact information build understanding without relying on fabricated endorsements or outcomes.'],
- ['Educational Websites','Schools and learning providers need organised programme information, admissions guidance and accessible updates. Content roles, downloadable resources and enquiry workflows should reflect how students and families actually research their options.'],
- ['Healthcare Websites','Healthcare sites need accurate service information, accessible contact paths and carefully reviewed content. Appointment requests and sensitive information require explicit privacy and handling decisions rather than informal collection through generic forms.'],
- ['Real Estate Websites','Property businesses may need listings, filters and location information alongside project enquiries. Planning covers who maintains availability, which details visitors compare and whether external listing systems need integration.'],
- ['Travel and Hospitality Websites','Accommodation and travel websites need clear experiences, useful destination information and mobile-friendly enquiries. Booking requirements, availability sources and external booking systems should be agreed before the interface is finalised.'],
- ['Industrial and Manufacturing Websites','Manufacturers need to communicate capabilities, applications and technical specifications. Well-organised product families, document libraries and enquiry routing help buyers identify a relevant solution and reach the appropriate team.'],
- ['Portfolio and Personal Brand Websites','A portfolio should make genuine work easy to inspect. Project descriptions, appropriately sized media and clear contact details allow creators and professionals to present their expertise without invented client associations.'],
+export const developmentIndustries = [
+  [
+    "Small Business Websites",
+    "A small business needs a credible introduction, useful service pages and direct contact options. Priorities include straightforward editing, local business information and a manageable structure that can grow without making routine updates difficult.",
+  ],
+  [
+    "Corporate Websites",
+    "Larger organisations need consistent messaging across departments and audiences. Clear section ownership, capability information, recruitment content and publishing permissions help the website remain organised as different teams contribute.",
+  ],
+  [
+    "Startup Websites",
+    "An early-stage business needs room to refine its offer. A focused structure can explain the product, establish credibility and collect relevant enquiries while keeping unnecessary complexity out of the initial scope.",
+  ],
+  [
+    "eCommerce Websites",
+    "Stores need searchable categories, clear product information and dependable checkout journeys. Planning also considers stock updates, delivery information, returns and the practical work your team performs after receiving an order.",
+  ],
+  [
+    "B2B Websites",
+    "Business buyers often research specifications and capabilities before contacting sales. Resource downloads, detailed service information and well-positioned enquiry forms should support longer decision cycles without hiding essential information.",
+  ],
+  [
+    "Professional Service Websites",
+    "Consultancies and specialist firms need to explain expertise, engagement models and next steps. Useful service pages and transparent contact information build understanding without relying on fabricated endorsements or outcomes.",
+  ],
+  [
+    "Educational Websites",
+    "Schools and learning providers need organised programme information, admissions guidance and accessible updates. Content roles, downloadable resources and enquiry workflows should reflect how students and families actually research their options.",
+  ],
+  [
+    "Healthcare Websites",
+    "Healthcare sites need accurate service information, accessible contact paths and carefully reviewed content. Appointment requests and sensitive information require explicit privacy and handling decisions rather than informal collection through generic forms.",
+  ],
+  [
+    "Real Estate Websites",
+    "Property businesses may need listings, filters and location information alongside project enquiries. Planning covers who maintains availability, which details visitors compare and whether external listing systems need integration.",
+  ],
+  [
+    "Travel and Hospitality Websites",
+    "Accommodation and travel websites need clear experiences, useful destination information and mobile-friendly enquiries. Booking requirements, availability sources and external booking systems should be agreed before the interface is finalised.",
+  ],
+  [
+    "Industrial and Manufacturing Websites",
+    "Manufacturers need to communicate capabilities, applications and technical specifications. Well-organised product families, document libraries and enquiry routing help buyers identify a relevant solution and reach the appropriate team.",
+  ],
+  [
+    "Portfolio and Personal Brand Websites",
+    "A portfolio should make genuine work easy to inspect. Project descriptions, appropriately sized media and clear contact details allow creators and professionals to present their expertise without invented client associations.",
+  ],
 ] as const;
-export const developmentProcess=[
- ['Understanding Your Business Requirements','We discuss your audience, goals, current website and operational needs. This establishes what the website must accomplish, what information is available and which features need further clarification before estimating the work.'],
- ['Website Planning and Strategy','The plan defines page structure, content responsibilities, platform options and project milestones. Integrations and recurring expenses are identified early, helping you compare a practical launch scope with possible later improvements.'],
- ['UI/UX Design and Wireframing','Wireframes organise information and user journeys before detailed visual styling. Design reviews confirm navigation, content priorities and enquiry placement, reducing expensive changes after development has already begun.'],
- ['Website Development','Approved layouts become reusable website templates and agreed functionality. We configure the chosen platform, implement the planned features and review progress against the scope rather than adding unplanned complexity.'],
- ['Content and SEO Implementation','Approved copy, images and metadata are placed into the website. Page hierarchy, descriptive links and technical search controls are checked so publishing decisions support customers and search engines together.'],
- ['Responsive and Browser Testing','Representative desktop and mobile checks cover navigation, forms, media and key workflows. Testing also reviews accessibility, layout stability and browser behaviour, with issues prioritised before launch approval.'],
- ['Website Launch and Deployment','Launch planning covers domain configuration, hosting, backups and any agreed redirects. We check the deployed pages and critical workflows rather than assuming that a successful preview guarantees a successful production launch.'],
- ['Post-Launch Support','Handover explains editing responsibilities, access ownership and the agreed support arrangement. Subsequent maintenance can address updates, monitoring and improvements, with ongoing work distinguished from the initial development scope.'],
+export const developmentProcess = [
+  [
+    "Understanding Your Business Requirements",
+    "We discuss your audience, goals, current website and operational needs. This establishes what the website must accomplish, what information is available and which features need further clarification before estimating the work.",
+  ],
+  [
+    "Website Planning and Strategy",
+    "The plan defines page structure, content responsibilities, platform options and project milestones. Integrations and recurring expenses are identified early, helping you compare a practical launch scope with possible later improvements.",
+  ],
+  [
+    "UI/UX Design and Wireframing",
+    "Wireframes organise information and user journeys before detailed visual styling. Design reviews confirm navigation, content priorities and enquiry placement, reducing expensive changes after development has already begun.",
+  ],
+  [
+    "Website Development",
+    "Approved layouts become reusable website templates and agreed functionality. We configure the chosen platform, implement the planned features and review progress against the scope rather than adding unplanned complexity.",
+  ],
+  [
+    "Content and SEO Implementation",
+    "Approved copy, images and metadata are placed into the website. Page hierarchy, descriptive links and technical search controls are checked so publishing decisions support customers and search engines together.",
+  ],
+  [
+    "Responsive and Browser Testing",
+    "Representative desktop and mobile checks cover navigation, forms, media and key workflows. Testing also reviews accessibility, layout stability and browser behaviour, with issues prioritised before launch approval.",
+  ],
+  [
+    "Website Launch and Deployment",
+    "Launch planning covers domain configuration, hosting, backups and any agreed redirects. We check the deployed pages and critical workflows rather than assuming that a successful preview guarantees a successful production launch.",
+  ],
+  [
+    "Post-Launch Support",
+    "Handover explains editing responsibilities, access ownership and the agreed support arrangement. Subsequent maintenance can address updates, monitoring and improvements, with ongoing work distinguished from the initial development scope.",
+  ],
 ] as const;
-export const seoDevelopment=[
- ['Search Engine-Friendly Website Architecture','A logical page hierarchy helps visitors and crawlers understand which services and products belong together. We consider descriptive URLs, crawlable navigation and relevant internal links during planning. Existing useful URLs should be retained where possible, with documented redirects for necessary changes.'],
- ['Technical SEO Implementation','A suitable platform should support individual titles and descriptions, self-referencing canonical URLs and appropriate indexability controls. XML sitemaps, robots.txt, semantic HTML and relevant structured data need review in their actual configuration. Search controls should reflect the purpose of each page, not blanket settings copied from another website.'],
- ['Mobile-Friendly Website Development','Mobile usability includes readable content, accessible navigation, usable forms and media that fits its container. Important information should remain available on smaller screens. Testing real interactions is more useful than judging a single attractive screenshot, especially for checkout and multi-step enquiries.'],
- ['Website Speed and Core Web Vitals','We consider image sizes, efficient CSS and JavaScript, font delivery, caching and reserved media dimensions. LCP relates to main-content loading, INP to interaction responsiveness and CLS to unexpected movement. Hosting, third-party scripts and content affect results, so neither rankings nor a particular PageSpeed score can be guaranteed.'],
- ['Conversion-Focused Website Design','Visitors need to understand your offer before deciding to contact you. Clear page structure, contextual calls to action and manageable enquiry forms reduce avoidable friction. Conversion measurement should be configured around meaningful business events and consent requirements, not invented uplift figures.'],
+export const seoDevelopment = [
+  [
+    "Search Engine-Friendly Website Architecture",
+    "A logical page hierarchy helps visitors and crawlers understand which services and products belong together. We consider descriptive URLs, crawlable navigation and relevant internal links during planning. Existing useful URLs should be retained where possible, with documented redirects for necessary changes.",
+  ],
+  [
+    "Technical SEO Implementation",
+    "A suitable platform should support individual titles and descriptions, self-referencing canonical URLs and appropriate indexability controls. XML sitemaps, robots.txt, semantic HTML and relevant structured data need review in their actual configuration. Search controls should reflect the purpose of each page, not blanket settings copied from another website.",
+  ],
+  [
+    "Mobile-Friendly Website Development",
+    "Mobile usability includes readable content, accessible navigation, usable forms and media that fits its container. Important information should remain available on smaller screens. Testing real interactions is more useful than judging a single attractive screenshot, especially for checkout and multi-step enquiries.",
+  ],
+  [
+    "Website Speed and Core Web Vitals",
+    "We consider image sizes, efficient CSS and JavaScript, font delivery, caching and reserved media dimensions. LCP relates to main-content loading, INP to interaction responsiveness and CLS to unexpected movement. Hosting, third-party scripts and content affect results, so neither rankings nor a particular PageSpeed score can be guaranteed.",
+  ],
+  [
+    "Conversion-Focused Website Design",
+    "Visitors need to understand your offer before deciding to contact you. Clear page structure, contextual calls to action and manageable enquiry forms reduce avoidable friction. Conversion measurement should be configured around meaningful business events and consent requirements, not invented uplift figures.",
+  ],
 ] as const;
-export const capabilitySections=[
- {id:'wordpress',title:'WordPress Website Development Company in India',intro:'WordPress is a suitable choice when a business needs editable pages, regular publishing and an established extension ecosystem. We plan the content structure first, then assess whether a customised theme or more tailored implementation fits the project. A professional WordPress website should remain understandable to the team that maintains it, not depend on a collection of unexplained plugins.',points:['Custom business layouts and reusable content templates','Theme customisation and Elementor-based development where suitable','Plugin integration assessed for compatibility and maintenance','WooCommerce functionality scoped around store requirements','Website redesign, security updates and performance review'],detail:'Editing freedom needs boundaries. Consistent templates help staff publish without accidentally breaking navigation or page layout. Handover should explain content ownership, backups and safe update practices. Premium themes, plugins and ongoing maintenance may create recurring costs and are discussed separately from development.'},
- {id:'ecommerce',title:'eCommerce Website Development Services',intro:'A professional store connects the shopping experience with the work behind each order. WooCommerce, Magento and Shopify serve different requirements; platform selection considers catalogue size, product complexity, integrations and maintenance resources. Categories and product pages should answer practical buying questions before customers reach the checkout.',points:['Product catalogue management and shopping cart requirements','Secure payment gateway integration subject to agreed configuration','Shipping, delivery and order-management workflows','Mobile shopping experience and checkout testing','Product SEO and appropriate product structured data'],detail:'Payment and delivery providers have their own availability, approval processes and charges. Integrations are included only when explicitly agreed and configured. We also consider stock ownership, returns information and order notifications, so the website supports a workable operation rather than an attractive but incomplete storefront.'},
- {id:'custom',title:'Custom Website Development Solutions for Growing Businesses',intro:'Custom functionality becomes useful when your workflow cannot be handled reliably by standard platform features. Examples include a role-based portal, a specific approval process or a dashboard drawing information from different systems. We clarify who uses the system, what they can do and which information they need before choosing technology.',points:['Custom UI/UX and business-specific functionality','API integrations and database-driven websites','Custom dashboards and CRM integration requirements','Laravel-based development for suitable applications','Scalable architecture with explicit access and maintenance rules'],detail:'Custom does not mean adding every possible feature at once. A focused release can establish the core workflow and make later changes easier to evaluate. Integration access, data protection, failure handling and ownership are part of the scope. The final technology choice follows requirements rather than a predetermined framework preference.'},
- {id:'maintenance',title:'Website Redesign, Maintenance and Support',intro:'An outdated website may need clearer content, a better mobile experience and technical improvements as well as new styling. We review existing pages and functions before recommending a replacement. This helps retain useful information, established links and familiar workflows where they still serve the business.',points:['Existing website redesign and planned website migration','SEO-safe URL migration and redirect planning','Broken-link checks and agreed backup arrangements','Security, plugin and CMS update responsibilities','Performance monitoring and ongoing technical support'],detail:'Migration planning identifies which addresses stay, which change and how visitors reach the replacement content. Backups should be recoverable, not merely scheduled. Maintenance agreements define the supported platform, access requirements and response expectations; new features and emergency work should not be silently assumed to fall within routine updates.'},
+export const capabilitySections = [
+  {
+    id: "wordpress",
+    title: "WordPress Website Development Company in India",
+    intro:
+      "WordPress is a suitable choice when a business needs editable pages, regular publishing and an established extension ecosystem. We plan the content structure first, then assess whether a customised theme or more tailored implementation fits the project. A professional WordPress website should remain understandable to the team that maintains it, not depend on a collection of unexplained plugins.",
+    points: [
+      "Custom business layouts and reusable content templates",
+      "Theme customisation and Elementor-based development where suitable",
+      "Plugin integration assessed for compatibility and maintenance",
+      "WooCommerce functionality scoped around store requirements",
+      "Website redesign, security updates and performance review",
+    ],
+    detail:
+      "Editing freedom needs boundaries. Consistent templates help staff publish without accidentally breaking navigation or page layout. Handover should explain content ownership, backups and safe update practices. Premium themes, plugins and ongoing maintenance may create recurring costs and are discussed separately from development.",
+  },
+  {
+    id: "ecommerce",
+    title: "eCommerce Website Development Services",
+    intro:
+      "A professional store connects the shopping experience with the work behind each order. WooCommerce, Magento and Shopify serve different requirements; platform selection considers catalogue size, product complexity, integrations and maintenance resources. Categories and product pages should answer practical buying questions before customers reach the checkout.",
+    points: [
+      "Product catalogue management and shopping cart requirements",
+      "Secure payment gateway integration subject to agreed configuration",
+      "Shipping, delivery and order-management workflows",
+      "Mobile shopping experience and checkout testing",
+      "Product SEO and appropriate product structured data",
+    ],
+    detail:
+      "Payment and delivery providers have their own availability, approval processes and charges. Integrations are included only when explicitly agreed and configured. We also consider stock ownership, returns information and order notifications, so the website supports a workable operation rather than an attractive but incomplete storefront.",
+  },
+  {
+    id: "custom",
+    title: "Custom Website Development Solutions for Growing Businesses",
+    intro:
+      "Custom functionality becomes useful when your workflow cannot be handled reliably by standard platform features. Examples include a role-based portal, a specific approval process or a dashboard drawing information from different systems. We clarify who uses the system, what they can do and which information they need before choosing technology.",
+    points: [
+      "Custom UI/UX and business-specific functionality",
+      "API integrations and database-driven websites",
+      "Custom dashboards and CRM integration requirements",
+      "Laravel-based development for suitable applications",
+      "Scalable architecture with explicit access and maintenance rules",
+    ],
+    detail:
+      "Custom does not mean adding every possible feature at once. A focused release can establish the core workflow and make later changes easier to evaluate. Integration access, data protection, failure handling and ownership are part of the scope. The final technology choice follows requirements rather than a predetermined framework preference.",
+  },
+  {
+    id: "maintenance",
+    title: "Website Redesign, Maintenance and Support",
+    intro:
+      "An outdated website may need clearer content, a better mobile experience and technical improvements as well as new styling. We review existing pages and functions before recommending a replacement. This helps retain useful information, established links and familiar workflows where they still serve the business.",
+    points: [
+      "Existing website redesign and planned website migration",
+      "SEO-safe URL migration and redirect planning",
+      "Broken-link checks and agreed backup arrangements",
+      "Security, plugin and CMS update responsibilities",
+      "Performance monitoring and ongoing technical support",
+    ],
+    detail:
+      "Migration planning identifies which addresses stay, which change and how visitors reach the replacement content. Backups should be recoverable, not merely scheduled. Maintenance agreements define the supported platform, access requirements and response expectations; new features and emergency work should not be silently assumed to fall within routine updates.",
+  },
 ] as const;
-export const quoteRows=[
- ['Basic Business Website','A focused service presence with essential business information and enquiries.','Page count, content readiness and layout requirements.',500],
- ['Professional Corporate Website','A broader company structure with multiple audiences and publishing needs.','Departments, content workflows and integrations.',800],
- ['WordPress Website','Editable business pages and content using a suitable WordPress setup.','Theme work, plugins and training requirements.',800],
- ['eCommerce Website','Catalogue, checkout and agreed operational integrations.','Product complexity, fulfilment and payment requirements.',1500],
- ['Custom Website Development','Tailored functionality around a documented business workflow.','User roles, data, integrations and testing complexity.',2000],
+export const quoteRows = [
+  [
+    "Basic Business Website",
+    "A focused service presence with essential business information and enquiries.",
+    "Page count, content readiness and layout requirements.",
+    500,
+  ],
+  [
+    "Professional Corporate Website",
+    "A broader company structure with multiple audiences and publishing needs.",
+    "Departments, content workflows and integrations.",
+    800,
+  ],
+  [
+    "WordPress Website",
+    "Editable business pages and content using a suitable WordPress setup.",
+    "Theme work, plugins and training requirements.",
+    800,
+  ],
+  [
+    "eCommerce Website",
+    "Catalogue, checkout and agreed operational integrations.",
+    "Product complexity, fulfilment and payment requirements.",
+    1500,
+  ],
+  [
+    "Custom Website Development",
+    "Tailored functionality around a documented business workflow.",
+    "User roles, data, integrations and testing complexity.",
+    2000,
+  ],
 ] as const;
-export const designComparison=[
- ['UI/UX design','Defines how information is organised, how users move through the site and how the interface communicates your brand. Wireframes and visual designs guide implementation.'],
- ['Frontend development','Turns approved layouts into the interface people use in their browsers. It covers responsive presentation, accessible controls and interactions that behave consistently.'],
- ['Backend development','Handles server-side workflows and data where required. Permissions, validation and integrations must be designed securely rather than treated as invisible extras.'],
- ['CMS development','Configures the publishing experience and content templates. A good CMS setup allows authorised staff to update information without editing application code.'],
- ['Website deployment','Places the tested website onto its agreed hosting environment. Domain settings, redirects and deployed workflows are checked before the launch is considered complete.'],
+export const designComparison = [
+  [
+    "UI/UX design",
+    "Defines how information is organised, how users move through the site and how the interface communicates your brand. Wireframes and visual designs guide implementation.",
+  ],
+  [
+    "Frontend development",
+    "Turns approved layouts into the interface people use in their browsers. It covers responsive presentation, accessible controls and interactions that behave consistently.",
+  ],
+  [
+    "Backend development",
+    "Handles server-side workflows and data where required. Permissions, validation and integrations must be designed securely rather than treated as invisible extras.",
+  ],
+  [
+    "CMS development",
+    "Configures the publishing experience and content templates. A good CMS setup allows authorised staff to update information without editing application code.",
+  ],
+  [
+    "Website deployment",
+    "Places the tested website onto its agreed hosting environment. Domain settings, redirects and deployed workflows are checked before the launch is considered complete.",
+  ],
 ] as const;
-export const businessBenefits=[
- ['Online credibility','Accurate information and a professional presentation give customers a dependable place to understand your business.'],
- ['Brand visibility','Consistent positioning and useful content help people recognise your offer across search and other channels.'],
- ['Lead generation','Relevant pages and clear contact options make it easier for interested visitors to begin a conversation.'],
- ['Customer communication','Service details, practical resources and current contact information reduce uncertainty before an enquiry.'],
- ['Product and service presentation','Organised descriptions and media help customers compare options and understand suitability.'],
- ['Search engine visibility','Crawlable content and sound technical foundations support discovery without promising a specific ranking.'],
- ['Business scalability','A manageable structure allows new content and agreed functionality to be added as requirements evolve.'],
- ['24/7 online presence','Your website can provide information outside office hours, while response times remain subject to your operations.'],
+export const businessBenefits = [
+  [
+    "Online credibility",
+    "Accurate information and a professional presentation give customers a dependable place to understand your business.",
+  ],
+  [
+    "Brand visibility",
+    "Consistent positioning and useful content help people recognise your offer across search and other channels.",
+  ],
+  [
+    "Lead generation",
+    "Relevant pages and clear contact options make it easier for interested visitors to begin a conversation.",
+  ],
+  [
+    "Customer communication",
+    "Service details, practical resources and current contact information reduce uncertainty before an enquiry.",
+  ],
+  [
+    "Product and service presentation",
+    "Organised descriptions and media help customers compare options and understand suitability.",
+  ],
+  [
+    "Search engine visibility",
+    "Crawlable content and sound technical foundations support discovery without promising a specific ranking.",
+  ],
+  [
+    "Business scalability",
+    "A manageable structure allows new content and agreed functionality to be added as requirements evolve.",
+  ],
+  [
+    "24/7 online presence",
+    "Your website can provide information outside office hours, while response times remain subject to your operations.",
+  ],
 ] as const;
-export const developmentFaqs=[
- ['How do I choose a website development company in India?',`Choose a company by examining its approach, relevant work and clarity of scope rather than relying on a low headline price. Ask how it plans navigation, mobile layouts, content management and launch testing. A useful proposal explains the actual deliverables, responsibilities and exclusions in language your team can understand.
+export const developmentFaqs = [
+  [
+    "How do I choose a website development company in India?",
+    `Choose a company by examining its approach, relevant work and clarity of scope rather than relying on a low headline price. Ask how it plans navigation, mobile layouts, content management and launch testing. A useful proposal explains the actual deliverables, responsibilities and exclusions in language your team can understand.
 
 Review examples for suitability, not just visual polish. Can visitors find information easily? Are forms and menus usable on mobile? Ask whether the shown work is a completed client project or a demonstration, and request genuine references where available. SEO expertise is valuable when it translates into practical architecture and publishing controls rather than ranking promises.
 
-Before starting, clarify ownership of the domain, hosting, website access and source materials. Discuss content approvals, recurring charges, maintenance and how future changes will be handled. For international projects, agree communication windows and milestone reviews. These practical questions help you compare providers fairly and reduce misunderstandings once design and development are underway.`],
- ['How much does website development cost in India?',`Website development pricing depends on the agreed scope; there is no single useful price for every business website. The number of pages matters, but so do design complexity, content preparation, platform choice and the functionality needed behind the interface. A small informational site and an integrated online store involve different work.
+Before starting, clarify ownership of the domain, hosting, website access and source materials. Discuss content approvals, recurring charges, maintenance and how future changes will be handled. For international projects, agree communication windows and milestone reviews. These practical questions help you compare providers fairly and reduce misunderstandings once design and development are underway.`,
+  ],
+  [
+    "How much does website development cost in India?",
+    `Website development pricing depends on the agreed scope; there is no single useful price for every business website. The number of pages matters, but so do design complexity, content preparation, platform choice and the functionality needed behind the interface. A small informational site and an integrated online store involve different work.
 
 A meaningful quote should identify templates, features, integrations, review rounds and testing responsibilities. For example, product imports, booking workflows or a CRM connection can require planning and validation beyond the visible page design. SEO migration work may also be necessary if an existing website is being replaced.
 
-Separate initial development from recurring expenses. Domains, hosting, premium plugins, platform subscriptions and maintenance may have their own charges and renewal dates. SEO Expert India provides a project-specific quote after reviewing requirements alongside the listed USD scope examples. Share your priorities and constraints so essential launch features can be distinguished from improvements that could sensibly follow later.`],
- ['How long does a professional business website take to develop?',`The timeline depends on scope, content readiness, design approvals and integration complexity. A schedule is more reliable when it is based on defined milestones than when it promises the same delivery time for every project. We discuss requirements before confirming a realistic plan.
+Separate initial development from recurring expenses. Domains, hosting, premium plugins, platform subscriptions and maintenance may have their own charges and renewal dates. SEO Expert India provides a project-specific quote after reviewing requirements alongside the listed USD scope examples. Share your priorities and constraints so essential launch features can be distinguished from improvements that could sensibly follow later.`,
+  ],
+  [
+    "How long does a professional business website take to develop?",
+    `The timeline depends on scope, content readiness, design approvals and integration complexity. A schedule is more reliable when it is based on defined milestones than when it promises the same delivery time for every project. We discuss requirements before confirming a realistic plan.
 
 Typical stages include discovery, structure planning, design review, development, content placement, testing and launch. Several activities may overlap, but approvals still need clear ownership. If service descriptions, product information or photographs arrive late, the team may be unable to complete layouts and testing on the original schedule.
 
-For a redesign, allow time to review existing URLs, content and redirects. For commerce or custom workflows, account for provider approvals and access to integration systems. A useful plan records what the business must supply, when reviews are due and how scope changes affect delivery. Testing and launch checks should remain part of the schedule rather than being removed to meet an optimistic deadline.`],
- ['What do professional website development services include?',`Professional website development services usually connect planning, interface design, implementation and testing, but the exact deliverables must be agreed for your project. A service label alone does not establish that content writing, integrations, hosting or ongoing maintenance are included. The proposal should explain each responsibility clearly.
+For a redesign, allow time to review existing URLs, content and redirects. For commerce or custom workflows, account for provider approvals and access to integration systems. A useful plan records what the business must supply, when reviews are due and how scope changes affect delivery. Testing and launch checks should remain part of the schedule rather than being removed to meet an optimistic deadline.`,
+  ],
+  [
+    "What do professional website development services include?",
+    `Professional website development services usually connect planning, interface design, implementation and testing, but the exact deliverables must be agreed for your project. A service label alone does not establish that content writing, integrations, hosting or ongoing maintenance are included. The proposal should explain each responsibility clearly.
 
 Planning defines audiences, pages and essential workflows. Design establishes visual consistency and information priorities. Development creates the approved templates, configures the CMS where appropriate and implements agreed functionality. Content placement and technical SEO controls prepare pages for publication, while responsive and browser checks review the experience visitors will actually use.
 
-Launch work may include deployment, domain configuration and redirect checks, depending on the arrangement. Handover should explain editing access and ownership. Ask which items are one-time deliverables and which require ongoing work. For example, maintaining products, updating plugins and creating new content are different responsibilities even if they all affect the website after launch. Clear boundaries make the engagement easier to manage.`],
- ['Is WordPress suitable for a professional business website?',`WordPress can be a suitable choice for businesses that need editable service pages, articles and flexible content layouts. Its suitability depends on your requirements and the quality of implementation, not simply its popularity. A carefully configured site can be manageable, while an overloaded setup can create unnecessary maintenance work.
+Launch work may include deployment, domain configuration and redirect checks, depending on the arrangement. Handover should explain editing access and ownership. Ask which items are one-time deliverables and which require ongoing work. For example, maintaining products, updating plugins and creating new content are different responsibilities even if they all affect the website after launch. Clear boundaries make the engagement easier to manage.`,
+  ],
+  [
+    "Is WordPress suitable for a professional business website?",
+    `WordPress can be a suitable choice for businesses that need editable service pages, articles and flexible content layouts. Its suitability depends on your requirements and the quality of implementation, not simply its popularity. A carefully configured site can be manageable, while an overloaded setup can create unnecessary maintenance work.
 
 Consider who will publish content and what they need to change. Reusable templates help maintain consistency, and selected plugins can support useful functionality. Elementor may be appropriate for particular editing requirements, but the design and performance consequences should be reviewed. WooCommerce can extend a suitable WordPress foundation when commerce requirements fit its capabilities.
 
-Plan for updates, backups, access control and ongoing support. Premium extensions may add renewal fees, and plugin compatibility needs attention as software changes. A custom application may be more suitable for a highly specific workflow. We assess those trade-offs with you so the platform follows business needs instead of being chosen before the project is understood.`],
- ['How does custom website development differ from WordPress development?',`Custom development builds functionality around defined requirements, while WordPress development works within an established content-management platform and its extension ecosystem. They are not always opposites: a WordPress site can include custom templates or functionality. The important question is which foundation makes your workflow reliable and maintainable.
+Plan for updates, backups, access control and ongoing support. Premium extensions may add renewal fees, and plugin compatibility needs attention as software changes. A custom application may be more suitable for a highly specific workflow. We assess those trade-offs with you so the platform follows business needs instead of being chosen before the project is understood.`,
+  ],
+  [
+    "How does custom website development differ from WordPress development?",
+    `Custom development builds functionality around defined requirements, while WordPress development works within an established content-management platform and its extension ecosystem. They are not always opposites: a WordPress site can include custom templates or functionality. The important question is which foundation makes your workflow reliable and maintainable.
 
 WordPress often suits business publishing and standard content needs. A custom application may make more sense for a specialised dashboard, complex approval process or tightly connected business system. Custom work requires explicit decisions about data structure, permissions, integrations and error handling, not just a unique visual design.
 
-Compare the full ownership cost rather than only the initial build. Both approaches need updates, testing and support, but the skill requirements and maintenance arrangements differ. We clarify must-have workflows, staff responsibilities and future changes before selecting a platform or framework such as Laravel. A simpler proven platform is preferable when it comfortably meets the scope; tailored development should solve a real constraint rather than add complexity for its own sake.`],
- ['Do you develop SEO-friendly websites?',`Yes. SEO-friendly development considers structure, publishing controls and technical search requirements during planning rather than adding them after the website is complete. It does not guarantee rankings. Visibility also depends on content quality, competition, ongoing optimisation and how search systems evaluate the site.
+Compare the full ownership cost rather than only the initial build. Both approaches need updates, testing and support, but the skill requirements and maintenance arrangements differ. We clarify must-have workflows, staff responsibilities and future changes before selecting a platform or framework such as Laravel. A simpler proven platform is preferable when it comfortably meets the scope; tailored development should solve a real constraint rather than add complexity for its own sake.`,
+  ],
+  [
+    "Do you develop SEO-friendly websites?",
+    `Yes. SEO-friendly development considers structure, publishing controls and technical search requirements during planning rather than adding them after the website is complete. It does not guarantee rankings. Visibility also depends on content quality, competition, ongoing optimisation and how search systems evaluate the site.
 
 We review logical navigation, descriptive URLs and relevant internal linking so important pages can be understood and discovered. A suitable platform should support unique titles and descriptions, canonical URLs, XML sitemaps and appropriate indexability settings. Semantic HTML and a clear heading hierarchy help content remain meaningful rather than relying only on visual presentation.
 
-For an existing site, preserving useful URLs and planning redirects are important parts of migration. Performance and mobile usability also support a sound foundation, but scores are affected by hosting, media and external scripts. SEO development establishes the technical conditions for ongoing work; keyword research, useful content and measurement still need attention after launch. We can discuss those services separately through our existing SEO Services page.`],
- ['Will my website work on mobile phones and tablets?',`The website is planned with responsive layouts so its content and controls can adapt to desktop, tablet and mobile screens. Responsive development includes interaction checks, not simply shrinking a large layout. Visitors should be able to read important information, open navigation and complete agreed workflows without horizontal scrolling.
+For an existing site, preserving useful URLs and planning redirects are important parts of migration. Performance and mobile usability also support a sound foundation, but scores are affected by hosting, media and external scripts. SEO development establishes the technical conditions for ongoing work; keyword research, useful content and measurement still need attention after launch. We can discuss those services separately through our existing SEO Services page.`,
+  ],
+  [
+    "Will my website work on mobile phones and tablets?",
+    `The website is planned with responsive layouts so its content and controls can adapt to desktop, tablet and mobile screens. Responsive development includes interaction checks, not simply shrinking a large layout. Visitors should be able to read important information, open navigation and complete agreed workflows without horizontal scrolling.
 
 We review text sizes, touch targets, image dimensions and form usability at representative widths. Tables and complex dashboards may need different presentation strategies from ordinary service pages. Product selection and checkout journeys deserve particular attention because small usability problems can interrupt a purchase or enquiry.
 
-Testing should include relevant browsers and device conditions within the agreed scope. No provider can meaningfully promise identical behaviour on every device ever produced, so supported environments and acceptance checks should be clear. Content changes after launch can also affect layouts, especially very long headings or oversized media. Consistent templates and editing guidance help your team maintain the mobile experience as the website develops over time.`],
- ['Can you redesign my existing website without changing important URLs?',`A redesign can retain important URLs where the new structure supports them. We first review existing pages, navigation and functionality rather than replacing everything automatically. This identifies content worth keeping and addresses that visitors, search engines or external websites already use.
+Testing should include relevant browsers and device conditions within the agreed scope. No provider can meaningfully promise identical behaviour on every device ever produced, so supported environments and acceptance checks should be clear. Content changes after launch can also affect layouts, especially very long headings or oversized media. Consistent templates and editing guidance help your team maintain the mobile experience as the website develops over time.`,
+  ],
+  [
+    "Can you redesign my existing website without changing important URLs?",
+    `A redesign can retain important URLs where the new structure supports them. We first review existing pages, navigation and functionality rather than replacing everything automatically. This identifies content worth keeping and addresses that visitors, search engines or external websites already use.
 
 If a URL must change, a redirect plan should map the old address to the most relevant replacement. Sending every removed page to the homepage is not a substitute for thoughtful migration. Internal links, canonical settings and sitemap entries also need to reflect the final structure. Useful content should not disappear merely because the visual design has changed.
 
-Before launch, clarify which features are being preserved, replaced or retired. Backups and access ownership support recovery if unexpected issues occur. After deployment, check representative old addresses, new pages and critical workflows. A redesign can improve clarity and usability, but search performance may fluctuate during substantial changes. We do not promise that a migration has no possible ranking impact; careful planning reduces avoidable technical mistakes.`],
- ['Do you develop eCommerce websites with WooCommerce, Magento and Shopify?',`We can discuss eCommerce development using WooCommerce, Magento or Shopify according to your catalogue, operational needs and available maintenance resources. Platform selection should follow the business requirements. A familiar brand name alone does not establish that every integration or workflow will be straightforward.
+Before launch, clarify which features are being preserved, replaced or retired. Backups and access ownership support recovery if unexpected issues occur. After deployment, check representative old addresses, new pages and critical workflows. A redesign can improve clarity and usability, but search performance may fluctuate during substantial changes. We do not promise that a migration has no possible ranking impact; careful planning reduces avoidable technical mistakes.`,
+  ],
+  [
+    "Do you develop eCommerce websites with WooCommerce, Magento and Shopify?",
+    `We can discuss eCommerce development using WooCommerce, Magento or Shopify according to your catalogue, operational needs and available maintenance resources. Platform selection should follow the business requirements. A familiar brand name alone does not establish that every integration or workflow will be straightforward.
 
 Store planning covers product types, categories, stock ownership, checkout, delivery information and order handling. Product pages need accurate descriptions and media, while mobile shopping should remain usable. Payment gateway and shipping integrations require individual configuration, provider access and testing; they are not automatically included simply because the website has a shopping cart.
 
-We also consider product SEO, appropriate structured data and the relationship between categories and individual items. Recurring platform, extension and service charges need to be distinguished from development costs. Share details about your products, fulfilment and existing systems so we can identify a sensible scope. The goal is a store your team can operate reliably, not a collection of features that look impressive but lack a workable business process.`],
- ['Can I update content myself, and what maintenance will I need?',`With a suitable CMS and agreed editing setup, your authorised team can update defined content without changing application code. What can be edited depends on the platform, templates and permissions established for the project. We discuss those needs during planning rather than assuming every part of the website should be freely adjustable.
+We also consider product SEO, appropriate structured data and the relationship between categories and individual items. Recurring platform, extension and service charges need to be distinguished from development costs. Share details about your products, fulfilment and existing systems so we can identify a sensible scope. The goal is a store your team can operate reliably, not a collection of features that look impressive but lack a workable business process.`,
+  ],
+  [
+    "Can I update content myself, and what maintenance will I need?",
+    `With a suitable CMS and agreed editing setup, your authorised team can update defined content without changing application code. What can be edited depends on the platform, templates and permissions established for the project. We discuss those needs during planning rather than assuming every part of the website should be freely adjustable.
 
 Handover should explain routine tasks such as editing service text, adding articles or updating products. Reusable layouts help maintain consistency. Training and documentation requirements belong in the scope, especially when several staff members publish content or approvals are necessary.
 
-Content editing is different from technical maintenance. The website may still need software updates, backups, security checks and performance reviews. Plugins and integrations can change, and premium services may require renewals. Agree who owns these responsibilities and what support covers after launch. Avoid sharing administrator passwords casually; use appropriate access roles. A manageable publishing system and a clear maintenance arrangement work together to keep the site useful beyond the initial development project.`],
- ['What should we prepare before starting, including for an international project?',`Prepare a clear description of your business, audience and website objectives, together with any existing website address and must-have functionality. You do not need a finished technical specification to start a discussion, but practical examples help distinguish essential requirements from optional ideas. International clients should also identify target markets and language needs.
+Content editing is different from technical maintenance. The website may still need software updates, backups, security checks and performance reviews. Plugins and integrations can change, and premium services may require renewals. Agree who owns these responsibilities and what support covers after launch. Avoid sharing administrator passwords casually; use appropriate access roles. A manageable publishing system and a clear maintenance arrangement work together to keep the site useful beyond the initial development project.`,
+  ],
+  [
+    "What should we prepare before starting, including for an international project?",
+    `Prepare a clear description of your business, audience and website objectives, together with any existing website address and must-have functionality. You do not need a finished technical specification to start a discussion, but practical examples help distinguish essential requirements from optional ideas. International clients should also identify target markets and language needs.
 
 Useful materials include service information, product details, brand assets and media you have permission to use. Explain who approves designs and supplies content. If the website must connect to another system, provide documentation and access through secure invitations when appropriate, not passwords pasted into an enquiry form.
 
-Discuss domain and hosting ownership, budget constraints, recurring costs and your preferred launch priorities. Agree communication windows across time zones and milestone review responsibilities. Performance expectations should account for hosting, media and third-party tools rather than relying on an unconditional score promise. With these basics clarified, we can propose a suitable platform, scope and delivery plan for businesses in India or international markets.`],
+Discuss domain and hosting ownership, budget constraints, recurring costs and your preferred launch priorities. Agree communication windows across time zones and milestone review responsibilities. Performance expectations should account for hosting, media and third-party tools rather than relying on an unconditional score promise. With these basics clarified, we can propose a suitable platform, scope and delivery plan for businesses in India or international markets.`,
+  ],
 ] as const;

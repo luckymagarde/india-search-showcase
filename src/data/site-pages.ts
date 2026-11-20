@@ -1,34 +1,187 @@
-export const company = { name: 'SEO Expert India', established: 2016, experience: '10+', phone: '+91-903-903-0932', telephone: 'tel:+919039030932', whatsapp: 'https://wa.me/919039030932', email: 'info@seoexpertindia.biz', address: '24/B, Chetan Nagar, Near Bengali Square, Indore, Madhya Pradesh, India – 452016', profile: 'https://share.google/FJjTIHHwbvsQkfBdl', maps: 'https://maps.app.goo.gl/CvgKAvQEsbnmy2rb6' };
-export const pageLinks = [ {label:'About',to:'/about/'}, {label:'Recent Work',to:'/recent-work/'}, {label:'Testimonials',to:'/testimonials/'}, {label:'Contact',to:'/contact/'}, {label:'FAQs',to:'/faq/'}, {label:'Services',to:'/services/'} ] as const;
+export const company = {
+  name: "SEO Expert India",
+  established: 2016,
+  experience: "10+",
+  phone: "+91-903-903-0932",
+  telephone: "tel:+919039030932",
+  whatsapp: "https://wa.me/919039030932",
+  email: "info@seoexpertindia.biz",
+  address: "24/B, Chetan Nagar, Near Bengali Square, Indore, Madhya Pradesh, India – 452016",
+  profile: "https://share.google/FJjTIHHwbvsQkfBdl",
+  maps: "https://maps.app.goo.gl/CvgKAvQEsbnmy2rb6",
+};
+export const pageLinks = [
+  { label: "About", to: "/about/" },
+  { label: "Recent Work", to: "/recent-work/" },
+  { label: "Testimonials", to: "/testimonials/" },
+  { label: "Contact", to: "/contact/" },
+  { label: "FAQs", to: "/faq/" },
+  { label: "Services", to: "/services/" },
+] as const;
 export const serviceDirectory = [
- { title:'SEO Services', local:true, url:'/service/best-seo-services-in-india/', tag:'Organic visibility', description:'Technical audits, search intent, on-page improvements and content strategy brought together in a practical SEO roadmap. Explore our existing service page for platforms, industries, process and packages.' },
- { title:'Website Development', local:true, url:'https://www.seoexpertindia.biz/service/web-development-company-india/', tag:'Built for your business', description:'Business websites planned around clear navigation, accessible content and a sound technical foundation. Design and development work together so your site supports customers as well as search engines.' },
- { title:'Local SEO Services', url:'https://www.seoexpertindia.biz/service/best-local-seo-services-in-india/', tag:'Local discovery', description:'Location-focused content, consistent business information and Google Business Profile optimization to help nearby customers understand your services and find accurate ways to contact you.' },
- { title:'Global SEO Services', url:'https://www.seoexpertindia.biz/service/global-seo-services/', tag:'International reach', description:'Search strategies that account for different markets, languages and customer expectations. Align your website structure and content with how people research your business across borders.' },
- { title:'Link Building Services', url:'https://www.seoexpertindia.biz/service/best-seo-linkbuilding-services-in-india/', tag:'Relevant authority', description:'Build a stronger online presence through relevant opportunities and useful content. Link work should support credibility and topical relevance, not chase volume or guaranteed ranking claims.' },
- { title:'Website Development in USA', url:'https://www.seoexpertindia.biz/service/web-development-company-usa/', tag:'Market-focused websites', description:'Website planning and development for businesses serving the US market, with a focus on clear positioning, mobile usability and a structure ready for ongoing digital marketing.' },
+  {
+    title: "SEO Services",
+    local: true,
+    url: "/service/best-seo-services-in-india/",
+    tag: "Organic visibility",
+    description:
+      "Technical audits, search intent, on-page improvements and content strategy brought together in a practical SEO roadmap. Explore our existing service page for platforms, industries, process and packages.",
+  },
+  {
+    title: "Website Development",
+    local: true,
+    url: "https://www.seoexpertindia.biz/service/web-development-company-india/",
+    tag: "Built for your business",
+    description:
+      "Business websites planned around clear navigation, accessible content and a sound technical foundation. Design and development work together so your site supports customers as well as search engines.",
+  },
+  {
+    title: "Local SEO Services",
+    url: "https://www.seoexpertindia.biz/service/best-local-seo-services-in-india/",
+    tag: "Local discovery",
+    description:
+      "Location-focused content, consistent business information and Google Business Profile optimization to help nearby customers understand your services and find accurate ways to contact you.",
+  },
+  {
+    title: "Global SEO Services",
+    url: "https://www.seoexpertindia.biz/service/global-seo-services/",
+    tag: "International reach",
+    description:
+      "Search strategies that account for different markets, languages and customer expectations. Align your website structure and content with how people research your business across borders.",
+  },
+  {
+    title: "Link Building Services",
+    url: "https://www.seoexpertindia.biz/service/best-seo-linkbuilding-services-in-india/",
+    tag: "Relevant authority",
+    description:
+      "Build a stronger online presence through relevant opportunities and useful content. Link work should support credibility and topical relevance, not chase volume or guaranteed ranking claims.",
+  },
+  {
+    title: "Website Development in USA",
+    url: "https://www.seoexpertindia.biz/service/web-development-company-usa/",
+    tag: "Market-focused websites",
+    description:
+      "Website planning and development for businesses serving the US market, with a focus on clear positioning, mobile usability and a structure ready for ongoing digital marketing.",
+  },
 ];
 export const faqGroups = [
- {name:'SEO & local search',items:[
- ['What does an SEO engagement include?','The scope starts with your goals and the condition of your website. A typical plan combines a technical audit, keyword and competitor research, page improvements, content priorities and measurement. The proposed deliverables are agreed before work begins.'],
- ['Can you guarantee a first-place Google ranking?','No. Search rankings depend on competition, algorithms and factors outside an agency’s control. We focus on improvements we can implement, explain the reasoning and report progress without promising a particular position.'],
- ['How is local SEO different from broader SEO?','Local SEO focuses on searches connected to a place or service area. It combines accurate Google Business Profile information, relevant location pages, consistent business details and useful local content. Broader SEO addresses demand that is not limited to one location.'],
- ['Can you help with AI search visibility?','Yes. Clear entity information, useful answers and a crawlable website support how AI search systems interpret your content. These improvements complement SEO; they do not guarantee inclusion in any generated answer.']]},
- {name:'Websites & eCommerce',items:[
- ['Can you develop a new website and plan SEO together?','Yes. Navigation, page structure, content requirements and technical foundations can be considered during development rather than added after launch. The scope should identify who supplies copy, media and approvals.'],
- ['Do you work with existing websites?','Yes. We review the current platform and structure before recommending improvements. Where a redesign is appropriate, important URLs and redirects need a migration plan so useful content and existing search signals are not unnecessarily lost.'],
- ['What is involved in an eCommerce website project?','Planning covers your product catalogue, categories, product information, checkout requirements and integrations. Development and SEO should make it easy for customers to compare products while keeping categories and product pages understandable to search engines.'],
- ['Which platforms can you support?','The existing SEO service covers WordPress, WooCommerce, Shopify, Magento, Squarespace, Wix, Weebly and BigCommerce. Development requirements and platform limitations are reviewed before a specific implementation is agreed.']]},
- {name:'Pricing & timelines',items:[
- ['How is a project priced?','Pricing depends on the agreed scope, website size, technical condition and required services. SEO packages are available on the SEO Services page. Website development and custom engagements require a proposal based on your requirements.'],
- ['How long will a website project take?','The schedule depends on the number of pages, design approvals, content readiness and integrations. A useful project plan includes milestones and your review responsibilities. We confirm a realistic schedule after discussing the scope.'],
- ['How soon should we expect SEO progress?','There is no universal deadline. Technical changes, content work and authority improvements have different effects and depend on competition and the site’s starting point. We track agreed indicators and explain changes over time rather than promise a fixed result.']]},
- {name:'Reporting & working together',items:[
- ['What will be included in reporting?','Reporting should connect completed work to the goals agreed for the engagement. Depending on available access, it can include Search Console visibility, analytics traffic and conversions, technical issues and the priorities for the next stage.'],
- ['What do you need from us to get started?','Your website URL, target markets, main services or products and business goals are a useful starting point. We then agree the scope, necessary access and responsibilities. Share access through secure invitations rather than sending passwords.'],
- ['Can our internal team stay involved?','Yes. Clear ownership makes collaboration easier. We can coordinate recommendations with your team and explain which tasks need development, content or business approval so decisions remain transparent.']]},
+  {
+    name: "SEO & local search",
+    items: [
+      [
+        "What does an SEO engagement include?",
+        "The scope starts with your goals and the condition of your website. A typical plan combines a technical audit, keyword and competitor research, page improvements, content priorities and measurement. The proposed deliverables are agreed before work begins.",
+      ],
+      [
+        "Can you guarantee a first-place Google ranking?",
+        "No. Search rankings depend on competition, algorithms and factors outside an agency’s control. We focus on improvements we can implement, explain the reasoning and report progress without promising a particular position.",
+      ],
+      [
+        "How is local SEO different from broader SEO?",
+        "Local SEO focuses on searches connected to a place or service area. It combines accurate Google Business Profile information, relevant location pages, consistent business details and useful local content. Broader SEO addresses demand that is not limited to one location.",
+      ],
+      [
+        "Can you help with AI search visibility?",
+        "Yes. Clear entity information, useful answers and a crawlable website support how AI search systems interpret your content. These improvements complement SEO; they do not guarantee inclusion in any generated answer.",
+      ],
+    ],
+  },
+  {
+    name: "Websites & eCommerce",
+    items: [
+      [
+        "Can you develop a new website and plan SEO together?",
+        "Yes. Navigation, page structure, content requirements and technical foundations can be considered during development rather than added after launch. The scope should identify who supplies copy, media and approvals.",
+      ],
+      [
+        "Do you work with existing websites?",
+        "Yes. We review the current platform and structure before recommending improvements. Where a redesign is appropriate, important URLs and redirects need a migration plan so useful content and existing search signals are not unnecessarily lost.",
+      ],
+      [
+        "What is involved in an eCommerce website project?",
+        "Planning covers your product catalogue, categories, product information, checkout requirements and integrations. Development and SEO should make it easy for customers to compare products while keeping categories and product pages understandable to search engines.",
+      ],
+      [
+        "Which platforms can you support?",
+        "The existing SEO service covers WordPress, WooCommerce, Shopify, Magento, Squarespace, Wix, Weebly and BigCommerce. Development requirements and platform limitations are reviewed before a specific implementation is agreed.",
+      ],
+    ],
+  },
+  {
+    name: "Pricing & timelines",
+    items: [
+      [
+        "How is a project priced?",
+        "Pricing depends on the agreed scope, website size, technical condition and required services. SEO packages are available on the SEO Services page. Website development and custom engagements require a proposal based on your requirements.",
+      ],
+      [
+        "How long will a website project take?",
+        "The schedule depends on the number of pages, design approvals, content readiness and integrations. A useful project plan includes milestones and your review responsibilities. We confirm a realistic schedule after discussing the scope.",
+      ],
+      [
+        "How soon should we expect SEO progress?",
+        "There is no universal deadline. Technical changes, content work and authority improvements have different effects and depend on competition and the site’s starting point. We track agreed indicators and explain changes over time rather than promise a fixed result.",
+      ],
+    ],
+  },
+  {
+    name: "Reporting & working together",
+    items: [
+      [
+        "What will be included in reporting?",
+        "Reporting should connect completed work to the goals agreed for the engagement. Depending on available access, it can include Search Console visibility, analytics traffic and conversions, technical issues and the priorities for the next stage.",
+      ],
+      [
+        "What do you need from us to get started?",
+        "Your website URL, target markets, main services or products and business goals are a useful starting point. We then agree the scope, necessary access and responsibilities. Share access through secure invitations rather than sending passwords.",
+      ],
+      [
+        "Can our internal team stay involved?",
+        "Yes. Clear ownership makes collaboration easier. We can coordinate recommendations with your team and explain which tasks need development, content or business approval so decisions remain transparent.",
+      ],
+    ],
+  },
 ];
-export function pageHead(slug:string,title:string,description:string,type='WebPage'){
- const url=`https://www.seoexpertindia.biz/${slug}/`;
- return {meta:[{title:`${title} | SEO Expert India`},{name:'description',content:description},{property:'og:title',content:`${title} | SEO Expert India`},{property:'og:description',content:description},{property:'og:type',content:'website'},{property:'og:url',content:url},{name:'twitter:card',content:'summary_large_image'}],links:[{rel:'canonical',href:url}],scripts:[{type:'application/ld+json',children:JSON.stringify({'@context':'https://schema.org','@type':type,name:title,url,description})},{type:'application/ld+json',children:JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://www.seoexpertindia.biz/'},{'@type':'ListItem',position:2,name:title,item:url}]})}]};
+export function pageHead(slug: string, title: string, description: string, type = "WebPage") {
+  const url = `https://www.seoexpertindia.biz/${slug}/`;
+  return {
+    meta: [
+      { title: `${title} | SEO Expert India` },
+      { name: "description", content: description },
+      { property: "og:title", content: `${title} | SEO Expert India` },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: url },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: url }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": type,
+          name: title,
+          url,
+          description,
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.seoexpertindia.biz/",
+            },
+            { "@type": "ListItem", position: 2, name: title, item: url },
+          ],
+        }),
+      },
+    ],
+  };
 }

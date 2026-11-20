@@ -1,15 +1,308 @@
-import { createFileRoute, Link } from '@tanstack/react-router';
-import { Compass, Eye, ShieldCheck, Code2, Search, ShoppingBag, BarChart3, Users, MessageCircle } from 'lucide-react';
-import { PageShell, Intro, ContactLink, SectionHead, FinalCTA } from '@/components/site/page-shell';
-import { company, pageHead } from '@/data/site-pages';
-import { industryPath } from '@/data/industry-links';
-import { seoAssets } from '@/data/seo-assets';
-export const Route=createFileRoute('/about')({head:()=>pageHead('about','About Us – Strategy, Development & Digital Growth','Established in 2016, SEO Expert India brings 10+ years of website development and SEO experience to transparent, connected digital marketing.','AboutPage'),component:About});
-function About(){return <PageShell reviews={false}><Intro name="About" eyebrow="The people behind the strategy" title="About SEO Expert India" description="A website should be more than a business card. It should help people discover your expertise, understand your offer and take the next step."><div className="sp-actions"><ContactLink/><Link className="sp-service-link" to="/services/">Explore our capabilities ↗</Link></div><div className="sp-hero-line"><div><strong>{company.established}</strong>Established in Indore</div><div><strong>{company.experience} years</strong>Website development & SEO experience</div><div><strong>One connected approach</strong>Strategy through implementation</div></div></Intro>
-<section><div className="sp-wrap sp-split"><div><SectionHead eyebrow="Our beginning" title="Built from the website up."/><p>SEO Expert India was established in 2016 with a practical belief: a well-built website and a thoughtful search strategy belong together. Early website development and SEO work made that connection clear. A site could look polished yet leave customers unsure where to go; a strong content plan could be held back by technical problems.</p><p>Today, that same belief shapes our work as a digital marketing and website development company. We bring SEO, website development, eCommerce development and digital marketing into a coordinated process, rather than treating them as disconnected projects.</p></div><div><img className="sp-founder" src={seoAssets['founder']} width={360} height={360} alt="Lokesh Magarde, founder of SEO Expert India" loading="lazy"/><p className="sp-portrait-caption">Lokesh Magarde · Founder, SEO Expert India</p></div></div></section>
-<section className="sp-band"><div className="sp-wrap"><SectionHead eyebrow="Our journey" title="How SEO Expert India Began & Grew" description="From the first technical foundations to a wider digital growth practice — our work has stayed grounded in understanding the business behind the website."/><div className="sp-split"><img className="sp-banner" src={seoAssets['about-banner']} width={1200} height={600} alt="SEO Expert India navy and gold digital growth banner" loading="lazy"/><div><div className="sp-step"><span className="sp-number">01 · The foundation</span><h3>Website development & search</h3><p>We began by connecting website structure with discoverability: clear pages, useful content and technical SEO that made a site easier to use and understand.</p></div><div className="sp-step"><span className="sp-number">02 · A broader view</span><h3>From individual tasks to connected plans</h3><p>As business needs expanded, so did the scope: eCommerce development, content priorities and digital marketing alongside ongoing SEO.</p></div><div className="sp-step"><span className="sp-number">03 · Looking forward</span><h3>Keep the fundamentals. Adapt the execution.</h3><p>Search experiences continue to change. We pair established technical foundations with a considered approach to AI search, always separating opportunity from certainty.</p></div></div></div></div></section>
-<section><div className="sp-wrap"><SectionHead eyebrow="Our direction" title="A clear mission. A long-term view."/><div className="sp-grid two">{[[Compass,'Our mission','Help businesses build a stronger digital presence through useful websites, thoughtful search strategies and clear implementation. Make complex decisions understandable, and keep each recommendation connected to a business need.'],[Eye,'Our vision','Be a dependable long-term digital partner: one that combines technical care with sound strategy, adapts as customer behaviour changes and measures progress honestly.']].map(([Icon,title,text])=>{const I=Icon as typeof Compass;return <article className="sp-card" key={String(title)}><I aria-hidden/><h3>{String(title)}</h3><p>{String(text)}</p></article>})}</div></div></section>
-<section className="sp-band"><div className="sp-wrap"><SectionHead eyebrow="What makes us different" title="Good partnerships are built on clarity."/><div className="sp-grid">{[[ShieldCheck,'Transparency before promises','We explain what needs attention, why it matters and what sits outside our control. Recommendations should be understandable, not hidden behind impressive-sounding language.'],[Code2,'Strategy meets implementation','Development knowledge helps us connect SEO recommendations to changes that can actually be made. Content, design and technical work are planned together.'],[Users,'Relationships, not hand-offs','A shared understanding of responsibilities, feedback and priorities keeps work moving. We value thoughtful communication and long-term collaboration.']].map(([Icon,title,text])=>{const I=Icon as typeof Compass;return <article className="sp-card" key={String(title)}><I aria-hidden/><h3>{String(title)}</h3><p>{String(text)}</p></article>})}</div></div></section>
-<section><div className="sp-wrap"><SectionHead eyebrow="Our expertise" title="The capabilities your next stage needs."/><div className="sp-grid">{[[Search,'Search engine optimization','Technical health, intent-led content, local visibility and an approach to search that reflects your market.'],[Code2,'Website development','Clear information architecture, accessible layouts and a technical foundation that supports ongoing improvement.'],[ShoppingBag,'eCommerce development','Customer-focused product and category journeys, with development and discoverability considered together.'],[BarChart3,'Digital marketing','Coordinate organic search with paid campaigns, social activity and measurement where they fit the agreed scope.'],[Eye,'AI search readiness','Clear business entities and useful, well-structured answers that make your content easier for emerging search systems to interpret.'],[MessageCircle,'Practical collaboration','Translate findings into priorities your team can act on, with understandable reporting and clear next steps.']].map(([Icon,title,text])=>{const I=Icon as typeof Compass;return <article className="sp-card" key={String(title)}><I aria-hidden/><h3>{String(title)}</h3><p>{String(text)}</p></article>})}</div></div></section>
-<section className="sp-band"><div className="sp-wrap"><SectionHead eyebrow="Industries we serve" title="Different markets. The same attention to detail." description="An education website, local service business and online store have different customer journeys. We adapt the research, page structure and content priorities to those differences."/><div className="sp-tags">{['Education','Healthcare','eCommerce','Real estate','Legal services','Technology','Automotive','Home improvement','Photography','Telecommunications','Interior design','Professional services'].map(x=>industryPath(x)?<a key={x} href={industryPath(x)}>{x}</a>:<span key={x}>{x}</span>)}</div></div></section>
-<section><div className="sp-wrap"><SectionHead eyebrow="Our approach" title="Understand. Build. Measure. Improve."/><div className="sp-timeline">{[['01','Understand the starting point','Listen to your goals, review the website and identify the constraints before proposing the work.'],['02','Build around priorities','Agree a practical roadmap that connects website quality, content and acquisition to the customer journey.'],['03','Review and refine','Track the agreed indicators, explain what changed and use the evidence to decide the next priorities.']].map(([n,t,d])=><article className="sp-step" key={n}><span className="sp-number">{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div></div></section><FinalCTA/></PageShell>}
+import { createFileRoute, Link } from "@tanstack/react-router";
+import {
+  Compass,
+  Eye,
+  ShieldCheck,
+  Code2,
+  Search,
+  ShoppingBag,
+  BarChart3,
+  Users,
+  MessageCircle,
+} from "lucide-react";
+import { PageShell, Intro, ContactLink, SectionHead, FinalCTA } from "@/components/site/page-shell";
+import { company, pageHead } from "@/data/site-pages";
+import { industryPath } from "@/data/industry-links";
+import { seoAssets } from "@/data/seo-assets";
+export const Route = createFileRoute("/about")({
+  head: () =>
+    pageHead(
+      "about",
+      "About Us – Strategy, Development & Digital Growth",
+      "Established in 2016, SEO Expert India brings 10+ years of website development and SEO experience to transparent, connected digital marketing.",
+      "AboutPage",
+    ),
+  component: About,
+});
+function About() {
+  return (
+    <PageShell reviews={false}>
+      <Intro
+        name="About"
+        eyebrow="The people behind the strategy"
+        title="About SEO Expert India"
+        description="A website should be more than a business card. It should help people discover your expertise, understand your offer and take the next step."
+      >
+        <div className="sp-actions">
+          <ContactLink />
+          <Link className="sp-service-link" to="/services/">
+            Explore our capabilities ↗
+          </Link>
+        </div>
+        <div className="sp-hero-line">
+          <div>
+            <strong>{company.established}</strong>Established in Indore
+          </div>
+          <div>
+            <strong>{company.experience} years</strong>Website development & SEO experience
+          </div>
+          <div>
+            <strong>One connected approach</strong>Strategy through implementation
+          </div>
+        </div>
+      </Intro>
+      <section>
+        <div className="sp-wrap sp-split">
+          <div>
+            <SectionHead eyebrow="Our beginning" title="Built from the website up." />
+            <p>
+              SEO Expert India was established in 2016 with a practical belief: a well-built website
+              and a thoughtful search strategy belong together. Early website development and SEO
+              work made that connection clear. A site could look polished yet leave customers unsure
+              where to go; a strong content plan could be held back by technical problems.
+            </p>
+            <p>
+              Today, that same belief shapes our work as a digital marketing and website development
+              company. We bring SEO, website development, eCommerce development and digital
+              marketing into a coordinated process, rather than treating them as disconnected
+              projects.
+            </p>
+          </div>
+          <div>
+            <img
+              className="sp-founder"
+              src={seoAssets["founder"]}
+              width={360}
+              height={360}
+              alt="Lokesh Magarde, founder of SEO Expert India"
+              loading="lazy"
+            />
+            <p className="sp-portrait-caption">Lokesh Magarde · Founder, SEO Expert India</p>
+          </div>
+        </div>
+      </section>
+      <section className="sp-band">
+        <div className="sp-wrap">
+          <SectionHead
+            eyebrow="Our journey"
+            title="How SEO Expert India Began & Grew"
+            description="From the first technical foundations to a wider digital growth practice — our work has stayed grounded in understanding the business behind the website."
+          />
+          <div className="sp-split">
+            <img
+              className="sp-banner"
+              src={seoAssets["about-banner"]}
+              width={1200}
+              height={600}
+              alt="SEO Expert India navy and gold digital growth banner"
+              loading="lazy"
+            />
+            <div>
+              <div className="sp-step">
+                <span className="sp-number">01 · The foundation</span>
+                <h3>Website development & search</h3>
+                <p>
+                  We began by connecting website structure with discoverability: clear pages, useful
+                  content and technical SEO that made a site easier to use and understand.
+                </p>
+              </div>
+              <div className="sp-step">
+                <span className="sp-number">02 · A broader view</span>
+                <h3>From individual tasks to connected plans</h3>
+                <p>
+                  As business needs expanded, so did the scope: eCommerce development, content
+                  priorities and digital marketing alongside ongoing SEO.
+                </p>
+              </div>
+              <div className="sp-step">
+                <span className="sp-number">03 · Looking forward</span>
+                <h3>Keep the fundamentals. Adapt the execution.</h3>
+                <p>
+                  Search experiences continue to change. We pair established technical foundations
+                  with a considered approach to AI search, always separating opportunity from
+                  certainty.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="sp-wrap">
+          <SectionHead eyebrow="Our direction" title="A clear mission. A long-term view." />
+          <div className="sp-grid two">
+            {[
+              [
+                Compass,
+                "Our mission",
+                "Help businesses build a stronger digital presence through useful websites, thoughtful search strategies and clear implementation. Make complex decisions understandable, and keep each recommendation connected to a business need.",
+              ],
+              [
+                Eye,
+                "Our vision",
+                "Be a dependable long-term digital partner: one that combines technical care with sound strategy, adapts as customer behaviour changes and measures progress honestly.",
+              ],
+            ].map(([Icon, title, text]) => {
+              const I = Icon as typeof Compass;
+              return (
+                <article className="sp-card" key={String(title)}>
+                  <I aria-hidden />
+                  <h3>{String(title)}</h3>
+                  <p>{String(text)}</p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      <section className="sp-band">
+        <div className="sp-wrap">
+          <SectionHead
+            eyebrow="What makes us different"
+            title="Good partnerships are built on clarity."
+          />
+          <div className="sp-grid">
+            {[
+              [
+                ShieldCheck,
+                "Transparency before promises",
+                "We explain what needs attention, why it matters and what sits outside our control. Recommendations should be understandable, not hidden behind impressive-sounding language.",
+              ],
+              [
+                Code2,
+                "Strategy meets implementation",
+                "Development knowledge helps us connect SEO recommendations to changes that can actually be made. Content, design and technical work are planned together.",
+              ],
+              [
+                Users,
+                "Relationships, not hand-offs",
+                "A shared understanding of responsibilities, feedback and priorities keeps work moving. We value thoughtful communication and long-term collaboration.",
+              ],
+            ].map(([Icon, title, text]) => {
+              const I = Icon as typeof Compass;
+              return (
+                <article className="sp-card" key={String(title)}>
+                  <I aria-hidden />
+                  <h3>{String(title)}</h3>
+                  <p>{String(text)}</p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="sp-wrap">
+          <SectionHead eyebrow="Our expertise" title="The capabilities your next stage needs." />
+          <div className="sp-grid">
+            {[
+              [
+                Search,
+                "Search engine optimization",
+                "Technical health, intent-led content, local visibility and an approach to search that reflects your market.",
+              ],
+              [
+                Code2,
+                "Website development",
+                "Clear information architecture, accessible layouts and a technical foundation that supports ongoing improvement.",
+              ],
+              [
+                ShoppingBag,
+                "eCommerce development",
+                "Customer-focused product and category journeys, with development and discoverability considered together.",
+              ],
+              [
+                BarChart3,
+                "Digital marketing",
+                "Coordinate organic search with paid campaigns, social activity and measurement where they fit the agreed scope.",
+              ],
+              [
+                Eye,
+                "AI search readiness",
+                "Clear business entities and useful, well-structured answers that make your content easier for emerging search systems to interpret.",
+              ],
+              [
+                MessageCircle,
+                "Practical collaboration",
+                "Translate findings into priorities your team can act on, with understandable reporting and clear next steps.",
+              ],
+            ].map(([Icon, title, text]) => {
+              const I = Icon as typeof Compass;
+              return (
+                <article className="sp-card" key={String(title)}>
+                  <I aria-hidden />
+                  <h3>{String(title)}</h3>
+                  <p>{String(text)}</p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      <section className="sp-band">
+        <div className="sp-wrap">
+          <SectionHead
+            eyebrow="Industries we serve"
+            title="Different markets. The same attention to detail."
+            description="An education website, local service business and online store have different customer journeys. We adapt the research, page structure and content priorities to those differences."
+          />
+          <div className="sp-tags">
+            {[
+              "Education",
+              "Healthcare",
+              "eCommerce",
+              "Real estate",
+              "Legal services",
+              "Technology",
+              "Automotive",
+              "Home improvement",
+              "Photography",
+              "Telecommunications",
+              "Interior design",
+              "Professional services",
+            ].map((x) =>
+              industryPath(x) ? (
+                <a key={x} href={industryPath(x)}>
+                  {x}
+                </a>
+              ) : (
+                <span key={x}>{x}</span>
+              ),
+            )}
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="sp-wrap">
+          <SectionHead eyebrow="Our approach" title="Understand. Build. Measure. Improve." />
+          <div className="sp-timeline">
+            {[
+              [
+                "01",
+                "Understand the starting point",
+                "Listen to your goals, review the website and identify the constraints before proposing the work.",
+              ],
+              [
+                "02",
+                "Build around priorities",
+                "Agree a practical roadmap that connects website quality, content and acquisition to the customer journey.",
+              ],
+              [
+                "03",
+                "Review and refine",
+                "Track the agreed indicators, explain what changed and use the evidence to decide the next priorities.",
+              ],
+            ].map(([n, t, d]) => (
+              <article className="sp-step" key={n}>
+                <span className="sp-number">{n}</span>
+                <h3>{t}</h3>
+                <p>{d}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <FinalCTA />
+    </PageShell>
+  );
+}

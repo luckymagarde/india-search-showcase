@@ -1,9 +1,111 @@
-import {createFileRoute} from '@tanstack/react-router';
-import {Mail,Phone,MapPin,MessageCircle,ExternalLink} from 'lucide-react';
-import {PageShell,Intro,SectionHead} from '@/components/site/page-shell';
-import {LegacyContactForm} from '@/components/site/legacy-sections';
-import {Button} from '@/components/ui/button';
-import {company,pageHead} from '@/data/site-pages';
-export const Route=createFileRoute('/contact')({head:()=>pageHead('contact','Contact Us – Let’s Discuss Your Digital Growth','Contact SEO Expert India in Indore for SEO, website development and digital marketing. Find our existing enquiry form, contact details and Google Maps location.','ContactPage'),component:Contact});
-const mapUrl='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0421438055027!2d75.9141372!3d22.7266749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e3a44206419d%3A0xbccf68a4dd7e27cc!2sSEO%20Expert%20India!5e0!3m2!1sen!2sin!4v1793510810108!5m2!1sen!2sin';
-function Contact(){return <PageShell reviews={false}><Intro name="Contact" eyebrow="Start a conversation" title="Let’s talk about your next stage." description="A new website, a search challenge or a bigger digital growth plan — tell us what you have in mind."/><section><div className="sp-wrap sp-split sp-contact"><div><SectionHead eyebrow="Contact SEO Expert India" title="Good work starts with understanding." description="Share your website, target market and priorities. For a direct conversation, reach us by email, phone or WhatsApp."/><div className="sp-contact-details"><div className="sp-contact-detail"><Mail aria-hidden/><div><h3>Email</h3><a href={`mailto:${company.email}`}>{company.email}</a><br/><a href="mailto:lokesh@seoexpertindia.biz">lokesh@seoexpertindia.biz</a></div></div><div className="sp-contact-detail"><Phone aria-hidden/><div><h3>Call us</h3><a href={company.telephone}>{company.phone}</a></div></div><div className="sp-contact-detail"><MessageCircle aria-hidden/><div><h3>WhatsApp</h3><a href={company.whatsapp}>Message SEO Expert India ↗</a></div></div><div className="sp-contact-detail"><MapPin aria-hidden/><div><h3>Our address</h3><p>{company.address}</p></div></div></div></div><LegacyContactForm/></div></section><section className="sp-band"><div className="sp-wrap"><div className="sp-split"><div><SectionHead eyebrow="Find us in Indore" title="SEO Expert India on Google." description="Find our location and the latest public business information on our Google Business Profile."/></div><div className="sp-actions"><Button asChild className="sp-button"><a href={company.profile} target="_blank" rel="noopener noreferrer">Google Business Profile<ExternalLink aria-hidden/></a></Button><Button asChild variant="outline" className="sp-button"><a href={company.maps} target="_blank" rel="noopener noreferrer">Open Google Maps<ExternalLink aria-hidden/></a></Button></div></div><iframe className="sp-map" title="SEO Expert India location in Indore on Google Maps" src={mapUrl} width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin"/></div></section></PageShell>}
+import { createFileRoute } from "@tanstack/react-router";
+import { Mail, Phone, MapPin, MessageCircle, ExternalLink } from "lucide-react";
+import { PageShell, Intro, SectionHead } from "@/components/site/page-shell";
+import { LegacyContactForm } from "@/components/site/legacy-sections";
+import { Button } from "@/components/ui/button";
+import { company, pageHead } from "@/data/site-pages";
+export const Route = createFileRoute("/contact")({
+  head: () =>
+    pageHead(
+      "contact",
+      "Contact Us – Let’s Discuss Your Digital Growth",
+      "Contact SEO Expert India in Indore for SEO, website development and digital marketing. Find our existing enquiry form, contact details and Google Maps location.",
+      "ContactPage",
+    ),
+  component: Contact,
+});
+const mapUrl =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0421438055027!2d75.9141372!3d22.7266749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e3a44206419d%3A0xbccf68a4dd7e27cc!2sSEO%20Expert%20India!5e0!3m2!1sen!2sin!4v1793510810108!5m2!1sen!2sin";
+function Contact() {
+  return (
+    <PageShell reviews={false}>
+      <Intro
+        name="Contact"
+        eyebrow="Start a conversation"
+        title="Let’s talk about your next stage."
+        description="A new website, a search challenge or a bigger digital growth plan — tell us what you have in mind."
+      />
+      <section>
+        <div className="sp-wrap sp-split sp-contact">
+          <div>
+            <SectionHead
+              eyebrow="Contact SEO Expert India"
+              title="Good work starts with understanding."
+              description="Share your website, target market and priorities. For a direct conversation, reach us by email, phone or WhatsApp."
+            />
+            <div className="sp-contact-details">
+              <div className="sp-contact-detail">
+                <Mail aria-hidden />
+                <div>
+                  <h3>Email</h3>
+                  <a href={`mailto:${company.email}`}>{company.email}</a>
+                  <br />
+                  <a href="mailto:lokesh@seoexpertindia.biz">lokesh@seoexpertindia.biz</a>
+                </div>
+              </div>
+              <div className="sp-contact-detail">
+                <Phone aria-hidden />
+                <div>
+                  <h3>Call us</h3>
+                  <a href={company.telephone}>{company.phone}</a>
+                </div>
+              </div>
+              <div className="sp-contact-detail">
+                <MessageCircle aria-hidden />
+                <div>
+                  <h3>WhatsApp</h3>
+                  <a href={company.whatsapp}>Message SEO Expert India ↗</a>
+                </div>
+              </div>
+              <div className="sp-contact-detail">
+                <MapPin aria-hidden />
+                <div>
+                  <h3>Our address</h3>
+                  <p>{company.address}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <LegacyContactForm />
+        </div>
+      </section>
+      <section className="sp-band">
+        <div className="sp-wrap">
+          <div className="sp-split">
+            <div>
+              <SectionHead
+                eyebrow="Find us in Indore"
+                title="SEO Expert India on Google."
+                description="Find our location and the latest public business information on our Google Business Profile."
+              />
+            </div>
+            <div className="sp-actions">
+              <Button asChild className="sp-button">
+                <a href={company.profile} target="_blank" rel="noopener noreferrer">
+                  Google Business Profile
+                  <ExternalLink aria-hidden />
+                </a>
+              </Button>
+              <Button asChild variant="outline" className="sp-button">
+                <a href={company.maps} target="_blank" rel="noopener noreferrer">
+                  Open Google Maps
+                  <ExternalLink aria-hidden />
+                </a>
+              </Button>
+            </div>
+          </div>
+          <iframe
+            className="sp-map"
+            title="SEO Expert India location in Indore on Google Maps"
+            src={mapUrl}
+            width="600"
+            height="450"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
+        </div>
+      </section>
+    </PageShell>
+  );
+}

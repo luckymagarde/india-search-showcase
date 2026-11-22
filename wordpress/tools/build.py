@@ -2,7 +2,7 @@
 import json, re, hashlib, pathlib, shutil, random, subprocess, mimetypes
 from bs4 import BeautifulSoup, NavigableString, Tag, Comment
 random.seed(20261119)
-ROOT=pathlib.Path('/dev-server/wordpress/.build'); CAP=ROOT/'capture'; OUT=ROOT/'out'
+ROOT=pathlib.Path('/mnt/documents/.lovable/wpbuild'); CAP=ROOT/'capture'; OUT=ROOT/'out'
 SRC=pathlib.Path('/dev-server/src')
 if OUT.exists(): shutil.rmtree(OUT)
 DATA=OUT/'data'; MEDIA=DATA/'media'; PAGES=DATA/'pages'; TCSS=OUT/'theme/css'; TIMG=OUT/'theme/images'

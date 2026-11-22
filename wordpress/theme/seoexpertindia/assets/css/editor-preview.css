@@ -1,0 +1,4 @@
+/* Elementor editor preview: let SEO Expert India widgets keep the original layout. */
+[class*="elementor-widget-sei-"] { display: contents !important; }
+[class*="elementor-widget-sei-"] > .elementor-element-overlay { display: none !important; }
+.elementor-editor-active .e-con { position: relative; }

@@ -1,0 +1,34 @@
+/*
+ * Neutralises Elementor's default container/widget layout so the original SEO Expert India
+ * design classes control layout. Elementor's base stylesheet is loaded in the low
+ * "elementor-base" layer (see inc/assets.php); values set in the Elementor panel still win.
+ */
+@layer sei-reset {
+	.e-con {
+		--display: block;
+		--width: auto;
+		--position: static;
+		--padding-top: 0px; --padding-right: 0px; --padding-bottom: 0px; --padding-left: 0px;
+		--margin-top: 0px; --margin-right: 0px; --margin-bottom: 0px; --margin-left: 0px;
+		--gap: normal; --row-gap: normal; --column-gap: normal;
+		--flex-direction: row; --flex-wrap: nowrap;
+		--justify-content: normal; --align-items: normal; --align-content: normal;
+		--content-width: none; --container-max-width: none;
+		--z-index: auto; --overflow: visible; --height: auto; --min-height: auto;
+		--container-widget-width: auto;
+		min-width: revert;
+		transition: revert;
+	}
+	li.e-con { --display: list-item; }
+	a.e-con, span.e-con { --display: inline; }
+	button.e-con { --display: inline-block; }
+	.e-con::before {
+		content: revert; position: revert; display: revert; width: revert; height: revert;
+		left: revert; top: revert; opacity: revert; mix-blend-mode: revert; transition: revert;
+		border-style: revert; border-width: revert; border-color: revert; border-radius: revert;
+	}
+	.elementor-widget {
+		position: revert; margin-block-end: revert; min-width: revert; max-width: revert;
+	}
+	.sei-contents { --display: contents; }
+}

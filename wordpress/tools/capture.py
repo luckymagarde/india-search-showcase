@@ -2,7 +2,7 @@
 import asyncio, json, re, pathlib
 from playwright.async_api import async_playwright
 SRC=pathlib.Path('/dev-server/src')
-OUT=pathlib.Path('/dev-server/wordpress/.build/capture'); OUT.mkdir(parents=True,exist_ok=True)
+OUT=pathlib.Path('/mnt/documents/.lovable/wpbuild/capture'); OUT.mkdir(parents=True,exist_ok=True)
 cat=(SRC/'data/service-catalogue.ts').read_text()
 services=re.findall(r'"path":\s*"([^"]+)"',cat)
 PAGES=['/','/about/','/services/','/recent-work/','/testimonials/','/faq/','/contact/']+services

@@ -140,7 +140,7 @@ def convert(t,inner_flag):
     elif name in ALWAYS_HTML:
         s=base(t); s['html']=inner(t); kind='sei-html'
     elif name in CONTAINER and elkids and not texty and not all(c.name in INLINE for c in elkids):
-        st={'content_width':'full','html_tag':name}
+        st={'content_width':'full','container_type':'block','html_tag':name}
         if cls(t): st['css_classes']=cls(t)
         if t.get('id'): st['_element_id']=t['id']
         skip=['class','id']
@@ -164,7 +164,7 @@ def to_elementor(html):
         if isinstance(c,NavigableString): continue
         e=convert(c,False)
         if e['elType']!='container':
-            e={'id':eid(),'elType':'container','isInner':False,'settings':{'content_width':'full','html_tag':'div','css_classes':'sei-contents'},'elements':[e]}
+            e={'id':eid(),'elType':'container','isInner':False,'settings':{'content_width':'full','container_type':'block','html_tag':'div','css_classes':'sei-contents'},'elements':[e]}
         out.append(e)
     return out
 

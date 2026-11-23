@@ -10,11 +10,9 @@ defined( 'ABSPATH' ) || exit;
 
 /** Saved settings merged with defaults. */
 function sei_enquiry_settings() {
-	$host     = wp_parse_url( home_url(), PHP_URL_HOST );
-	$host     = $host ? preg_replace( '/^www\./', '', $host ) : 'seoexpertindia.biz';
 	$defaults = array(
 		'recipients' => 'info@seoexpertindia.biz, lucky.magarde@gmail.com, lokesh@seoexpertindia.biz',
-		'from_email' => 'wordpress@' . $host,
+		'from_email' => 'wordpress@seoexpertindia.biz',
 		'from_name'  => 'SEO Expert India Website',
 	);
 	return wp_parse_args( (array) get_option( 'sei_enquiry_settings', array() ), $defaults );

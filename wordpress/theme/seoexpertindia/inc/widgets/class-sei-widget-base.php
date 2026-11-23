@@ -166,7 +166,7 @@ abstract class SEI_Widget_Base extends \Elementor\Widget_Base {
 	}
 
 	/** Live preview template; $content_js is the JS expression for the inner HTML. */
-	protected function print_template( $content_js, $extra_attrs_js = "''" ) {
+	protected function sei_print_template( $content_js, $extra_attrs_js = "''" ) {
 		?>
 		<#
 		var seiTag = settings.sei_tag || '<?php echo esc_js( $this->default_tag() ); ?>';

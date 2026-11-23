@@ -30,5 +30,8 @@
 	.elementor-widget {
 		position: revert; margin-block-end: revert; min-width: revert; max-width: revert;
 	}
-	.sei-contents { --display: contents; }
+	/* Converted sections use the "Original design" layout: the element keeps its natural display
+	   (div = block, li = list-item, a = inline) unless the original design classes set one. */
+	.e-con.e-block { display: revert; }
+	.e-con.e-block.sei-contents { display: contents; }
 }

@@ -16,7 +16,7 @@ if [ ! -f wp-config.php ]; then
   sed -i "s#{SQLITE_IMPLEMENTATION_FOLDER_PATH}#$PWD/wp-content/plugins/sqlite-database-integration#; s#{SQLITE_PLUGIN}#sqlite-database-integration/load.php#" wp-content/db.php
   cp wp-config-sample.php wp-config.php; sed -i "s/put your unique phrase here/k$$RANDOM/g" wp-config.php
   /tmp/wp/wp core install --url=http://localhost:8099 --title="SEO Expert India" --admin_user=admin --admin_password=admin12345 --admin_email=admin@example.com --skip-email
-  /tmp/wp/wp plugin activate elementor; /tmp/wp/wp rewrite structure '/%postname%/'
+  /tmp/wp/wp option update siteurl http://localhost:8099; /tmp/wp/wp option update home http://localhost:8099; /tmp/wp/wp plugin activate elementor; /tmp/wp/wp rewrite structure '/%postname%/'
 fi
 cat > router.php <<'R'
 <?php

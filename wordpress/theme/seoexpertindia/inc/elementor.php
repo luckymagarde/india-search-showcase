@@ -42,6 +42,26 @@ add_action(
 	}
 );
 
+/**
+ * Adds an "Original design" container layout. Converted sections use it so the site's own CSS
+ * controls their layout; switch a container to Flexbox or Grid to use Elementor's layout tools.
+ */
+add_action(
+	'elementor/element/container/section_layout_container/before_section_end',
+	static function ( $element ) {
+		$control = \Elementor\Plugin::$instance->controls_manager->get_control_from_stack( $element->get_unique_name(), 'container_type' );
+		if ( is_wp_error( $control ) || empty( $control['options'] ) ) {
+			return;
+		}
+		$element->update_control(
+			'container_type',
+			array(
+				'options' => array( 'block' => __( 'Original design', 'seoexpertindia' ) ) + $control['options'],
+			)
+		);
+	}
+);
+
 /** "HTML attributes" field on containers (Advanced tab), e.g. role or aria-label from the original markup. */
 add_action(
 	'elementor/element/container/section_layout/after_section_end',

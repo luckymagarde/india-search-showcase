@@ -45,7 +45,7 @@ class SEI_Heading_Widget extends SEI_Widget_Base {
 		return (string) $this->get_settings_for_display( 'title' );
 	}
 	protected function content_template() {
-		$this->print_template( "settings.title || ''" );
+		$this->sei_print_template( "settings.title || ''" );
 	}
 }
 
@@ -83,7 +83,7 @@ class SEI_Text_Widget extends SEI_Widget_Base {
 		return (string) $this->get_settings_for_display( 'content' );
 	}
 	protected function content_template() {
-		$this->print_template( "settings.content || ''" );
+		$this->sei_print_template( "settings.content || ''" );
 	}
 }
 
@@ -148,7 +148,7 @@ class SEI_Image_Widget extends SEI_Widget_Base {
 		return '';
 	}
 	protected function content_template() {
-		$this->print_template( "''", "'src=\"' + _.escape( settings.image && settings.image.url ? settings.image.url : '' ) + '\" alt=\"' + _.escape( settings.alt || '' ) + '\"'" );
+		$this->sei_print_template( "''", "'src=\"' + _.escape( settings.image && settings.image.url ? settings.image.url : '' ) + '\" alt=\"' + _.escape( settings.alt || '' ) + '\"'" );
 	}
 }
 
@@ -211,7 +211,7 @@ class SEI_Link_Widget extends SEI_Widget_Base {
 		return (string) $this->get_settings_for_display( 'text' );
 	}
 	protected function content_template() {
-		$this->print_template( "settings.text || ''", "( settings.link && settings.link.url ? 'href=\"' + _.escape( settings.link.url ) + '\"' : '' ) + ( settings.link && settings.link.is_external ? ' target=\"_blank\"' : '' )" );
+		$this->sei_print_template( "settings.text || ''", "( settings.link && settings.link.url ? 'href=\"' + _.escape( settings.link.url ) + '\"' : '' ) + ( settings.link && settings.link.is_external ? ' target=\"_blank\"' : '' )" );
 	}
 }
 
@@ -245,6 +245,6 @@ class SEI_Html_Widget extends SEI_Widget_Base {
 		return (string) $this->get_settings( 'html' );
 	}
 	protected function content_template() {
-		$this->print_template( "settings.html || ''" );
+		$this->sei_print_template( "settings.html || ''" );
 	}
 }

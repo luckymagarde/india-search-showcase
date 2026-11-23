@@ -64,16 +64,49 @@ add_action(
 		if ( $image ) {
 			printf( "<meta name=\"twitter:image\" content=\"%s\">\n", esc_url( $image ) );
 		}
-		$schema = $id ? get_post_meta( $id, '_sei_jsonld', true ) : '';
-		if ( $schema ) {
-			foreach ( (array) json_decode( $schema, true ) as $block ) {
-				if ( is_array( $block ) ) {
-					echo '<script type="application/ld+json">' . wp_json_encode( $block, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG ) . "</script>\n";
-				}
-			}
-		}
+		sei_print_jsonld( $id, false );
 	},
 	2
+);
+
+/**
+ * Page structured data. With an SEO plugin active (e.g. Rank Math), the plugin outputs the
+ * site-wide types, so only page-specific types (Service, FAQPage, …) are printed to avoid duplicates.
+ */
+function sei_print_jsonld( $id, $page_specific_only ) {
+	$schema = $id ? get_post_meta( $id, '_sei_jsonld', true ) : '';
+	if ( ! $schema ) {
+		return;
+	}
+	$sitewide = array( 'Organization', 'WebSite', 'WebPage', 'BreadcrumbList', 'Person', 'LocalBusiness' );
+	$keep     = static function ( $node ) use ( $sitewide, $page_specific_only ) {
+		$types = (array) ( $node['@type'] ?? array() );
+		return ! $page_specific_only || ! array_intersect( $types, $sitewide );
+	};
+	foreach ( (array) json_decode( $schema, true ) as $block ) {
+		if ( ! is_array( $block ) ) {
+			continue;
+		}
+		if ( isset( $block['@graph'] ) && is_array( $block['@graph'] ) ) {
+			$block['@graph'] = array_values( array_filter( $block['@graph'], $keep ) );
+			if ( ! $block['@graph'] ) {
+				continue;
+			}
+		} elseif ( ! $keep( $block ) ) {
+			continue;
+		}
+		echo '<script type="application/ld+json">' . wp_json_encode( $block, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG ) . "</script>\n";
+	}
+}
+
+add_action(
+	'wp_head',
+	static function () {
+		if ( sei_seo_plugin_active() && is_singular() ) {
+			sei_print_jsonld( get_queried_object_id(), true );
+		}
+	},
+	30
 );
 
 /** Editable SEO fields on pages and posts. */

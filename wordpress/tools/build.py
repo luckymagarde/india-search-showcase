@@ -250,6 +250,7 @@ for f in sorted(CAP.glob('*.json')):
     print(path,layout,styles,len(json.dumps(data))//1024,'KB')
 fsoup=BeautifulSoup(str(footer_html),'html.parser'); clean_soup(fsoup)
 (DATA/'footer.json').write_text(json.dumps(to_elementor(str(fsoup))))
+(OUT/'theme/footer.html').write_text(str(fsoup))
 hd=BeautifulSoup(json.load(open(CAP/'about.json'))['header'],'html.parser')
 icons={}
 for a in hd.select('#services-submenu li a'):

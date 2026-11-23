@@ -1,0 +1,1774 @@
+{
+ "version": "1.0.0",
+ "pages": [
+  {
+   "key": "about",
+   "path": "/about/",
+   "slug": "about",
+   "parent": "",
+   "title": "About",
+   "layout": "company",
+   "styles": [
+    "sei-header",
+    "sei-home",
+    "sei-site-pages"
+   ],
+   "seo": {
+    "title": "About Us \u2013 Strategy, Development & Digital Growth | SEO Expert India",
+    "description": "Established in 2016, SEO Expert India brings 10+ years of website development and SEO experience to transparent, connected digital marketing.",
+    "robots": "",
+    "og_title": "About Us \u2013 Strategy, Development & Digital Growth | SEO Expert India",
+    "og_description": "Established in 2016, SEO Expert India brings 10+ years of website development and SEO experience to transparent, connected digital marketing.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@type\":\"AboutPage\",\"name\":\"About Us \u2013 Strategy, Development & Digital Growth\",\"url\":\"{{SEI_HOME}}/about/\",\"description\":\"Established in 2016, SEO Expert India brings 10+ years of website development and SEO experience to transparent, connected digital marketing.\"}",
+     "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"About Us \u2013 Strategy, Development & Digital Growth\",\"item\":\"{{SEI_HOME}}/about/\"}]}"
+    ]
+   }
+  },
+  {
+   "key": "contact",
+   "path": "/contact/",
+   "slug": "contact",
+   "parent": "",
+   "title": "Contact",
+   "layout": "company",
+   "styles": [
+    "sei-header",
+    "sei-home",
+    "sei-site-pages"
+   ],
+   "seo": {
+    "title": "Contact Us \u2013 Let\u2019s Discuss Your Digital Growth | SEO Expert India",
+    "description": "Contact SEO Expert India in Indore for SEO, website development and digital marketing. Find our existing enquiry form, contact details and Google Maps location.",
+    "robots": "",
+    "og_title": "Contact Us \u2013 Let\u2019s Discuss Your Digital Growth | SEO Expert India",
+    "og_description": "Contact SEO Expert India in Indore for SEO, website development and digital marketing. Find our existing enquiry form, contact details and Google Maps location.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@type\":\"ContactPage\",\"name\":\"Contact Us \u2013 Let\u2019s Discuss Your Digital Growth\",\"url\":\"{{SEI_HOME}}/contact/\",\"description\":\"Contact SEO Expert India in Indore for SEO, website development and digital marketing. Find our existing enquiry form, contact details and Google Maps location.\"}",
+     "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Contact Us \u2013 Let\u2019s Discuss Your Digital Growth\",\"item\":\"{{SEI_HOME}}/contact/\"}]}"
+    ]
+   }
+  },
+  {
+   "key": "faq",
+   "path": "/faq/",
+   "slug": "faq",
+   "parent": "",
+   "title": "FAQs",
+   "layout": "company",
+   "styles": [
+    "sei-header",
+    "sei-home",
+    "sei-site-pages"
+   ],
+   "seo": {
+    "title": "Frequently Asked Questions \u2013 SEO, Websites & Working Together | SEO Expert India",
+    "description": "Helpful answers about SEO, local search, website and eCommerce development, pricing, timelines, reporting and working with SEO Expert India.",
+    "robots": "",
+    "og_title": "Frequently Asked Questions \u2013 SEO, Websites & Working Together | SEO Expert India",
+    "og_description": "Helpful answers about SEO, local search, website and eCommerce development, pricing, timelines, reporting and working with SEO Expert India.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Frequently Asked Questions \u2013 SEO, Websites & Working Together\",\"url\":\"{{SEI_HOME}}/faq/\",\"description\":\"Helpful answers about SEO, local search, website and eCommerce development, pricing, timelines, reporting and working with SEO Expert India.\"}",
+     "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Frequently Asked Questions \u2013 SEO, Websites & Working Together\",\"item\":\"{{SEI_HOME}}/faq/\"}]}"
+    ]
+   }
+  },
+  {
+   "key": "home",
+   "path": "/",
+   "slug": "",
+   "parent": "",
+   "title": "Home",
+   "layout": "home",
+   "styles": [
+    "sei-header",
+    "sei-home"
+   ],
+   "seo": {
+    "title": "SEO Expert India | SEO, AI Search & Website Development",
+    "description": "SEO Expert India helps businesses grow with technical, local and international SEO, AI search optimization and SEO-ready website development.",
+    "robots": "index,follow",
+    "og_title": "SEO Expert India | SEO, AI Search & Website Development",
+    "og_description": "Technical, local and international SEO, AI search optimization and SEO-ready websites.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": []
+   }
+  },
+  {
+   "key": "recent-work",
+   "path": "/recent-work/",
+   "slug": "recent-work",
+   "parent": "",
+   "title": "Recent Work",
+   "layout": "company",
+   "styles": [
+    "sei-header",
+    "sei-home",
+    "sei-site-pages"
+   ],
+   "seo": {
+    "title": "Recent Work \u2013 Website & SEO Portfolio | SEO Expert India",
+    "description": "Explore SEO Expert India\u2019s website design portfolio across fashion, sports, construction, wellness and eCommerce, with a separate SEO projects section.",
+    "robots": "",
+    "og_title": "Recent Work \u2013 Website & SEO Portfolio | SEO Expert India",
+    "og_description": "Explore SEO Expert India\u2019s website design portfolio across fashion, sports, construction, wellness and eCommerce, with a separate SEO projects section.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Recent Work \u2013 Website & SEO Portfolio\",\"url\":\"{{SEI_HOME}}/recent-work/\",\"description\":\"Explore SEO Expert India\u2019s website design portfolio across fashion, sports, construction, wellness and eCommerce, with a separate SEO projects section.\"}",
+     "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Recent Work \u2013 Website & SEO Portfolio\",\"item\":\"{{SEI_HOME}}/recent-work/\"}]}"
+    ]
+   }
+  },
+  {
+   "key": "automobile-industries-seo",
+   "path": "/service/automobile-industries-seo/",
+   "slug": "automobile-industries-seo",
+   "parent": "service",
+   "title": "Automobile Industries SEO",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Automobile Industries SEO | SEO Expert India",
+    "description": "Automobile Industries SEO from SEO Expert India for car dealers, workshops and automobile businesses: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Automobile Industries SEO | SEO Expert India",
+    "og_description": "Automobile Industries SEO from SEO Expert India for car dealers, workshops and automobile businesses: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Automobile Industries SEO\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/automobile-industries-seo/\",\"description\":\"Automobile Industries SEO from SEO Expert India for car dealers, workshops and automobile businesses: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Automobile Industries SEO\",\"item\":\"{{SEI_HOME}}/service/automobile-industries-seo/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "best-local-seo-services-in-india",
+   "path": "/service/best-local-seo-services-in-india/",
+   "slug": "best-local-seo-services-in-india",
+   "parent": "service",
+   "title": "Best Local SEO Services in India",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Best Local SEO Services in India | SEO Expert India",
+    "description": "Best Local SEO Services in India from SEO Expert India for local businesses that want more nearby calls, visits and map visibility in India: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Best Local SEO Services in India | SEO Expert India",
+    "og_description": "Best Local SEO Services in India from SEO Expert India for local businesses that want more nearby calls, visits and map visibility in India: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Best Local SEO Services in India\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/best-local-seo-services-in-india/\",\"description\":\"Best Local SEO Services in India from SEO Expert India for local businesses that want more nearby calls, visits and map visibility in India: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Best Local SEO Services in India\",\"item\":\"{{SEI_HOME}}/service/best-local-seo-services-in-india/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "best-seo-experts-in-malta",
+   "path": "/service/best-seo-experts-in-malta/",
+   "slug": "best-seo-experts-in-malta",
+   "parent": "service",
+   "title": "Best SEO Experts in Malta",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Best SEO Experts in Malta | SEO Expert India",
+    "description": "Best SEO Experts in Malta from SEO Expert India for businesses in Valletta, Sliema and across Malta: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Best SEO Experts in Malta | SEO Expert India",
+    "og_description": "Best SEO Experts in Malta from SEO Expert India for businesses in Valletta, Sliema and across Malta: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Best SEO Experts in Malta\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/best-seo-experts-in-malta/\",\"description\":\"Best SEO Experts in Malta from SEO Expert India for businesses in Valletta, Sliema and across Malta: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Best SEO Experts in Malta\",\"item\":\"{{SEI_HOME}}/service/best-seo-experts-in-malta/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "best-seo-linkbuilding-services-in-india",
+   "path": "/service/best-seo-linkbuilding-services-in-india/",
+   "slug": "best-seo-linkbuilding-services-in-india",
+   "parent": "service",
+   "title": "Best SEO Linkbuilding Services in India",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Best SEO Linkbuilding Services in India | SEO Expert India",
+    "description": "Best SEO Linkbuilding Services in India from SEO Expert India for brands that need relevant, editorially earned links and safer authority building: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Best SEO Linkbuilding Services in India | SEO Expert India",
+    "og_description": "Best SEO Linkbuilding Services in India from SEO Expert India for brands that need relevant, editorially earned links and safer authority building: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Best SEO Linkbuilding Services in India\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/best-seo-linkbuilding-services-in-india/\",\"description\":\"Best SEO Linkbuilding Services in India from SEO Expert India for brands that need relevant, editorially earned links and safer authority building: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Best SEO Linkbuilding Services in India\",\"item\":\"{{SEI_HOME}}/service/best-seo-linkbuilding-services-in-india/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "best-seo-services-in-india",
+   "path": "/service/best-seo-services-in-india/",
+   "slug": "best-seo-services-in-india",
+   "parent": "service",
+   "title": "Best SEO Services in India",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Best SEO Services in India | SEO Expert India",
+    "description": "Get the best SEO services in India from SEO Expert India: technical, local, ecommerce, international and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Best SEO Services in India | SEO Expert India",
+    "og_description": "Get the best SEO services in India from SEO Expert India: technical, local, ecommerce, international and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\",\"email\":\"info@seoexpertindia.biz\",\"telephone\":\"+91-903-903-0932\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"24/B, Chetan Nagar, Near Bengali Square\",\"addressLocality\":\"Indore\",\"addressRegion\":\"Madhya Pradesh\",\"postalCode\":\"452016\",\"addressCountry\":\"IN\"},\"sameAs\":[\"https://www.facebook.com/seoexpertindia.biz\",\"https://www.instagram.com/seoexpertindia.biz\",\"https://www.linkedin.com/company/seoexpertindia-biz/\"]}",
+     "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"SEO Services\",\"serviceType\":\"Search Engine Optimization\",\"url\":\"{{SEI_HOME}}/service/best-seo-services-in-india/\",\"description\":\"Get the best SEO services in India from SEO Expert India: technical, local, ecommerce, international and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"},\"areaServed\":[\"IN\",\"Worldwide\"]}",
+     "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Best SEO Services in India\",\"item\":\"{{SEI_HOME}}/service/best-seo-services-in-india/\"}]}"
+    ]
+   }
+  },
+  {
+   "key": "best-seo-services-in-uae",
+   "path": "/service/best-seo-services-in-uae/",
+   "slug": "best-seo-services-in-uae",
+   "parent": "service",
+   "title": "Best SEO Services in UAE",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Best SEO Services in UAE | SEO Expert India",
+    "description": "Best SEO Services in UAE from SEO Expert India for businesses in Dubai, Abu Dhabi and across the UAE: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Best SEO Services in UAE | SEO Expert India",
+    "og_description": "Best SEO Services in UAE from SEO Expert India for businesses in Dubai, Abu Dhabi and across the UAE: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Best SEO Services in UAE\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/best-seo-services-in-uae/\",\"description\":\"Best SEO Services in UAE from SEO Expert India for businesses in Dubai, Abu Dhabi and across the UAE: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Best SEO Services in UAE\",\"item\":\"{{SEI_HOME}}/service/best-seo-services-in-uae/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "ecommerce-website-seo-services",
+   "path": "/service/ecommerce-website-seo-services/",
+   "slug": "ecommerce-website-seo-services",
+   "parent": "service",
+   "title": "Ecommerce Website SEO Services",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Ecommerce Website SEO Services | SEO Expert India",
+    "description": "Ecommerce Website SEO Services from SEO Expert India for online stores that want more organic product and category sales: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Ecommerce Website SEO Services | SEO Expert India",
+    "og_description": "Ecommerce Website SEO Services from SEO Expert India for online stores that want more organic product and category sales: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Ecommerce Website SEO Services\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/ecommerce-website-seo-services/\",\"description\":\"Ecommerce Website SEO Services from SEO Expert India for online stores that want more organic product and category sales: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Ecommerce Website SEO Services\",\"item\":\"{{SEI_HOME}}/service/ecommerce-website-seo-services/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "global-seo-services",
+   "path": "/service/global-seo-services/",
+   "slug": "global-seo-services",
+   "parent": "service",
+   "title": "Global SEO Services",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Global SEO Services | SEO Expert India",
+    "description": "Global SEO Services from SEO Expert India for businesses expanding into multiple countries and languages: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Global SEO Services | SEO Expert India",
+    "og_description": "Global SEO Services from SEO Expert India for businesses expanding into multiple countries and languages: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Global SEO Services\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/global-seo-services/\",\"description\":\"Global SEO Services from SEO Expert India for businesses expanding into multiple countries and languages: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Global SEO Services\",\"item\":\"{{SEI_HOME}}/service/global-seo-services/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "healthcare-website-seo-services",
+   "path": "/service/healthcare-website-seo-services/",
+   "slug": "healthcare-website-seo-services",
+   "parent": "service",
+   "title": "Healthcare Website SEO Services",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Healthcare Website SEO Services | SEO Expert India",
+    "description": "Healthcare Website SEO Services from SEO Expert India for clinics, hospitals and healthcare practitioners: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Healthcare Website SEO Services | SEO Expert India",
+    "og_description": "Healthcare Website SEO Services from SEO Expert India for clinics, hospitals and healthcare practitioners: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Healthcare Website SEO Services\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/healthcare-website-seo-services/\",\"description\":\"Healthcare Website SEO Services from SEO Expert India for clinics, hospitals and healthcare practitioners: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Healthcare Website SEO Services\",\"item\":\"{{SEI_HOME}}/service/healthcare-website-seo-services/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "home-improvements",
+   "path": "/service/home-improvements/",
+   "slug": "home-improvements",
+   "parent": "service",
+   "title": "Home Improvements",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Home Improvements | SEO Expert India",
+    "description": "Home Improvements from SEO Expert India for home improvement, renovation and trade businesses: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Home Improvements | SEO Expert India",
+    "og_description": "Home Improvements from SEO Expert India for home improvement, renovation and trade businesses: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Home Improvements\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/home-improvements/\",\"description\":\"Home Improvements from SEO Expert India for home improvement, renovation and trade businesses: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Home Improvements\",\"item\":\"{{SEI_HOME}}/service/home-improvements/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "newcastle-seo-expert",
+   "path": "/service/newcastle-seo-expert/",
+   "slug": "newcastle-seo-expert",
+   "parent": "service",
+   "title": "Newcastle SEO Expert",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Newcastle SEO Expert | SEO Expert India",
+    "description": "Newcastle SEO Expert from SEO Expert India for businesses in Newcastle upon Tyne and across the North East of England: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Newcastle SEO Expert | SEO Expert India",
+    "og_description": "Newcastle SEO Expert from SEO Expert India for businesses in Newcastle upon Tyne and across the North East of England: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Newcastle SEO Expert\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/newcastle-seo-expert/\",\"description\":\"Newcastle SEO Expert from SEO Expert India for businesses in Newcastle upon Tyne and across the North East of England: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Newcastle SEO Expert\",\"item\":\"{{SEI_HOME}}/service/newcastle-seo-expert/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "pet-services",
+   "path": "/service/pet-services/",
+   "slug": "pet-services",
+   "parent": "service",
+   "title": "Pet Services",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Pet Services | SEO Expert India",
+    "description": "Pet Services from SEO Expert India for pet clinics, groomers, trainers and pet product businesses: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Pet Services | SEO Expert India",
+    "og_description": "Pet Services from SEO Expert India for pet clinics, groomers, trainers and pet product businesses: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Pet Services\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/pet-services/\",\"description\":\"Pet Services from SEO Expert India for pet clinics, groomers, trainers and pet product businesses: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pet Services\",\"item\":\"{{SEI_HOME}}/service/pet-services/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "real-estate-website-seo-services",
+   "path": "/service/real-estate-website-seo-services/",
+   "slug": "real-estate-website-seo-services",
+   "parent": "service",
+   "title": "Real Estate Website SEO Services",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "Real Estate Website SEO Services | SEO Expert India",
+    "description": "Real Estate Website SEO Services from SEO Expert India for real estate agents, developers and property portals: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "Real Estate Website SEO Services | SEO Expert India",
+    "og_description": "Real Estate Website SEO Services from SEO Expert India for real estate agents, developers and property portals: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Real Estate Website SEO Services\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/real-estate-website-seo-services/\",\"description\":\"Real Estate Website SEO Services from SEO Expert India for real estate agents, developers and property portals: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Real Estate Website SEO Services\",\"item\":\"{{SEI_HOME}}/service/real-estate-website-seo-services/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "san-diego-seo-expert",
+   "path": "/service/san-diego-seo-expert/",
+   "slug": "san-diego-seo-expert",
+   "parent": "service",
+   "title": "San Diego SEO Expert",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "San Diego SEO Expert | SEO Expert India",
+    "description": "San Diego SEO Expert from SEO Expert India for businesses serving customers in San Diego and Southern California: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "San Diego SEO Expert | SEO Expert India",
+    "og_description": "San Diego SEO Expert from SEO Expert India for businesses serving customers in San Diego and Southern California: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"San Diego SEO Expert\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/san-diego-seo-expert/\",\"description\":\"San Diego SEO Expert from SEO Expert India for businesses serving customers in San Diego and Southern California: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"San Diego SEO Expert\",\"item\":\"{{SEI_HOME}}/service/san-diego-seo-expert/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "seo-expert-denmark",
+   "path": "/service/seo-expert-denmark/",
+   "slug": "seo-expert-denmark",
+   "parent": "service",
+   "title": "SEO Expert Denmark",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "SEO Expert Denmark | SEO Expert India",
+    "description": "SEO Expert Denmark from SEO Expert India for businesses targeting customers in Copenhagen and across Denmark: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "SEO Expert Denmark | SEO Expert India",
+    "og_description": "SEO Expert Denmark from SEO Expert India for businesses targeting customers in Copenhagen and across Denmark: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"SEO Expert Denmark\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/seo-expert-denmark/\",\"description\":\"SEO Expert Denmark from SEO Expert India for businesses targeting customers in Copenhagen and across Denmark: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"SEO Expert Denmark\",\"item\":\"{{SEI_HOME}}/service/seo-expert-denmark/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "seo-expert-london-uk",
+   "path": "/service/seo-expert-london-uk/",
+   "slug": "seo-expert-london-uk",
+   "parent": "service",
+   "title": "SEO Expert London UK",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "SEO Expert London UK | SEO Expert India",
+    "description": "SEO Expert London UK from SEO Expert India for businesses targeting customers in London and the wider UK: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "SEO Expert London UK | SEO Expert India",
+    "og_description": "SEO Expert London UK from SEO Expert India for businesses targeting customers in London and the wider UK: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"SEO Expert London UK\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/seo-expert-london-uk/\",\"description\":\"SEO Expert London UK from SEO Expert India for businesses targeting customers in London and the wider UK: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"SEO Expert London UK\",\"item\":\"{{SEI_HOME}}/service/seo-expert-london-uk/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "seo-expert-new-york",
+   "path": "/service/seo-expert-new-york/",
+   "slug": "seo-expert-new-york",
+   "parent": "service",
+   "title": "SEO Expert New York",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "SEO Expert New York | SEO Expert India",
+    "description": "SEO Expert New York from SEO Expert India for businesses competing for customers in New York City: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "SEO Expert New York | SEO Expert India",
+    "og_description": "SEO Expert New York from SEO Expert India for businesses competing for customers in New York City: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"SEO Expert New York\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/seo-expert-new-york/\",\"description\":\"SEO Expert New York from SEO Expert India for businesses competing for customers in New York City: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"SEO Expert New York\",\"item\":\"{{SEI_HOME}}/service/seo-expert-new-york/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "seo-for-it-industry",
+   "path": "/service/seo-for-it-industry/",
+   "slug": "seo-for-it-industry",
+   "parent": "service",
+   "title": "SEO for IT Industry",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "SEO for IT Industry | SEO Expert India",
+    "description": "SEO for IT Industry from SEO Expert India for IT, SaaS and technology service companies: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "SEO for IT Industry | SEO Expert India",
+    "og_description": "SEO for IT Industry from SEO Expert India for IT, SaaS and technology service companies: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"SEO for IT Industry\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/seo-for-it-industry/\",\"description\":\"SEO for IT Industry from SEO Expert India for IT, SaaS and technology service companies: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"SEO for IT Industry\",\"item\":\"{{SEI_HOME}}/service/seo-for-it-industry/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "seo-for-law-firm",
+   "path": "/service/seo-for-law-firm/",
+   "slug": "seo-for-law-firm",
+   "parent": "service",
+   "title": "SEO for Law Firm",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "SEO for Law Firm | SEO Expert India",
+    "description": "SEO for Law Firm from SEO Expert India for law firms and legal practices that want more qualified client enquiries: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "SEO for Law Firm | SEO Expert India",
+    "og_description": "SEO for Law Firm from SEO Expert India for law firms and legal practices that want more qualified client enquiries: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"SEO for Law Firm\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/seo-for-law-firm/\",\"description\":\"SEO for Law Firm from SEO Expert India for law firms and legal practices that want more qualified client enquiries: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"SEO for Law Firm\",\"item\":\"{{SEI_HOME}}/service/seo-for-law-firm/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "seo-services-for-education-industry",
+   "path": "/service/seo-services-for-education-industry/",
+   "slug": "seo-services-for-education-industry",
+   "parent": "service",
+   "title": "SEO Services for Education Industry",
+   "layout": "service-seo",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services"
+   ],
+   "seo": {
+    "title": "SEO Services for Education Industry | SEO Expert India",
+    "description": "SEO Services for Education Industry from SEO Expert India for schools, colleges, coaching institutes and education providers: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "robots": "",
+    "og_title": "SEO Services for Education Industry | SEO Expert India",
+    "og_description": "SEO Services for Education Industry from SEO Expert India for schools, colleges, coaching institutes and education providers: technical, content, local and AI search SEO with transparent reporting. Free consultation.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"SEO Services for Education Industry\",\"serviceType\":\"Search engine optimization\",\"url\":\"{{SEI_HOME}}/service/seo-services-for-education-industry/\",\"description\":\"SEO Services for Education Industry from SEO Expert India for schools, colleges, coaching institutes and education providers: technical, content, local and AI search SEO with transparent reporting. Free consultation.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"SEO Services for Education Industry\",\"item\":\"{{SEI_HOME}}/service/seo-services-for-education-industry/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "web-agency-copenhagen-denmark",
+   "path": "/service/web-agency-copenhagen-denmark/",
+   "slug": "web-agency-copenhagen-denmark",
+   "parent": "service",
+   "title": "Web Agency Copenhagen, Denmark",
+   "layout": "service-dev",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services-web-development"
+   ],
+   "seo": {
+    "title": "Web Agency Copenhagen, Denmark | SEO Expert India",
+    "description": "Web Agency Copenhagen, Denmark: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Copenhagen and across Denmark. Get a free quote.",
+    "robots": "",
+    "og_title": "Web Agency Copenhagen, Denmark | SEO Expert India",
+    "og_description": "Web Agency Copenhagen, Denmark: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Copenhagen and across Denmark. Get a free quote.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Web Agency Copenhagen, Denmark\",\"serviceType\":\"Website design and development\",\"url\":\"{{SEI_HOME}}/service/web-agency-copenhagen-denmark/\",\"description\":\"Web Agency Copenhagen, Denmark: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Copenhagen and across Denmark. Get a free quote.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Web Agency Copenhagen, Denmark\",\"item\":\"{{SEI_HOME}}/service/web-agency-copenhagen-denmark/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "web-development-agency-germany",
+   "path": "/service/web-development-agency-germany/",
+   "slug": "web-development-agency-germany",
+   "parent": "service",
+   "title": "Web Development Agency Germany",
+   "layout": "service-dev",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services-web-development"
+   ],
+   "seo": {
+    "title": "Web Development Agency Germany | SEO Expert India",
+    "description": "Web Development Agency Germany: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Berlin, Munich and across Germany. Get a free quote.",
+    "robots": "",
+    "og_title": "Web Development Agency Germany | SEO Expert India",
+    "og_description": "Web Development Agency Germany: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Berlin, Munich and across Germany. Get a free quote.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Web Development Agency Germany\",\"serviceType\":\"Website design and development\",\"url\":\"{{SEI_HOME}}/service/web-development-agency-germany/\",\"description\":\"Web Development Agency Germany: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Berlin, Munich and across Germany. Get a free quote.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Web Development Agency Germany\",\"item\":\"{{SEI_HOME}}/service/web-development-agency-germany/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "web-development-company-india",
+   "path": "/service/web-development-company-india/",
+   "slug": "web-development-company-india",
+   "parent": "service",
+   "title": "Web Development Company India",
+   "layout": "service-dev",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services-web-development"
+   ],
+   "seo": {
+    "title": "Website Development Company in India | SEO Expert India",
+    "description": "Looking for a website development company in India? SEO Expert India builds professional, responsive and SEO-friendly business, WordPress and eCommerce websites.",
+    "robots": "",
+    "og_title": "Website Development Company in India | SEO Expert India",
+    "og_description": "Looking for a website development company in India? SEO Expert India builds professional, responsive and SEO-friendly business, WordPress and eCommerce websites.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Website Development Company in India\",\"serviceType\":\"Website design and development\",\"url\":\"{{SEI_HOME}}/service/web-development-company-india/\",\"description\":\"Looking for a website development company in India? SEO Expert India builds professional, responsive and SEO-friendly business, WordPress and eCommerce websites.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\",\"foundingDate\":\"2016\"},\"areaServed\":[\"India\",\"Worldwide\"]}",
+     "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Website Development\",\"item\":\"{{SEI_HOME}}/service/web-development-company-india/\"}]}"
+    ]
+   }
+  },
+  {
+   "key": "web-development-company-netherlands",
+   "path": "/service/web-development-company-netherlands/",
+   "slug": "web-development-company-netherlands",
+   "parent": "service",
+   "title": "Web Development Company Netherlands",
+   "layout": "service-dev",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services-web-development"
+   ],
+   "seo": {
+    "title": "Web Development Company Netherlands | SEO Expert India",
+    "description": "Web Development Company Netherlands: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Amsterdam, Rotterdam and across the Netherlands. Get a free quote.",
+    "robots": "",
+    "og_title": "Web Development Company Netherlands | SEO Expert India",
+    "og_description": "Web Development Company Netherlands: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Amsterdam, Rotterdam and across the Netherlands. Get a free quote.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Web Development Company Netherlands\",\"serviceType\":\"Website design and development\",\"url\":\"{{SEI_HOME}}/service/web-development-company-netherlands/\",\"description\":\"Web Development Company Netherlands: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Amsterdam, Rotterdam and across the Netherlands. Get a free quote.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Web Development Company Netherlands\",\"item\":\"{{SEI_HOME}}/service/web-development-company-netherlands/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "web-development-company-paris",
+   "path": "/service/web-development-company-paris/",
+   "slug": "web-development-company-paris",
+   "parent": "service",
+   "title": "Web Development Company Paris",
+   "layout": "service-dev",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services-web-development"
+   ],
+   "seo": {
+    "title": "Web Development Company Paris | SEO Expert India",
+    "description": "Web Development Company Paris: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Paris and across France. Get a free quote.",
+    "robots": "",
+    "og_title": "Web Development Company Paris | SEO Expert India",
+    "og_description": "Web Development Company Paris: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Paris and across France. Get a free quote.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Web Development Company Paris\",\"serviceType\":\"Website design and development\",\"url\":\"{{SEI_HOME}}/service/web-development-company-paris/\",\"description\":\"Web Development Company Paris: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Paris and across France. Get a free quote.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Web Development Company Paris\",\"item\":\"{{SEI_HOME}}/service/web-development-company-paris/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "web-development-company-uk",
+   "path": "/service/web-development-company-uk/",
+   "slug": "web-development-company-uk",
+   "parent": "service",
+   "title": "Web Development Company UK",
+   "layout": "service-dev",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services-web-development"
+   ],
+   "seo": {
+    "title": "Web Development Company UK | SEO Expert India",
+    "description": "Web Development Company UK: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies across the United Kingdom. Get a free quote.",
+    "robots": "",
+    "og_title": "Web Development Company UK | SEO Expert India",
+    "og_description": "Web Development Company UK: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies across the United Kingdom. Get a free quote.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Web Development Company UK\",\"serviceType\":\"Website design and development\",\"url\":\"{{SEI_HOME}}/service/web-development-company-uk/\",\"description\":\"Web Development Company UK: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies across the United Kingdom. Get a free quote.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Web Development Company UK\",\"item\":\"{{SEI_HOME}}/service/web-development-company-uk/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "web-development-company-usa",
+   "path": "/service/web-development-company-usa/",
+   "slug": "web-development-company-usa",
+   "parent": "service",
+   "title": "Web Development Company USA",
+   "layout": "service-dev",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services-web-development"
+   ],
+   "seo": {
+    "title": "Web Development Company USA | SEO Expert India",
+    "description": "Web Development Company USA: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies across the United States. Get a free quote.",
+    "robots": "",
+    "og_title": "Web Development Company USA | SEO Expert India",
+    "og_description": "Web Development Company USA: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies across the United States. Get a free quote.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Web Development Company USA\",\"serviceType\":\"Website design and development\",\"url\":\"{{SEI_HOME}}/service/web-development-company-usa/\",\"description\":\"Web Development Company USA: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies across the United States. Get a free quote.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Web Development Company USA\",\"item\":\"{{SEI_HOME}}/service/web-development-company-usa/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "web-development-company-washington",
+   "path": "/service/web-development-company-washington/",
+   "slug": "web-development-company-washington",
+   "parent": "service",
+   "title": "Web Development Company Washington",
+   "layout": "service-dev",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services-web-development"
+   ],
+   "seo": {
+    "title": "Web Development Company Washington | SEO Expert India",
+    "description": "Web Development Company Washington: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for organisations and businesses in Washington, DC. Get a free quote.",
+    "robots": "",
+    "og_title": "Web Development Company Washington | SEO Expert India",
+    "og_description": "Web Development Company Washington: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for organisations and businesses in Washington, DC. Get a free quote.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Web Development Company Washington\",\"serviceType\":\"Website design and development\",\"url\":\"{{SEI_HOME}}/service/web-development-company-washington/\",\"description\":\"Web Development Company Washington: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for organisations and businesses in Washington, DC. Get a free quote.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Web Development Company Washington\",\"item\":\"{{SEI_HOME}}/service/web-development-company-washington/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "website-development-company-malta",
+   "path": "/service/website-development-company-malta/",
+   "slug": "website-development-company-malta",
+   "parent": "service",
+   "title": "Website Development Company Malta",
+   "layout": "service-dev",
+   "styles": [
+    "sei-header",
+    "sei-home-seo-services-web-development"
+   ],
+   "seo": {
+    "title": "Website Development Company Malta | SEO Expert India",
+    "description": "Website Development Company Malta: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Malta and Gozo. Get a free quote.",
+    "robots": "",
+    "og_title": "Website Development Company Malta | SEO Expert India",
+    "og_description": "Website Development Company Malta: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Malta and Gozo. Get a free quote.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Service\",\"name\":\"Website Development Company Malta\",\"serviceType\":\"Website design and development\",\"url\":\"{{SEI_HOME}}/service/website-development-company-malta/\",\"description\":\"Website Development Company Malta: SEO Expert India builds responsive, SEO-friendly business, WordPress and eCommerce websites for companies in Malta and Gozo. Get a free quote.\",\"provider\":{\"@type\":\"Organization\",\"name\":\"SEO Expert India\",\"url\":\"{{SEI_HOME}}/\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"{{SEI_HOME}}/services/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Website Development Company Malta\",\"item\":\"{{SEI_HOME}}/service/website-development-company-malta/\"}]}]}"
+    ]
+   }
+  },
+  {
+   "key": "services",
+   "path": "/services/",
+   "slug": "services",
+   "parent": "",
+   "title": "Services",
+   "layout": "company",
+   "styles": [
+    "sei-header",
+    "sei-home",
+    "sei-site-pages"
+   ],
+   "seo": {
+    "title": "SEO & Website Development Services | SEO Expert India",
+    "description": "Explore SEO Expert India\u2019s existing SEO, local and global search, link building and website development services with their original service URLs.",
+    "robots": "",
+    "og_title": "SEO & Website Development Services | SEO Expert India",
+    "og_description": "Explore SEO Expert India\u2019s existing SEO, local and global search, link building and website development services with their original service URLs.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"SEO & Website Development Services\",\"url\":\"{{SEI_HOME}}/services/\",\"description\":\"Explore SEO Expert India\u2019s existing SEO, local and global search, link building and website development services with their original service URLs.\"}",
+     "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"SEO & Website Development Services\",\"item\":\"{{SEI_HOME}}/services/\"}]}"
+    ]
+   }
+  },
+  {
+   "key": "testimonials",
+   "path": "/testimonials/",
+   "slug": "testimonials",
+   "parent": "",
+   "title": "Testimonials",
+   "layout": "company",
+   "styles": [
+    "sei-header",
+    "sei-home",
+    "sei-site-pages"
+   ],
+   "seo": {
+    "title": "Client Feedback & Testimonials | SEO Expert India",
+    "description": "Explore the feedback already present on the SEO Expert India homepage, presented in the same testimonial card design.",
+    "robots": "",
+    "og_title": "Client Feedback & Testimonials | SEO Expert India",
+    "og_description": "Explore the feedback already present on the SEO Expert India homepage, presented in the same testimonial card design.",
+    "og_type": "website",
+    "og_image": "",
+    "twitter_card": "summary_large_image",
+    "jsonld": [
+     "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Client Feedback & Testimonials\",\"url\":\"{{SEI_HOME}}/testimonials/\",\"description\":\"Explore the feedback already present on the SEO Expert India homepage, presented in the same testimonial card design.\"}",
+     "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"{{SEI_HOME}}/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Client Feedback & Testimonials\",\"item\":\"{{SEI_HOME}}/testimonials/\"}]}"
+    ]
+   }
+  }
+ ],
+ "menu": {
+  "top": [
+   [
+    "Home",
+    "/"
+   ],
+   [
+    "About",
+    "/about/"
+   ],
+   [
+    "Services",
+    "/services/"
+   ],
+   [
+    "Recent Work",
+    "/recent-work/"
+   ],
+   [
+    "Testimonials",
+    "/testimonials/"
+   ],
+   [
+    "Contact",
+    "/contact/"
+   ],
+   [
+    "FAQs",
+    "/faq/"
+   ],
+   [
+    "Blog",
+    "/blog/"
+   ]
+  ],
+  "mega": [
+   {
+    "title": "SEO Services",
+    "icon": "Search",
+    "items": [
+     {
+      "title": "Newcastle SEO Expert",
+      "path": "/service/newcastle-seo-expert/",
+      "icon": "MapPin"
+     },
+     {
+      "title": "SEO Services",
+      "path": "/service/best-seo-services-in-india/",
+      "icon": "Search"
+     },
+     {
+      "title": "Best SEO Linkbuilding Services in India",
+      "path": "/service/best-seo-linkbuilding-services-in-india/",
+      "icon": "Link2"
+     },
+     {
+      "title": "Best SEO Services in UAE",
+      "path": "/service/best-seo-services-in-uae/",
+      "icon": "Globe"
+     },
+     {
+      "title": "Global SEO Services",
+      "path": "/service/global-seo-services/",
+      "icon": "Languages"
+     },
+     {
+      "title": "SEO Expert New York",
+      "path": "/service/seo-expert-new-york/",
+      "icon": "Building2"
+     },
+     {
+      "title": "San Diego SEO Expert",
+      "path": "/service/san-diego-seo-expert/",
+      "icon": "Compass"
+     },
+     {
+      "title": "SEO Expert London UK",
+      "path": "/service/seo-expert-london-uk/",
+      "icon": "Landmark"
+     },
+     {
+      "title": "SEO Expert Denmark",
+      "path": "/service/seo-expert-denmark/",
+      "icon": "Flag"
+     },
+     {
+      "title": "Best SEO Experts in Malta",
+      "path": "/service/best-seo-experts-in-malta/",
+      "icon": "Anchor"
+     },
+     {
+      "title": "Best Local SEO Services in India",
+      "path": "/service/best-local-seo-services-in-india/",
+      "icon": "MapPinned"
+     }
+    ]
+   },
+   {
+    "title": "Website Development",
+    "icon": "Code2",
+    "items": [
+     {
+      "title": "Web Agency Copenhagen, Denmark",
+      "path": "/service/web-agency-copenhagen-denmark/",
+      "icon": "Palette"
+     },
+     {
+      "title": "Web Development Company Paris",
+      "path": "/service/web-development-company-paris/",
+      "icon": "Code2"
+     },
+     {
+      "title": "Web Development Company Netherlands",
+      "path": "/service/web-development-company-netherlands/",
+      "icon": "Workflow"
+     },
+     {
+      "title": "Web Development Company UK",
+      "path": "/service/web-development-company-uk/",
+      "icon": "Laptop"
+     },
+     {
+      "title": "Web Development Agency Germany",
+      "path": "/service/web-development-agency-germany/",
+      "icon": "Settings"
+     },
+     {
+      "title": "Web Development Company Washington",
+      "path": "/service/web-development-company-washington/",
+      "icon": "PanelsTopLeft"
+     },
+     {
+      "title": "Web Development Company USA",
+      "path": "/service/web-development-company-usa/",
+      "icon": "MonitorSmartphone"
+     },
+     {
+      "title": "Website Development Company Malta",
+      "path": "/service/website-development-company-malta/",
+      "icon": "LayoutTemplate"
+     },
+     {
+      "title": "Web Development Company India",
+      "path": "/service/web-development-company-india/",
+      "icon": "Braces"
+     }
+    ]
+   },
+   {
+    "title": "Industry-Based SEO Services",
+    "icon": "Building2",
+    "items": [
+     {
+      "title": "SEO for Law Firm",
+      "path": "/service/seo-for-law-firm/",
+      "icon": "Scale"
+     },
+     {
+      "title": "SEO Services for Education Industry",
+      "path": "/service/seo-services-for-education-industry/",
+      "icon": "GraduationCap"
+     },
+     {
+      "title": "Home Improvements",
+      "path": "/service/home-improvements/",
+      "icon": "Hammer"
+     },
+     {
+      "title": "Pet Services",
+      "path": "/service/pet-services/",
+      "icon": "PawPrint"
+     },
+     {
+      "title": "SEO for IT Industry",
+      "path": "/service/seo-for-it-industry/",
+      "icon": "Monitor"
+     },
+     {
+      "title": "Automobile Industries SEO",
+      "path": "/service/automobile-industries-seo/",
+      "icon": "Car"
+     },
+     {
+      "title": "Ecommerce Website SEO Services",
+      "path": "/service/ecommerce-website-seo-services/",
+      "icon": "ShoppingBag"
+     },
+     {
+      "title": "Real Estate Website SEO Services",
+      "path": "/service/real-estate-website-seo-services/",
+      "icon": "House"
+     },
+     {
+      "title": "Healthcare Website SEO Services",
+      "path": "/service/healthcare-website-seo-services/",
+      "icon": "HeartPulse"
+     }
+    ]
+   }
+  ]
+ },
+ "media": [
+  {
+   "key": "original-site-282a47fee4855b.webp",
+   "file": "original-site-282a47fee4855b.webp",
+   "alt": "Original site 282a47fee4855b"
+  },
+  {
+   "key": "founder.webp",
+   "file": "founder.webp",
+   "alt": "Lokesh Magarde, founder of SEO Expert India"
+  },
+  {
+   "key": "about-banner.png",
+   "file": "about-banner.png",
+   "alt": "SEO Expert India navy and gold digital growth banner"
+  },
+  {
+   "key": "googleanalytics.svg",
+   "file": "googleanalytics.svg",
+   "alt": "Google Analytics 4 logo"
+  },
+  {
+   "key": "googlesearchconsole.svg",
+   "file": "googlesearchconsole.svg",
+   "alt": "Google Search Console logo"
+  },
+  {
+   "key": "semrush.svg",
+   "file": "semrush.svg",
+   "alt": "SEMrush logo"
+  },
+  {
+   "key": "yoast.svg",
+   "file": "yoast.svg",
+   "alt": "Yoast"
+  },
+  {
+   "key": "original-site-42ec200cc86c71.webp",
+   "file": "original-site-42ec200cc86c71.webp",
+   "alt": "Shopify logo"
+  },
+  {
+   "key": "original-site-658fef78330190.webp",
+   "file": "original-site-658fef78330190.webp",
+   "alt": "WordPress logo"
+  },
+  {
+   "key": "original-site-5bb9d48cf0dc76.webp",
+   "file": "original-site-5bb9d48cf0dc76.webp",
+   "alt": "Magento logo"
+  },
+  {
+   "key": "original-site-a2ddd34207f839.webp",
+   "file": "original-site-a2ddd34207f839.webp",
+   "alt": "Squarespace logo"
+  },
+  {
+   "key": "original-site-f5c103bec2edcd.webp",
+   "file": "original-site-f5c103bec2edcd.webp",
+   "alt": "Wix logo"
+  },
+  {
+   "key": "original-site-64c505f47f2044.webp",
+   "file": "original-site-64c505f47f2044.webp",
+   "alt": "Weebly logo"
+  },
+  {
+   "key": "original-site-415c20de0089b0.webp",
+   "file": "original-site-415c20de0089b0.webp",
+   "alt": "BigCommerce logo"
+  },
+  {
+   "key": "original-site-070a6356a7a844.webp",
+   "file": "original-site-070a6356a7a844.webp",
+   "alt": "Original site 070a6356a7a844"
+  },
+  {
+   "key": "original-site-a2914b1a81dd01.webp",
+   "file": "original-site-a2914b1a81dd01.webp",
+   "alt": "EduLearn Academy website mockup"
+  },
+  {
+   "key": "original-site-258f2e2428db97.webp",
+   "file": "original-site-258f2e2428db97.webp",
+   "alt": "MedCare Hospital website mockup"
+  },
+  {
+   "key": "original-site-ebe7b2d9cfd960.webp",
+   "file": "original-site-ebe7b2d9cfd960.webp",
+   "alt": "TechVista Solutions website mockup"
+  },
+  {
+   "key": "original-site-6a131fde999a22.webp",
+   "file": "original-site-6a131fde999a22.webp",
+   "alt": "HomeStyle Interiors website mockup"
+  },
+  {
+   "key": "original-site-f0da6c20b089ba.webp",
+   "file": "original-site-f0da6c20b089ba.webp",
+   "alt": "LuxeCart Store website mockup"
+  },
+  {
+   "key": "original-site-6ade34de58de53.webp",
+   "file": "original-site-6ade34de58de53.webp",
+   "alt": "Carter & Blake Law website mockup"
+  },
+  {
+   "key": "original-site-9f7c53bc2c38dc.webp",
+   "file": "original-site-9f7c53bc2c38dc.webp",
+   "alt": "AutoDrive Motors website mockup"
+  },
+  {
+   "key": "original-site-fd45a2a441201b.webp",
+   "file": "original-site-fd45a2a441201b.webp",
+   "alt": "SnapShutter Studio website mockup"
+  },
+  {
+   "key": "original-site-0196b28e6f8725.webp",
+   "file": "original-site-0196b28e6f8725.webp",
+   "alt": "PrimeRealty Group website mockup"
+  },
+  {
+   "key": "original-site-b9f938d76043cf.webp",
+   "file": "original-site-b9f938d76043cf.webp",
+   "alt": "CloudNet Telecom website mockup"
+  },
+  {
+   "key": "original-site-180ed11577657d.webp",
+   "file": "original-site-180ed11577657d.webp",
+   "alt": "FreshMart Online website mockup"
+  },
+  {
+   "key": "original-site-6d4d5508f88749.webp",
+   "file": "original-site-6d4d5508f88749.webp",
+   "alt": "GreenHome Builders website mockup"
+  },
+  {
+   "key": "original-site-ef8f1e14c341d5.webp",
+   "file": "original-site-ef8f1e14c341d5.webp",
+   "alt": "BrightMinds School website mockup"
+  },
+  {
+   "key": "original-site-31f31b6d30a355.webp",
+   "file": "original-site-31f31b6d30a355.webp",
+   "alt": "DesignCraft Interiors website mockup"
+  },
+  {
+   "key": "original-site-a3eef24dd51a49.webp",
+   "file": "original-site-a3eef24dd51a49.webp",
+   "alt": "MediPlus Clinic website mockup"
+  },
+  {
+   "key": "original-site-cfa6fa7b2a064f.webp",
+   "file": "original-site-cfa6fa7b2a064f.webp",
+   "alt": "Google Partner"
+  },
+  {
+   "key": "original-site-54a6363f2d0d74.webp",
+   "file": "original-site-54a6363f2d0d74.webp",
+   "alt": "Meta Business Partner"
+  },
+  {
+   "key": "original-site-74abeca2e5b133.webp",
+   "file": "original-site-74abeca2e5b133.webp",
+   "alt": "HubSpot Certified Partner"
+  },
+  {
+   "key": "original-site-2dea72c9939581.webp",
+   "file": "original-site-2dea72c9939581.webp",
+   "alt": "Illustrative Google Search Console performance dashboard shown on a laptop"
+  },
+  {
+   "key": "original-site-1f754b004a981e.webp",
+   "file": "original-site-1f754b004a981e.webp",
+   "alt": "AEO and GEO optimization: Google at the center with ChatGPT, Gemini, Claude and Perplexity around it"
+  },
+  {
+   "key": "design-1.webp",
+   "file": "design-1.webp",
+   "alt": "Fashion and talent agency website design"
+  },
+  {
+   "key": "design-2.webp",
+   "file": "design-2.webp",
+   "alt": "Gaming and video entertainment website design"
+  },
+  {
+   "key": "design-3.webp",
+   "file": "design-3.webp",
+   "alt": "Online basketball training website design"
+  },
+  {
+   "key": "design-4.webp",
+   "file": "design-4.webp",
+   "alt": "Athletic training programmes website design"
+  },
+  {
+   "key": "design-5.webp",
+   "file": "design-5.webp",
+   "alt": "Financial and business services website design"
+  },
+  {
+   "key": "design-6.webp",
+   "file": "design-6.webp",
+   "alt": "Construction company website design"
+  },
+  {
+   "key": "design-7.webp",
+   "file": "design-7.webp",
+   "alt": "Home selling and property services website design"
+  },
+  {
+   "key": "design-8.webp",
+   "file": "design-8.webp",
+   "alt": "Nutrition and wellness website design"
+  },
+  {
+   "key": "design-9.webp",
+   "file": "design-9.webp",
+   "alt": "Beauty and cosmetics store website design"
+  },
+  {
+   "key": "design-10.webp",
+   "file": "design-10.webp",
+   "alt": "Fitness and personal training website design"
+  },
+  {
+   "key": "design-11.webp",
+   "file": "design-11.webp",
+   "alt": "Fitness challenge and gym website design"
+  },
+  {
+   "key": "design-12.webp",
+   "file": "design-12.webp",
+   "alt": "Personal trainer and workout programmes website design"
+  },
+  {
+   "key": "design-13.webp",
+   "file": "design-13.webp",
+   "alt": "Grocery and fresh produce store website design"
+  },
+  {
+   "key": "design-14.webp",
+   "file": "design-14.webp",
+   "alt": "Footwear and sports shoes store website design"
+  },
+  {
+   "key": "design-15.webp",
+   "file": "design-15.webp",
+   "alt": "Pet supplies store website design"
+  },
+  {
+   "key": "design-16.webp",
+   "file": "design-16.webp",
+   "alt": "Skincare and beauty products store website design"
+  },
+  {
+   "key": "design-17.webp",
+   "file": "design-17.webp",
+   "alt": "Baby and parenting products store website design"
+  },
+  {
+   "key": "design-18.webp",
+   "file": "design-18.webp",
+   "alt": "Coffee shop and coffee products website design"
+  },
+  {
+   "key": "design-19.webp",
+   "file": "design-19.webp",
+   "alt": "Restaurant and food ordering website design"
+  },
+  {
+   "key": "design-20.webp",
+   "file": "design-20.webp",
+   "alt": "Meat and butcher shop website design"
+  },
+  {
+   "key": "design-21.webp",
+   "file": "design-21.webp",
+   "alt": "Florist and floral arrangements website design"
+  },
+  {
+   "key": "design-22.webp",
+   "file": "design-22.webp",
+   "alt": "Automotive parts store website design"
+  },
+  {
+   "key": "design-23.webp",
+   "file": "design-23.webp",
+   "alt": "Fashion and clothing store website design"
+  },
+  {
+   "key": "design-24.webp",
+   "file": "design-24.webp",
+   "alt": "Cosmetics and skincare store website design"
+  },
+  {
+   "key": "design-25.webp",
+   "file": "design-25.webp",
+   "alt": "Clothing and accessories store website design"
+  },
+  {
+   "key": "design-26.webp",
+   "file": "design-26.webp",
+   "alt": "Fashion collection and apparel store website design"
+  },
+  {
+   "key": "design-27.webp",
+   "file": "design-27.webp",
+   "alt": "Summer fashion and womenswear store website design"
+  },
+  {
+   "key": "client-1.png",
+   "file": "client-1.png",
+   "alt": "Acharya Pandit Devendra Guruji client logo"
+  },
+  {
+   "key": "client-2.png",
+   "file": "client-2.png",
+   "alt": "Pandit Arun Guruji client logo"
+  },
+  {
+   "key": "client-3.png",
+   "file": "client-3.png",
+   "alt": "Acharya Ashu Sharma client logo"
+  },
+  {
+   "key": "client-4.webp",
+   "file": "client-4.webp",
+   "alt": "Jyotishacharya Pandit Deepak Krishna Shastri client logo"
+  },
+  {
+   "key": "client-5.png",
+   "file": "client-5.png",
+   "alt": "Arrow Air Conditioning client logo"
+  },
+  {
+   "key": "client-6.webp",
+   "file": "client-6.webp",
+   "alt": "Catalyser client logo"
+  },
+  {
+   "key": "client-7.webp",
+   "file": "client-7.webp",
+   "alt": "Cornerstone Fence client logo"
+  },
+  {
+   "key": "client-8.jpg",
+   "file": "client-8.jpg",
+   "alt": "Dragonfly Hostels client logo"
+  },
+  {
+   "key": "client-9.jpg",
+   "file": "client-9.jpg",
+   "alt": "London Speech Workshop client logo"
+  },
+  {
+   "key": "client-10.jpg",
+   "file": "client-10.jpg",
+   "alt": "HUMAX client logo"
+  },
+  {
+   "key": "client-11.png",
+   "file": "client-11.png",
+   "alt": "Dejex client logo"
+  },
+  {
+   "key": "client-12.jpg",
+   "file": "client-12.jpg",
+   "alt": "Project Solar UK client logo"
+  },
+  {
+   "key": "client-13.png",
+   "file": "client-13.png",
+   "alt": "Thomas Electrical client logo"
+  },
+  {
+   "key": "client-15.webp",
+   "file": "client-15.webp",
+   "alt": "Clean Group client logo"
+  },
+  {
+   "key": "client-16.png",
+   "file": "client-16.png",
+   "alt": "MedLinks client logo"
+  },
+  {
+   "key": "client-17.svg",
+   "file": "client-17.svg",
+   "alt": "FreeMotion client logo"
+  },
+  {
+   "key": "client-18.png",
+   "file": "client-18.png",
+   "alt": "CURRUS client logo"
+  },
+  {
+   "key": "client-19.jpg",
+   "file": "client-19.jpg",
+   "alt": "Skin Cancer Assessment and Treatment Centre client logo"
+  },
+  {
+   "key": "client-20.jpg",
+   "file": "client-20.jpg",
+   "alt": "Medusa\u2019s Makeup client logo"
+  },
+  {
+   "key": "client-21.png",
+   "file": "client-21.png",
+   "alt": "Fetterman & Associates client logo"
+  },
+  {
+   "key": "client-22.png",
+   "file": "client-22.png",
+   "alt": "Leifer Law Firm client logo"
+  },
+  {
+   "key": "client-23.jpg",
+   "file": "client-23.jpg",
+   "alt": "NODUS client logo"
+  },
+  {
+   "key": "client-24.png",
+   "file": "client-24.png",
+   "alt": "JCP Japanese Car Parts client logo"
+  },
+  {
+   "key": "strategy-video-one.jpg",
+   "file": "strategy-video-one.jpg",
+   "alt": "YouTube thumbnail: SEO strategy: building the foundation"
+  },
+  {
+   "key": "strategy-video-two.jpg",
+   "file": "strategy-video-two.jpg",
+   "alt": "YouTube thumbnail: Turning search insights into action"
+  },
+  {
+   "key": "chatgpt.svg",
+   "file": "chatgpt.svg",
+   "alt": "ChatGPT Search logo"
+  },
+  {
+   "key": "gemini.svg",
+   "file": "gemini.svg",
+   "alt": "Google Gemini logo"
+  },
+  {
+   "key": "google.svg",
+   "file": "google.svg",
+   "alt": "AI Overviews logo"
+  },
+  {
+   "key": "perplexity.svg",
+   "file": "perplexity.svg",
+   "alt": "Perplexity logo"
+  },
+  {
+   "key": "copilot.svg",
+   "file": "copilot.svg",
+   "alt": "Microsoft Copilot logo"
+  },
+  {
+   "key": "ai-search-platforms.webp",
+   "file": "ai-search-platforms.webp",
+   "alt": "AI SEO network connecting ChatGPT, Gemini, Perplexity and Microsoft Copilot"
+  },
+  {
+   "key": "ahrefs.png",
+   "file": "ahrefs.png",
+   "alt": "Ahrefs logo"
+  },
+  {
+   "key": "screamingfrog.png",
+   "file": "screamingfrog.png",
+   "alt": "Screaming Frog logo"
+  },
+  {
+   "key": "surfer.ico",
+   "file": "surfer.ico",
+   "alt": "Surfer SEO logo"
+  },
+  {
+   "key": "wordpress.svg",
+   "file": "wordpress.svg",
+   "alt": "WordPress logo"
+  },
+  {
+   "key": "woocommerce.svg",
+   "file": "woocommerce.svg",
+   "alt": "WooCommerce logo"
+  },
+  {
+   "key": "shopify.svg",
+   "file": "shopify.svg",
+   "alt": "Shopify logo"
+  },
+  {
+   "key": "magento.svg",
+   "file": "magento.svg",
+   "alt": "Magento logo"
+  },
+  {
+   "key": "squarespace.svg",
+   "file": "squarespace.svg",
+   "alt": "Squarespace logo"
+  },
+  {
+   "key": "wix.svg",
+   "file": "wix.svg",
+   "alt": "Wix logo"
+  },
+  {
+   "key": "weebly.svg",
+   "file": "weebly.svg",
+   "alt": "Weebly logo"
+  },
+  {
+   "key": "bigcommerce.svg",
+   "file": "bigcommerce.svg",
+   "alt": "BigCommerce logo"
+  },
+  {
+   "key": "client-portrait-men-11.jpg",
+   "file": "client-portrait-men-11.jpg",
+   "alt": "Amit Sharma profile"
+  },
+  {
+   "key": "client-portrait-men-16.jpg",
+   "file": "client-portrait-men-16.jpg",
+   "alt": "Mikkel Andersen profile"
+  },
+  {
+   "key": "client-portrait-men-21.jpg",
+   "file": "client-portrait-men-21.jpg",
+   "alt": "Daniel Wilson profile"
+  },
+  {
+   "key": "client-portrait-men-26.jpg",
+   "file": "client-portrait-men-26.jpg",
+   "alt": "Michael Carter profile"
+  },
+  {
+   "key": "client-portrait-men-31.jpg",
+   "file": "client-portrait-men-31.jpg",
+   "alt": "James Mitchell profile"
+  },
+  {
+   "key": "client-portrait-men-36.jpg",
+   "file": "client-portrait-men-36.jpg",
+   "alt": "Stefan M\u00fcller profile"
+  },
+  {
+   "key": "client-portrait-men-41.jpg",
+   "file": "client-portrait-men-41.jpg",
+   "alt": "Ryan Thompson profile"
+  },
+  {
+   "key": "client-portrait-men-46.jpg",
+   "file": "client-portrait-men-46.jpg",
+   "alt": "Thomas Schneider profile"
+  },
+  {
+   "key": "website-development-company-india.png",
+   "file": "website-development-company-india.png",
+   "alt": "website development company india"
+  },
+  {
+   "key": "wordpress-website-development-company-india.png",
+   "file": "wordpress-website-development-company-india.png",
+   "alt": "WordPress website development company india"
+  },
+  {
+   "key": "custom-website-development-solutions.png",
+   "file": "custom-website-development-solutions.png",
+   "alt": "Custom website development solutions for growing businesses"
+  },
+  {
+   "key": "development-project-19.webp",
+   "file": "development-project-19.webp",
+   "alt": "Restaurant website design showcase"
+  },
+  {
+   "key": "development-project-22.webp",
+   "file": "development-project-22.webp",
+   "alt": "Automotive store website design showcase"
+  },
+  {
+   "key": "development-project-3.webp",
+   "file": "development-project-3.webp",
+   "alt": "Basketball training website design showcase"
+  },
+  {
+   "key": "development-project-5.webp",
+   "file": "development-project-5.webp",
+   "alt": "Financial services website design showcase"
+  },
+  {
+   "key": "development-project-8.webp",
+   "file": "development-project-8.webp",
+   "alt": "Nutrition website design showcase"
+  },
+  {
+   "key": "development-project-18.webp",
+   "file": "development-project-18.webp",
+   "alt": "Coffee shop website design showcase"
+  },
+  {
+   "key": "client-portrait-men-51.jpg",
+   "file": "client-portrait-men-51.jpg",
+   "alt": "Marco Rossi profile"
+  },
+  {
+   "key": "client-portrait-men-56.jpg",
+   "file": "client-portrait-men-56.jpg",
+   "alt": "Lars van Dijk profile"
+  },
+  {
+   "key": "client-portrait-women-61.jpg",
+   "file": "client-portrait-women-61.jpg",
+   "alt": "Emily Brown profile"
+  },
+  {
+   "key": "client-portrait-women-71.jpg",
+   "file": "client-portrait-women-71.jpg",
+   "alt": "Sophie Laurent profile"
+  },
+  {
+   "key": "client-portrait-men-76.jpg",
+   "file": "client-portrait-men-76.jpg",
+   "alt": "Andreas Keller profile"
+  },
+  {
+   "key": "client-portrait-men-81.jpg",
+   "file": "client-portrait-men-81.jpg",
+   "alt": "Lucas Pereira profile"
+  },
+  {
+   "key": "client-portrait-women-86.jpg",
+   "file": "client-portrait-women-86.jpg",
+   "alt": "Emma Wilson profile"
+  },
+  {
+   "key": "original-site-3565c90aebe48c.png",
+   "file": "original-site-3565c90aebe48c.png",
+   "alt": "Original site 3565c90aebe48c"
+  }
+ ],
+ "stats": {
+  "container": 9602,
+  "sei-link": 454,
+  "sei-text": 11796,
+  "sei-heading": 3055,
+  "sei-image": 1040,
+  "sei-html": 610
+ }
+}

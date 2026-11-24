@@ -81,11 +81,13 @@ Every unchecked page still needs independently written 5,000-word content, relev
 - [x] Verify source associations, exact duplicate removal, canonical and desktop/tablet/mobile rendering without filters; source rankings are undated, not live checks.
 
 ## WordPress theme + one-click demo import (Nov 19 brief)
-- [ ] Audit routes, CSS, media, interactions; capture all 36 pages from the running site.
-- [ ] Theme `seoexpertindia`: header with WP-menu three-column mega menu, Quick Consultation, Elementor-friendly templates, blog templates, global colours/fonts.
-- [ ] Elementor JSON per page (containers + editable SEO Expert India widgets), editable global footer template.
-- [ ] Importer plugin: Dashboard → SEO Expert India → Import Demo; checks, warning, batched AJAX, progress, report, idempotent (no duplicates), media library import, menus, front page, blog page, kit globals.
-- [ ] Forms: validation, spam trap, server-side wp_mail to configured recipients, success/error messages.
-- [ ] SEO: editable title/description, canonical, schema, Rank Math compatibility.
-- [ ] Test in a real WordPress + Elementor install: activation, import twice, rendering, menu, links, images, forms, PHP lint, JS errors, 6 breakpoints.
-- [ ] Deliver 4 ZIPs (theme, importer, templates, complete bundle) + README/requirements/troubleshooting/changelog.
+- [x] Audit routes, CSS, media, interactions; capture all 36 pages from the running site.
+- [x] Theme `seoexpertindia`: header with WP-menu three-column mega menu, Quick Consultation, Elementor-friendly templates, blog templates, global colours/fonts.
+- [x] Elementor JSON per page (containers + editable SEO Expert India widgets), editable global footer template.
+- [x] Importer plugin: Dashboard → SEO Expert India → Import Demo; checks, warning, batched AJAX, progress, report, idempotent, media library, menus, front/blog page, kit globals.
+- [x] Forms: validation, spam trap, server-side wp_mail to the three recipients from wordpress@seoexpertindia.biz, success/error messages.
+- [x] SEO: editable title/description, canonical, schema, Rank Math compatibility.
+- [x] Test in WordPress + Elementor: activation, import twice, editor edit/publish, menu, links, images, forms, PHP lint, JS errors, 6 breakpoints.
+- [x] Deliver 4 ZIPs + README/requirements/troubleshooting/changelog.
+- [ ] Elementor Pro theme-builder footer — untestable here (paid plugin not available); code path written, not exercised.
+- [ ] Real inbox delivery — depends on the live host's mail setup; tested only up to WordPress handing the email over.

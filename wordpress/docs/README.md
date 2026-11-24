@@ -15,6 +15,10 @@ This bundle turns the SEO Expert India website into a WordPress website you can 
 - Pretty permalinks (the importer switches “Plain” permalinks to “Post name” automatically)
 - Server email (PHP `mail()` or an SMTP plugin) for the enquiry forms
 
+## Tested with
+WordPress 7.1.5, Elementor 4.4.1 (free), PHP 8.3, Rank Math SEO 1.0.282. Elementor Pro was **not** available for testing;
+the footer is assigned to Elementor Pro's theme builder automatically when Pro is active, and works without Pro.
+
 ## Required plugins
 - **Elementor** (free) 3.16 or newer – required
 - **Elementor Pro** – recommended (theme-builder footer, Pro widgets). Not needed for the site to display.
@@ -59,6 +63,10 @@ All contact forms send an HTML email through WordPress (`wp_mail`) to the config
 (default: info@seoexpertindia.biz, lucky.magarde@gmail.com, lokesh@seoexpertindia.biz; sender wordpress@your-domain).
 Fields are validated in the browser and on the server, spam is filtered by a hidden honeypot field and a minimum fill time,
 and nothing is stored in the database. No credentials are exposed in the page.
+
+## Notes
+- The footer's *Privacy Policy* and *Terms* links point to `https://www.seoexpertindia.biz/privacy-policy/` and `/terms-conditions/`, as on the current website. Create those pages in WordPress (or edit the links in the footer template) so they keep working after you move the domain.
+- Converted sections use the container layout **"Original design"** so the site's own styles control them. Switch a container to *Flexbox* or *Grid* in Elementor to use Elementor's layout controls for it.
 
 ## Troubleshooting
 | Problem | Fix |

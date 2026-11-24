@@ -14,7 +14,8 @@ function sei_render_footer() {
 	}
 	$layout  = sei_page_layout();
 	$company = ! in_array( $layout, array( 'home', 'service-seo', 'service-dev' ), true );
-	echo '<div class="sei-footer' . ( $company ? ' sei-footer--company' : '' ) . '">';
+	// Company pages wrap the footer in the same page container as the original site.
+	echo '<div class="sei-footer' . ( $company ? ' sei-footer--company sp-page' : '' ) . '">';
 	$template = (int) get_option( 'sei_footer_template_id' );
 	if ( $template && did_action( 'elementor/loaded' ) && 'publish' === get_post_status( $template ) ) {
 		echo \Elementor\Plugin::$instance->frontend->get_builder_content_for_display( $template, true ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

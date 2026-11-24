@@ -138,7 +138,7 @@ function sei_attribute_string( array $attrs ) {
 add_action(
 	'wp_head',
 	static function () {
-		echo "<style id=\"sei-global-colors\">body{--bg:var(--e-global-color-sei_navy,#020817);--blue:var(--e-global-color-sei_gold,#d4a72c);--cyan:var(--e-global-color-sei_gold_light,#f3c95f);--ink:var(--e-global-color-sei_ink,#eef2fb)}.ss.ss{--ss-gold:var(--e-global-color-sei_gold,#D4A72C);--ss-gold2:var(--e-global-color-sei_gold_light,#F3C95F);--ss-ink:var(--e-global-color-sei_ink,#EEF2FB)}</style>\n";
+		echo "<style id=\"sei-global-colors\">body{--bg:var(--e-global-color-sei_page_bg,#07111f);--blue:var(--e-global-color-sei_page_accent,#c9a957);--cyan:var(--e-global-color-sei_page_accent_light,#e0c574);--ink:var(--e-global-color-sei_page_text,#f5f1e7)}.ss.ss{--ss-gold:var(--e-global-color-sei_gold,#D4A72C);--ss-gold2:var(--e-global-color-sei_gold_light,#F3C95F);--ss-ink:var(--e-global-color-sei_ink,#EEF2FB)}</style>\n";
 	},
 	99
 );

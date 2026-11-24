@@ -42,7 +42,7 @@ class SEIDI_Importer {
 			array( 'label' => __( 'SEO Expert India theme active', 'seoexpertindia-demo-importer' ), 'ok' => 'seoexpertindia' === $theme->get_template(), 'required' => true, 'value' => $theme->get( 'Name' ) ),
 			array( 'label' => __( 'Elementor plugin active (version 3.16 or newer)', 'seoexpertindia-demo-importer' ), 'ok' => $el_ok && version_compare( ELEMENTOR_VERSION, '3.16', '>=' ), 'required' => true, 'value' => $el_ok ? ELEMENTOR_VERSION : __( 'Not active', 'seoexpertindia-demo-importer' ) ),
 			array( 'label' => __( 'Elementor Pro (recommended, for theme-builder footer and Pro widgets)', 'seoexpertindia-demo-importer' ), 'ok' => defined( 'ELEMENTOR_PRO_VERSION' ), 'required' => false, 'value' => defined( 'ELEMENTOR_PRO_VERSION' ) ? ELEMENTOR_PRO_VERSION : __( 'Not active', 'seoexpertindia-demo-importer' ) ),
-			array( 'label' => __( 'Rank Math SEO (optional)', 'seoexpertindia-demo-importer' ), 'ok' => defined( 'RANK_MATH_VERSION' ), 'required' => false, 'value' => defined( 'RANK_MATH_VERSION' ) ? RANK_MATH_VERSION : __( 'Not active – the theme outputs titles, descriptions and schema itself', 'seoexpertindia-demo-importer' ) ),
+			array( 'label' => __( 'Rank Math SEO', 'seoexpertindia-demo-importer' ), 'ok' => defined( 'RANK_MATH_VERSION' ), 'required' => false, 'value' => defined( 'RANK_MATH_VERSION' ) ? RANK_MATH_VERSION : __( 'Not active – the theme outputs titles, descriptions and schema itself', 'seoexpertindia-demo-importer' ) ),
 			array( 'label' => __( 'PHP 8.0 or newer', 'seoexpertindia-demo-importer' ), 'ok' => version_compare( PHP_VERSION, '8.0', '>=' ), 'required' => true, 'value' => PHP_VERSION ),
 			array( 'label' => __( 'WordPress 6.4 or newer', 'seoexpertindia-demo-importer' ), 'ok' => version_compare( get_bloginfo( 'version' ), '6.4', '>=' ), 'required' => true, 'value' => get_bloginfo( 'version' ) ),
 			array( 'label' => __( 'PHP memory limit 128 MB or more', 'seoexpertindia-demo-importer' ), 'ok' => $memory <= 0 || $memory >= 128 * MB_IN_BYTES, 'required' => false, 'value' => (string) ini_get( 'memory_limit' ) ),
@@ -509,7 +509,7 @@ class SEIDI_Importer {
 			},
 			$colors
 		);
-		$custom = array( array( 'sei_navy', 'SEI Navy', '#020817' ), array( 'sei_gold', 'SEI Gold', '#D4A72C' ), array( 'sei_gold_light', 'SEI Light Gold', '#F3C95F' ), array( 'sei_ink', 'SEI Text', '#EEF2FB' ), array( 'sei_dim', 'SEI Muted Text', '#94A3C4' ), array( 'sei_card', 'SEI Card', '#0A1730' ), array( 'sei_violet', 'SEI Violet', '#8B7CF6' ) );
+		$custom = array( array( 'sei_page_bg', 'SEI Page background', '#07111F' ), array( 'sei_page_accent', 'SEI Page accent (gold)', '#C9A957' ), array( 'sei_page_accent_light', 'SEI Page accent light', '#E0C574' ), array( 'sei_page_text', 'SEI Page text', '#F5F1E7' ), array( 'sei_navy', 'SEI Navy (header & service pages)', '#020817' ), array( 'sei_gold', 'SEI Gold', '#D4A72C' ), array( 'sei_gold_light', 'SEI Light Gold', '#F3C95F' ), array( 'sei_ink', 'SEI Text', '#EEF2FB' ), array( 'sei_dim', 'SEI Muted Text', '#94A3C4' ), array( 'sei_card', 'SEI Card', '#0A1730' ), array( 'sei_violet', 'SEI Violet', '#8B7CF6' ) );
 		$existing = array();
 		foreach ( (array) ( $settings['custom_colors'] ?? array() ) as $c ) {
 			if ( isset( $c['_id'] ) && 0 !== strpos( $c['_id'], 'sei_' ) ) {

@@ -92,3 +92,9 @@ function sei_is_elementor_page( $post_id = 0 ) {
 	$document = \Elementor\Plugin::$instance->documents->get( $post_id );
 	return $document && $document->is_built_with_elementor();
 }
+
+/*
+ * Keep the original image sizing: WordPress's automatic "sizes=auto" for lazy images changes how
+ * tall images (portfolio screenshots) are laid out inside scrolling cards.
+ */
+add_filter( 'wp_img_tag_add_auto_sizes', '__return_false' );

@@ -1,7 +1,5 @@
 /* SEO Expert India – theme additions (footer variants, blog, form messages). */
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}
-.sei-footer--company footer{background:var(--bg)}
-.sei-footer--company footer .wrap{max-width:1240px}
 #leadForm [data-contact-feedback]{margin:12px 0 0;font-size:14px;color:#fca5a5}
 #leadForm [data-contact-feedback]:empty{display:none}
 .sei-blog-intro h1{margin:0 0 12px}

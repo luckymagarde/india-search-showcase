@@ -12,10 +12,18 @@ function sei_seo_plugin_active() {
 	return defined( 'RANK_MATH_VERSION' ) || defined( 'WPSEO_VERSION' ) || defined( 'AIOSEO_VERSION' ) || defined( 'SEOPRESS_VERSION' );
 }
 
+/**
+ * True once an SEO plugin has printed its head tags on this request. If a plugin is installed
+ * but not set up yet (and prints nothing), the theme keeps printing the page's own tags.
+ */
+function sei_seo_plugin_printed_head() {
+	return did_action( 'rank_math/head' ) || did_action( 'wpseo_head' ) || did_action( 'aioseo_head' ) || did_action( 'seopress_head' );
+}
+
 add_filter(
 	'pre_get_document_title',
 	static function ( $title ) {
-		if ( sei_seo_plugin_active() || ! is_singular() ) {
+		if ( ! is_singular() || ( sei_seo_plugin_active() && $title ) ) {
 			return $title;
 		}
 		$custom = get_post_meta( get_queried_object_id(), '_sei_seo_title', true );
@@ -27,8 +35,11 @@ add_filter(
 add_action(
 	'wp_head',
 	static function () {
-		if ( sei_seo_plugin_active() ) {
+		if ( sei_seo_plugin_printed_head() ) {
 			return;
+		}
+		if ( is_home() && ! is_front_page() && get_option( 'page_for_posts' ) && ! is_paged() ) {
+			printf( "<link rel=\"canonical\" href=\"%s\">\n", esc_url( get_permalink( (int) get_option( 'page_for_posts' ) ) ) );
 		}
 		$id          = is_singular() ? get_queried_object_id() : 0;
 		$description = $id ? get_post_meta( $id, '_sei_seo_description', true ) : get_bloginfo( 'description' );
@@ -102,7 +113,7 @@ function sei_print_jsonld( $id, $page_specific_only ) {
 add_action(
 	'wp_head',
 	static function () {
-		if ( sei_seo_plugin_active() && is_singular() ) {
+		if ( sei_seo_plugin_printed_head() && is_singular() ) {
 			sei_print_jsonld( get_queried_object_id(), true );
 		}
 	},

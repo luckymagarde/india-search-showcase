@@ -1,6 +1,6 @@
 # SEO Expert India – WordPress Theme & One-Click Demo (v1.0.0)
 
-This bundle turns the SEO Expert India website into a WordPress website you can edit with Elementor.
+This is the current WordPress conversion package, with separately editable Elementor page sections. It is not yet certified as the complete Elementor Pro migration requested; see `TESTING-REPORT.md` for evidence and remaining work.
 
 | Package | What it is |
 |---|---|
@@ -52,7 +52,7 @@ so edits you made to imported pages are replaced — duplicate a page first if y
 
 ## Editing
 - **Pages:** *Pages → Edit with Elementor*. Headings, text, images, buttons and links are separate widgets; complex parts (forms, tables, tab panels, icons) are HTML widgets you can edit too.
-- **Header menu:** *Appearance → Menus*. Items under “Services” whose own sub-items exist become mega-menu columns. Add `sei-icon-Search` (or another icon name) in an item's *CSS Classes* to change its icon.
+- **Header menu:** *Appearance → Menus*. Items under “Services” whose own sub-items exist become mega-menu columns. Add `sei-icon-Search` (or another icon name) in an item's *CSS Classes* to change its icon. The header is currently theme-rendered, not an imported Elementor global header template.
 - **Header logo / tagline / Quick Consultation button:** *Appearance → Customize → Site Identity* and *SEO Expert India Header*.
 - **Footer:** *Templates → Saved Templates → SEO Expert India Footer* (or *Theme Builder → Footer* with Elementor Pro).
 - **Enquiry emails:** *Settings → SEO Expert India Enquiries* – recipients and sender address.
@@ -60,7 +60,7 @@ so edits you made to imported pages are replaced — duplicate a page first if y
 
 ## Enquiry forms
 All contact forms send an HTML email through WordPress (`wp_mail`) to the configured recipients
-(default: info@seoexpertindia.biz, lucky.magarde@gmail.com, lokesh@seoexpertindia.biz; sender wordpress@your-domain).
+(default: info@seoexpertindia.biz, lucky.magarde@gmail.com, lokesh@seoexpertindia.biz; sender wordpress@seoexpertindia.biz).
 Fields are validated in the browser and on the server, spam is filtered by a hidden honeypot field and a minimum fill time,
 and nothing is stored in the database. No credentials are exposed in the page.
 

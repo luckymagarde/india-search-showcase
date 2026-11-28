@@ -5,8 +5,8 @@ WP = pathlib.Path('/dev-server/wordpress')
 SRC = pathlib.Path('/dev-server/src')
 BUILD = pathlib.Path('/mnt/documents/.lovable/wpbuild')
 OUT = BUILD / 'out'
-STAGE = BUILD / 'stage'
-DIST = pathlib.Path(os.environ.get('SEI_DIST', '/mnt/documents/wordpress'))
+STAGE = pathlib.Path('/tmp/seoexpertindia-packaging')
+DIST = pathlib.Path(os.environ.get('SEI_DIST', '/tmp/seoexpertindia-packages'))
 THEME = WP / 'theme/seoexpertindia'
 PLUGIN = WP / 'importer/seoexpertindia-demo-importer'
 VERSION = '1.0.0'
@@ -101,7 +101,8 @@ footer = resolve_static(json.loads((OUT / 'data/footer.json').read_text()))
 for f in (OUT / 'data/media').iterdir():
     shutil.copy(f, tpl / 'media' / f.name)
 glob = {
-    'colors': {'primary (gold)': '#D4A72C', 'secondary (navy)': '#020817', 'text': '#EEF2FB', 'accent (light gold)': '#F3C95F',
+    'colors': {'page background': '#07111F', 'page accent': '#C9A957', 'page accent light': '#E0C574', 'page text': '#F5F1E7',
+               'primary (gold)': '#D4A72C', 'secondary (navy)': '#020817', 'text': '#EEF2FB', 'accent (light gold)': '#F3C95F',
                'muted text': '#94A3C4', 'card': '#0A1730', 'violet accent': '#8B7CF6'},
     'fonts': {'primary (headings)': 'Plus Jakarta Sans 700', 'secondary (display)': 'Playfair Display 600', 'text': 'DM Sans 400', 'accent (labels)': 'Space Grotesk 600'},
     'container_width_px': 1240,

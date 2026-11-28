@@ -87,7 +87,9 @@ Every unchecked page still needs independently written 5,000-word content, relev
 - [x] Importer plugin: Dashboard → SEO Expert India → Import Demo; checks, warning, batched AJAX, progress, report, idempotent, media library, menus, front/blog page, kit globals.
 - [x] Forms: validation, spam trap, server-side wp_mail to the three recipients from wordpress@seoexpertindia.biz, success/error messages.
 - [x] SEO: editable title/description, canonical, schema, Rank Math compatibility.
-- [x] Test in WordPress + Elementor: activation, import twice, editor edit/publish, menu, links, images, forms, PHP lint, JS errors, 6 breakpoints.
+- [x] Test in local WordPress + Elementor: activation, import twice, editor edit/publish, menu, links, images, forms, PHP lint and JS errors; see the testing report for recorded coverage.
 - [x] Deliver 4 ZIPs + README/requirements/troubleshooting/changelog.
+- [ ] Finish full-site visual comparison at all six requested widths and resolve recorded differences — blocked: local WordPress test environment is unavailable after the sandbox reset; setup dependency restoration failed.
+- [ ] Elementor global header template — current header uses WordPress menus and Customizer, not the requested Elementor template; Pro verification needs the paid plugin.
 - [ ] Elementor Pro theme-builder footer — untestable here (paid plugin not available); code path written, not exercised.
 - [ ] Real inbox delivery — depends on the live host's mail setup; tested only up to WordPress handing the email over.
